@@ -1,0 +1,125 @@
+body{
+	background: url(img/panel1.jpg) no-repeat;
+	background-size: cover;
+}
+
+p{
+	font-size: 100%;
+	text-decoration: none;
+	text-decoration-color: none;
+    font-family: 'Commissioner', sans-serif;
+}
+
+img{
+	border: 23px #fff;
+	text-align: center;
+}
+
+
+a{
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #245674;
+	text-decoration: none;
+	font-size: 120%;
+}
+
+#vse{
+
+}
+
+.izobr{
+	opacity: 1;
+	z-index: 3;
+}
+
+
+/*----------------------- Серединка------------------------------ */
+
+#container{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.bloki{
+	margin: 0 auto;
+	width: 60%;
+    background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 2px;
+	text-align: center;
+}
+
+.textblock{
+	text-align: justify;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%; 
+	font-size: 110%;
+	text-decoration: none;
+}
+
+.zitata{
+	text-align: right;
+	padding-right: 5%;
+}
+
+
+/*----------------------- Левая панель------------------------------ */
+
+#leftpanel{
+	position: fixed;
+    top: 2%;
+    left: 2%;
+    width: 10%;
+	background: #fff;
+	text-align: center;
+	border-radius: 2px;
+	text-decoration: none;
+	margin: 2%;
+	padding: 0.5%;
+    opacity: 0.8;
+
+}
+
+
+/*----------------------- Правая панель------------------------------ */
+
+#rightokno{
+	position: fixed;
+	top: 2%;
+    right: 2%;
+    width: 10%;
+    background: #fff;
+    border-radius: 2px;
+	text-decoration: none;
+	margin: 2%;
+	padding: 0.5%;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.okno{
+    opacity: 0.8;	
+}
+
+.okno:hover{
+	opacity: 1;
+}
+
+
+#rightpanel{
+	position: fixed;
+    bottom: 2%;
+    right: 2%;
+	background: #fff;
+	width: 10%;
+	text-align: center;
+	border-radius: 2px;
+	text-decoration: none;
+	margin: 2%;
+	padding: 0.5%;
+    opacity: 0.8;
+}

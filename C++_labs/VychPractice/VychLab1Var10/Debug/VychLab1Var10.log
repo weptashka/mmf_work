@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+D:\C++\2kurs\VychPractica\VychLab1Var10\MyForm.cpp(8,32): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  VychLab1Var10.vcxproj -> D:\C++\2kurs\VychPractica\VychLab1Var10\Debug\VychLab1Var10.exe

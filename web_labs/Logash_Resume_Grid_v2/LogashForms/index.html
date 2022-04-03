@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+	<title>Форма</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <style> 
+		 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+     </style>
+</head>
+<body>
+<form action="#" name="form">
+	<p class="shapka">Форма с UI элементами</p>
+	<p class="shapka">Заявка в ТС</p>
+		<fieldset>
+		    <legend>Курс (Radio)</legend>
+		         <input name="radio" type="radio">Первый</p>
+			     <input name="radio" type="radio">Второй</p>
+			     <input name="radio" type="radio">Третий</p>
+			     <input name="radio" type="radio">Четвёртый</p>
+  		</fieldset>
+  		<fieldset>
+		    <legend>Ваши мысли по поводу афиши (Frame)</legend>
+		         <a href="https://vk.com/creativemmf" ><img src="img/nabor.jpg" alt="Афиша ТС" width="60%"></a>
+		         <input name="radio" type="text">
+		         <button type="submit" autofocus>Ок</button>
+  		</fieldset>
+  		<fieldset>
+	        <legend>Ваши умения, увлечения (Checkbox)</legend>
+			     <label><input type="checkbox">Вокал</label></br>
+			     <label><input type="checkbox">Инструментал</label></br>
+			     <label><input type="checkbox">Рисование</label></br>
+			     <label><input type="checkbox">Танцы</label></br>
+			     <label><input type="checkbox">SMM</label></br>
+			     <label><input type="checkbox">Другое</label></br>
+  		</fieldset>
+  		<fieldset>
+	        <legend>Listbox</legend>
+			 <select multiple size="3">
+				 <option>Первый</option>
+				 <option>Второй</option>
+				 <option>Третий</option>
+				 <option>Четвёртый</option>
+				 <option>Пятый</option>
+				 <option>Шестой</option>
+		    </select>
+  		</fieldset>
+  		<fieldset>
+	        <legend>Combobox</legend>
+			    <select>
+				 <option>Первый</option>
+				 <option>Второй</option>
+				 <option>Третий</option>
+				 <option>Четвёртый</option>
+			    </select>
+		</fieldset>
+		<fieldset>
+		    <legend>Желание участвовать во всех мероприятиях (от 0 до 10) (Бегунок)</legend>
+				<input type="range" list="tickmarks" min="0" max="100" step="10">
+		        <datalist id="tickmarks">
+  			     <option value="0" label="0">
+  			     <option value="10">
+  			     <option value="20">
+  			     <option value="30">
+  			     <option value="40">
+  			     <option value="50" label="5">
+  			     <option value="60">
+  			     <option value="70">
+  			     <option value="80">
+  			     <option value="90">
+  			     <option value="100" label="10">
+		        </datalist>
+		</fieldset>
+		<fieldset>
+		    <legend>Счётчик</legend>
+			     <input type="number">
+		</fieldset>
+
+	 	     <div class="knopki">
+			     <button type="submit" >Ок</button>
+		         <button type="submit" >Отмена</button>
+		     </div>
+</form>
+</body>
+</html>

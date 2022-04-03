@@ -1,0 +1,154 @@
+/*------General--------*/
+
+body{
+
+font-family: 'Montserrat', sans-serif;
+background-color:#202020;
+}
+
+a{
+text-decoration:none;
+color:#FFBD10;
+	
+}
+
+a:hover{
+text-decoration:none;
+color: white;	
+}
+
+
+nav ul { 
+list-style-type: none;
+margin-top: 1.5%;
+} 
+
+nav li { 
+
+font-size: 120%;
+display : inline;
+margin : 0 9%;
+} 
+
+ul { 
+list-style-type: none;
+} 
+
+li { 
+
+font-size: calc(0.5em + 0.5vw);
+display : inline;
+} 
+
+
+.text0{
+margin-top:%; 
+margin-left: 10%;
+width:80%;
+font-size: 100%;
+text-align: justify;
+color:white;
+}
+
+.text1{
+font-size: 200%;
+width:80%;
+margin-left:10%;
+margin-bottom:3%;
+margin-top: 7%;
+color:white;
+}
+
+/*------First Img Line--------*/
+
+.car1{
+border: 5px solid #FFFFFF;
+margin-left:10%;
+}
+
+.car1:hover{
+border: 5px solid #FFBD10;
+}
+
+.car2{
+border: 5px solid #FFFFFF;
+margin-left:10%;
+}
+
+.car2:hover{
+border: 5px solid #FFBD10;
+}
+
+.car3{
+border: 5px solid #FFFFFF;
+margin-left:14.2%;
+}
+
+.car3:hover{
+border: 5px solid #FFBD10;
+}
+
+/*------Second Img Line--------*/
+
+.car12{
+border: 5px solid #FFFFFF;
+margin-left:10%;
+}
+
+.car12:hover{
+border: 5px solid #FFBD10;
+}
+
+.car22{
+border: 5px solid #FFFFFF;
+margin-left:8%;
+}
+
+.car22:hover{
+border: 5px solid #FFBD10;
+}
+
+.car32{
+border: 5px solid #FFFFFF;
+margin-left:7%;
+}
+
+.car32:hover{
+border: 5px solid #FFBD10;
+}
+
+/*------Third Img Line--------*/
+
+.car13{
+border: 5px solid #FFFFFF;
+margin-left:10%;
+}
+
+.car13:hover{
+border: 5px solid #FFBD10;
+}
+
+.car23{
+border: 5px solid #FFFFFF;
+margin-left:8%;
+}
+
+.car23:hover{
+border: 5px solid #FFBD10;
+}
+
+.car33{
+border: 5px solid #FFFFFF;
+margin-left:7%;
+}
+
+.car33:hover{
+border: 5px solid #FFBD10;
+}
+
+
+
+.p1{
+margin-left:10%;
+font-size: calc(0.5em + 0.5vw);	
+}

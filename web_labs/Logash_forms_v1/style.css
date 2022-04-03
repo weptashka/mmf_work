@@ -1,0 +1,40 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  }
+
+form{
+  margin:5% auto;
+  width:20%; 
+  background-color: #C4C4C4;
+  padding: 2%;
+  }
+
+
+img{
+  margin: 0 2% 2%;
+  }
+
+.shapka{
+	text-align: center;
+  margin: 1 1 10 1%;
+  font-size: 100%;
+  font-weight: 30%; 
+  background-color: #E43F3F;
+  }
+
+.knopki{
+  text-decoration: none;
+  text-align: center;
+  }
+  
+fieldset{ 
+  margin: 3%;
+  padding: 2%;
+  }
+
+button{
+  text-align: center;
+  text-decoration: none;
+  lighting-color:#FDC15F;
+

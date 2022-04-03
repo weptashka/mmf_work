@@ -1,0 +1,9 @@
+C:\Users\TrouenUn\source\repos\vect\vect\Debug\vect.vcxproj.AssemblyReference.cache
+C:\Users\TrouenUn\source\repos\vect\vect\Debug\vect.MyForm.resources
+C:\Users\TrouenUn\source\repos\vect\vect\Debug\vect.vcxproj.GenerateResource.cache
+C:\Users\Полина\Desktop\vect\vect\Debug\vect.vcxproj.AssemblyReference.cache
+C:\Users\Полина\Desktop\vect\vect\Debug\vect.MyForm.resources
+C:\Users\Полина\Desktop\vect\vect\Debug\vect.vcxproj.GenerateResource.cache
+D:\C++\2kurs\VychPractica\vect\vect\Debug\vect.vcxproj.AssemblyReference.cache
+D:\C++\2kurs\VychPractica\vect\vect\Debug\vect.MyForm.resources
+D:\C++\2kurs\VychPractica\vect\vect\Debug\vect.vcxproj.GenerateResource.cache

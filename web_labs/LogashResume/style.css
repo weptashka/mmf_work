@@ -1,0 +1,171 @@
+body {background: #f3f2f3;
+color: #000000;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+}
+
+a{
+text-decoration:none;
+color:#FFFFFF;	
+}
+
+
+a:hover{
+text-decoration:none;
+color: #000000;	
+}
+
+#flexy{
+background:#FFFFFF; 
+width: 900px;
+height: 700px;
+display: flex;
+flex-wrap: wrap;
+justify-content:space-around;
+
+}
+
+#cont{
+display: flex;
+align-self: center;
+width: 900px;
+height: 400px;
+}
+
+.eve{
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+color: #FFFFFF;	
+}
+
+.eve:hover{
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+color: #000000;	
+}
+
+
+.bsu{
+font-family: 'Montserrat', sans-serif;
+color: #FFFFFF;	
+font-size: 50px;
+line-height: 28px;
+}
+
+#container {
+background: #FFFFFF;
+margin: 0px auto;
+width: 900px;
+height: 700px;
+}
+
+#header {
+display: flex;
+flex-direction: row;
+background: #333333;
+height: 100px;
+width: 900px;
+}
+
+.tet{
+color:#FFFFFF;	
+}
+
+#header2 {
+background: #294946;
+height: 80px;
+width: 900px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-around;
+}
+
+#imya{
+text-align: center;
+background:#FFFFFF;
+height: 60px;
+width: 900px;	
+}
+
+
+#flexx{
+display: flex;
+ flex-direction: row;
+}
+
+#foto {
+background:#333333;
+width:360px;
+height: 360px;
+}
+#res{
+width: 550px;
+height: 350px;
+}
+
+table{
+align-self : center;
+width: 550px;
+height: 350px;
+border-collapse: collapse;
+border-spacing: 0px;
+border: 1px solid #FFFFFF; 
+
+line-height: 40px;
+}
+
+td, th {
+
+			padding:0px 10px 0px 10px;
+			border: 0px solid black;
+		}
+
+.logo{
+margin: 10px;
+float: left; 
+}
+
+
+.fotoe{
+	margin:28px;
+}
+
+
+#probel{
+background: #FFFFFF;
+width: 900px;
+height: 25px;	
+}
+
+#content {
+background: #294946;
+width: 900px;
+height: 25px;
+text-align:right;	
+}
+
+.NR{
+	text-align: center;
+	padding-right: 50px;
+	padding-top: 100px;
+ }
+
+.dv{
+
+padding:20px;	
+}
+
+#footer {background: #333333;
+height: 25px;
+width: 900px;
+text-align: right;
+}
+
+.prev{
+	border: 2px solid #333333;
+	margin: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding:10px;
+}

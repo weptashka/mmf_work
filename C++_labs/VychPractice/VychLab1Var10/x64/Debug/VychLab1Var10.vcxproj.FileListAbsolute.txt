@@ -1,0 +1,4 @@
+D:\C++\2kurs\VychPractica\VychLab1Var10\x64\Debug\VychLab1Var10.vcxproj.AssemblyReference.cache
+D:\C++\2kurs\VychPractica\VychLab1Var10\x64\Debug\VychLab1Var10.MyForm.resources
+D:\C++\2kurs\VychPractica\VychLab1Var10\x64\Debug\VychLab1Var10.vcxproj.GenerateResource.cache
+D:\C++\2kurs\VychPractica\VychLab1Var10\x64\Debug\VychLab1Var10.exe

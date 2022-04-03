@@ -1,0 +1,24 @@
+using namespace System;
+using namespace System::Windows::Forms;
+
+[STAThread]
+void main(array<String^>^ arg) {
+    Application::EnableVisualStyles();
+    Application::SetCompatibleTextRenderingDefault(false);
+
+    WinFormsTest::MyForm form; //WinFormsTest - имя вашего проекта
+    Application::Run(%form);
+}
+
+
+////////////////////////////////////////////////////////
+
+не знаю, как это работает, но если не включается View Designer
+т.е. нельзя визуально форму увидеть, то
+- пракой кнопкой по проекту > Unload Progect > 
+в xml посмотреть чтоб была строка <FileType>CppForm</FileType>
+просто посмотреть-потыкать
+-опять пкм > reload Project
+и при пкм по FormName.h должно появиться View Designer
+
+////////////////////////////////////////////////////////
