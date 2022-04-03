@@ -1,0 +1,125 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3744,        117]
+NotebookOptionsPosition[      3397,        100]
+NotebookOutlinePosition[      3775,        116]
+CellTagsIndexPosition[      3732,        113]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"R", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Reduce", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"4", "\[Pi]", "*", 
+         SuperscriptBox["R", "2"]}], "-", 
+        RowBox[{"4", "\[Pi]", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"R", "+", 
+            SuperscriptBox["\[EmptyUpTriangle]R", "*"]}], ")"}], "2"]}]}], 
+       "\[LessEqual]", 
+       SuperscriptBox["10", 
+        RowBox[{"-", "4"}]]}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"4", "\[Pi]", "*", 
+         SuperscriptBox["R", "2"]}], "-", 
+        RowBox[{"4", "\[Pi]", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"R", "-", 
+            SuperscriptBox["\[EmptyUpTriangle]R", "*"]}], ")"}], "2"]}]}], 
+       "\[LessEqual]", 
+       SuperscriptBox["10", 
+        RowBox[{"-", "4"}]]}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"4", "\[Pi]", "*", 
+         SuperscriptBox["R", "2"]}], "-", 
+        RowBox[{"4", "\[Pi]", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"R", "+", 
+            SuperscriptBox["\[EmptyUpTriangle]R", "*"]}], ")"}], "2"]}]}], 
+       "\[GreaterSlantEqual]", 
+       RowBox[{"-", 
+        SuperscriptBox["10", 
+         RowBox[{"-", "4"}]]}]}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"4", "\[Pi]", "*", 
+         SuperscriptBox["R", "2"]}], "-", 
+        RowBox[{"4", "\[Pi]", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"R", "-", 
+            SuperscriptBox["\[EmptyUpTriangle]R", "*"]}], ")"}], "2"]}]}], 
+       "\[GreaterSlantEqual]", 
+       RowBox[{"-", 
+        SuperscriptBox["10", 
+         RowBox[{"-", "4"}]]}]}], ",", 
+      SuperscriptBox["\[EmptyUpTriangle]R", "*"]}], "}"}], ",", " ", 
+    SuperscriptBox["\[EmptyUpTriangle]R", "*"]}], "]"}], "//", 
+  "N"}]}], "Input",
+ CellChangeTimes->{{3.8406171409567757`*^9, 3.840617168058112*^9}, {
+   3.840617551800869*^9, 3.8406175521278925`*^9}, {3.8406175905707493`*^9, 
+   3.840617621468958*^9}, {3.8406177093762617`*^9, 3.840617941232476*^9}, {
+   3.8406179839026184`*^9, 3.8406180697204976`*^9}, {3.840618229250183*^9, 
+   3.8406182479906044`*^9}, {3.840618615563463*^9, 3.8406186295979853`*^9}, {
+   3.8406186855983686`*^9, 3.8406186994319353`*^9}, {3.8406237371448812`*^9, 
+   3.8406237676616044`*^9}, 3.8406239097058396`*^9, {3.840623946029385*^9, 
+   3.84062396825117*^9}, 3.8406261581269608`*^9, {3.8406262051331863`*^9, 
+   3.8406262318301272`*^9}, {3.840626331631481*^9, 3.8406263324512215`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"0.`", "\[LessEqual]", 
+  SuperscriptBox["\[EmptyUpTriangle]R", "*"], "\[LessEqual]", 
+  "3.97886566161354`*^-6"}]], "Output",
+ CellChangeTimes->{3.840623955843989*^9}]
+}, Open  ]]
+},
+WindowSize->{1280, 637},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>1.3 Inherited,
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2607, 69, 100, "Input"],
+Cell[3190, 93, 191, 4, 39, "Output"]
+}, Open  ]]
+}
+]
+*)
+
