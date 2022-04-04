@@ -1,13 +1,17 @@
-## 🌌 Hello, here you can find some works namely:
+<h1 align="center">Hi there, I'm <a href="https://vk.com/weptashka" target="_blank">Polly</a> 
+   
 
-### ✴ numerical methods ✴ :
-   3, 4 terms -7 variant
+## 🌌 Here you can find some works namely:
+
+- ✴ numerical methods ✴ :
+   - 3, 4 terms -7 variant
 
 and other)
 
 
 
 
-## [`🌠 Some history of 2nd term 🧑🔴`](https://vk.com/polistrausy)
+## [🎆 Some history of 2nd web mmf term 🎆](https://vk.com/polistrausy)
 
-![polistrausy](https://sun9-84.userapi.com/impg/59ViBNsE-vmDrKXTB_ioCgvo6dvkAev3VQkubQ/S1zfOiwuShA.jpg?size=512x512&quality=96&sign=66c89b69fb224a623de75709a3529ed9&type=album)
+
+<img src="https://sun9-47.userapi.com/impg/PURN2YNPfoycdU9j3txxSPJhxjgNUtezib88Bw/YpzBSziHQg4.jpg?size=1600x900&quality=96&sign=868849c3a0e4ed3af81319fbfcc77dd1&type=album" width="500">
