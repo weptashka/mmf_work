@@ -6,13 +6,16 @@
 - numerical methods ✴ 
    - 3, 4 terms -7 variant
    
-- some lukuanovich web works
+- some Lukuanovich web works
    - forms
    - michelangelo gallery
    
 - linux 🐧
    - 6 labs from 2st term
    - 30 tasks for 2nd term credit session
+   
+- java ☕
+   - 6 labs from Lul'kin
 
 and other)
 
