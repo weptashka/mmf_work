@@ -1,7 +1,7 @@
 <h1 align="center">Hi there, I'm <a href="https://vk.com/weptashka" target="_blank">Polly</a> 
    
 
-## 🌌 Here you can find some works namely:
+## Here you can find some works namely:
 
 - numerical methods ✴ 
    - 3, 4 terms -7 variant
@@ -9,6 +9,8 @@
 - some Lukuanovich web works
    - forms
    - michelangelo gallery
+   - resime
+   - resume grid
    
 - linux 🐧
    - 6 labs from 2st term
