@@ -25,4 +25,4 @@ and other)
 ## [🎆 Some history of 2nd & 3rd web mmf term 🎆](https://vk.com/polistrausy)
 
 
-<img src="https://sun9-49.userapi.com/impg/AW4e6uK_HErRRtgap9qKGC1TFFmPNkHgEO7yNw/pOLE_ohwtqs.jpg?size=1080x607&quality=96&sign=5fc4cf248d60378ccd1c06615310dd8b&type=album" width="500">
+<img src="https://sun9-44.userapi.com/impg/EGJ2WHWxVY4ZgJKb_7zy8xxQ4ToH22Lrtp-EXA/Xo5KpFzGvHU.jpg?size=1080x602&quality=96&sign=438f01bc9938f58f885999e8c178624d&type=album" width="500">
