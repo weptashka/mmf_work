@@ -22,7 +22,7 @@ and other)
 
 
 
-## [🎆 Some history of 2nd web mmf term 🎆](https://vk.com/polistrausy)
+## [🎆 Some history of 2nd & 3rd web mmf term 🎆](https://vk.com/polistrausy)
 
 
 <img src="https://sun9-47.userapi.com/impg/PURN2YNPfoycdU9j3txxSPJhxjgNUtezib88Bw/YpzBSziHQg4.jpg?size=1600x900&quality=96&sign=868849c3a0e4ed3af81319fbfcc77dd1&type=album" width="500">
