@@ -1,6 +1,6 @@
-## 🌌Hello, here you can find some works namely:
+## 🌌 Hello, here you can find some works namely:
 
-### ✴numerical methods:
-3, 4 terms -7 variant
+### ✴ numerical methods ✴ :
+      3, 4 terms -7 variant
 
 and other)
