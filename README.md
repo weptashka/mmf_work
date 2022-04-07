@@ -5,7 +5,7 @@
 
 - numerical methods ✴ 
    - 3, 4 terms -7 variant
-   - dock for 1st kolock
+   - docx for 1st kolock
    
 - some Lukuanovich web works
    - forms
