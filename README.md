@@ -19,6 +19,7 @@
    
 - java ☕
    - 6 labs from Lul'kin
+   - Nagornyy vych practice labs
 
 and other)
 
