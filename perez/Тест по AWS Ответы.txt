@@ -1,0 +1,51 @@
+1 - Which of the following are benefits of the AWS Cloud? (Select TWO.)
+- capital expenses...
+- companies gain...
+2 - Which of the following are advantages of the AWS Cloud? (Select TWO.)
+- ...of the cloud infrastructure
+- ... for physical servers
+3 - A company requires physical isolation of its Amazon EC2 instances from the instances of other customers.
+Which instance purchasing option meets this requirement?
+- dedicated hosts
+4 - Which AWS Cloud architecture principle states that systems should reduce interdependencies?
+- loose coupling
+5 - Which AWS Cloud architecture design principle supports the distribution of workloads across multiple Availability Zones?
+- design for failure
+6 - Which of the following is a responsibility of AWS under the AWS shared responsibility model?
+- secure the physical
+7 - Which of the following describes a security best practice that can be implemented by using AWS Identity and Access Management (IAM)?
+- grant permissions to users
+8 - A company needs to monitor and receive alerts about AWS Management Console sign-in events that involve the AWS account root user.
+Which AWS service can the company use to meet these requirements?
+- amazon cloudwatch
+9 - A company has an application server that runs on an Amazon EC2 instance. The application server needs to access contents within a private Amazon S3 bucket.
+What is the recommended approach to meet this requirement?
+- create an IAM
+10 - Which security-related services or features does AWS offer? (Select TWO.)
+- aws trusted
+- data encryption
+11 - Which recommendations are included in the AWS Trusted Advisor checks? (Select TWO.)
+- amazon s3 bucket
+- multi-factor authentication
+12 - A company wants a dedicated private connection to the AWS Cloud from its on-premises operations.
+Which AWS service or feature will provide this connection?
+- aws direct connect
+13 - Which aspect of AWS infrastructure provides global deployment of compute and storage?
+- multiple aws regions
+14 - Which AWS services or features support data replication across AWS Regions? (Select TWO.)
+- amazon s3
+- rds
+15 - A company is hosting a static website from a single Amazon S3 bucket. 
+Which AWS service will achieve lower latency and high transfer speeds?
+- cloudfront
+16 - Which AWS service provides a simple and scalable shared file storage solution for use with Linux-based Amazon EC2 instances and on-premises servers?
+- amazon EFS
+17 - A company needs phone, email, and chat access 24 hours a day, 7 days a week. The response time must be less than 1 hour if a production system has a service interruption.
+Which AWS Support plan meets these requirements at the LOWEST cost?
+- business support
+18 - Which Amazon EC2 pricing model adjusts based on supply and demand of EC2 instances?
+- spot instances
+19 - Which of the following is an advantage of consolidated billing on AWS?
+- volume pricing
+20 - Which AWS service can create an alarm that sends a notification when a billing threshold is exceeded?
+- cloudwatch

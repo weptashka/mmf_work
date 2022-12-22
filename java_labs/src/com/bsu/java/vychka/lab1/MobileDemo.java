@@ -5,12 +5,12 @@ import java.util.Scanner;
 //Создать класс Mobile с внутренним классом, с помощью объектов которого
 //        можно хранить информацию о моделях телефонов и их свойствах
 
-public class Mobile {
+public class MobileDemo {
     private String brand;
     private String model;
-    private boolean haveProperties = false;
 
-    public Mobile(String brand, String model){
+
+    public MobileDemo(String brand, String model){
         this.brand = brand;
         this.model = model;
     }
@@ -21,12 +21,7 @@ public class Mobile {
     public void setModel(String model){ this.model = model;}
     public String getModel() { return model; }
 
-    public boolean getHaveProperties(){ return this.haveProperties; };
 
-    void addProperties(){
-         this.haveProperties = true;
-         Mobile.Properties prop = this.new Properties();
-    }
 
     //Inner class
     public class Properties{
