@@ -1,0 +1,50 @@
+1. Пусть   const n=10; int a[n]={-1, -2, 33, 44, -5, -6, 77, 8}; int *q;
+
+Какие из следующих присваиваний допустимы и что они означают:
+
+1)  q=a; //- теперь эл-ты массива можно вызывать и с помощью q[1], q[2], .. q[n] 
+
+2)  q=*a[0];  // 
+ 
+3)  q=n; //
+
+4)  q=&a[0]; //- теперь эл-ты массива можно вызывать и с помощью q[1], q[2], .. q[n] 
+
+5)  int i=2; q=&a[i]; // - q[0]=a[2], q[1]=a[3] и т.д.
+
+6)  int i=2; q=a[i]; //
+
+7)  q=a[0];  //
+
+8)  q=&a[n]; // если q=&a[n], то q[0] — это a[n] и по сути q[1] уже не может быть так как q[1]=a[n+1] => q[i] может быть только i<=n 
+
+======================================================
+
+void Fun (int *x, int N,  int &S)
+
+{   S=0; 
+  for (int i=0; i<N-1; )   
+  if (x[++i]>0) S+=x[i]; }
+
+
+ int main( ) {   const n=10;   int a[n]= {11, -2, 30, 44, -5, 66,  0, 8, 99};
+
+  int &Sum1;   Fun (a,n,Sum1);  cout<<endl<<Sum1;                   //1 ?
+
+  int  Sum2;   Fun (&a[0],n/2,Sum2);  cout<<endl<<Sum2;             //2 78
+
+  int  Sum3;   Fun (a,n,Sum3);  cout<<endl<<Sum3;                   //3 251
+
+  int Sum4;  Fun (&a[5], 5, Sum4);  cout<<endl<<Sum4;               //4 168
+
+  int *Sum5; Fun (a,n,Sum5);cout<<endl<<Sum5;                       //5  - 
+
+  int *q=a[5], Sum6=0; Fun(q, n/2, Sum6);  cout<<endl<<Sum6;        //6
+
+  int *q=a[n/2], Sum7=0; Fun(q, 5, Sum7);cout<<endl<<Sum7;          //7
+
+  int *q=&a[n/2], Sum8=0; Fun(q, 5, Sum8);  cout<<endl<<Sum8;       //8
+ 
+  int *q=*a[n/2], Sum9=0; Fun(q, 5, Sum9);   cout<<endl<<Sum9;      //9
+
+  getch();        return 0;        }

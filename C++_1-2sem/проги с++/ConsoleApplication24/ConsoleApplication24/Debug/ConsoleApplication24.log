@@ -1,0 +1,11 @@
+﻿Build started 16.12.2020 8:48:37.
+     1>Project "C:\!p,l\Прога\проги с++\ConsoleApplication24\ConsoleApplication24\ConsoleApplication24.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\!p,l\прога\проги с++\consoleapplication24\consoleapplication24\source.cpp(6): error C2470: 'main' : looks like a function definition, but there is no parameter list; skipping apparent body
+     1>Done Building Project "C:\!p,l\Прога\проги с++\ConsoleApplication24\ConsoleApplication24\ConsoleApplication24.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.09
