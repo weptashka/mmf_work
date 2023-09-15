@@ -1,0 +1,26 @@
+{
+  "name": "event-api",
+  "version": "0.0.1",
+  "private": true,
+  "description": "New Swagger API Project",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "chance": "^1.1.7",
+    "express": "^4.12.3",
+    "faker": "^5.5.3",
+    "json-schema-faker": "^0.5.0-rcv.34",
+    "swagger-express-mw": "^0.1.0",
+    "util": "^0.12.3"
+  },
+  "devDependencies": {
+    "should": "^7.1.0",
+    "supertest": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "swagger project test"
+  }
+}

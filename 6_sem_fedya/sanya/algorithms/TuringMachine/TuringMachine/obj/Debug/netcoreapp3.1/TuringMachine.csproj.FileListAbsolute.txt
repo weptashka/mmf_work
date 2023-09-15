@@ -1,0 +1,12 @@
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/bin/Debug/netcoreapp3.1/TuringMachine.deps.json
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/bin/Debug/netcoreapp3.1/TuringMachine.runtimeconfig.json
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/bin/Debug/netcoreapp3.1/TuringMachine.runtimeconfig.dev.json
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/bin/Debug/netcoreapp3.1/TuringMachine.dll
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/bin/Debug/netcoreapp3.1/TuringMachine.pdb
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/obj/Debug/netcoreapp3.1/TuringMachine.csprojAssemblyReference.cache
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/obj/Debug/netcoreapp3.1/TuringMachine.AssemblyInfoInputs.cache
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/obj/Debug/netcoreapp3.1/TuringMachine.AssemblyInfo.cs
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/obj/Debug/netcoreapp3.1/TuringMachine.csproj.CoreCompileInputs.cache
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/obj/Debug/netcoreapp3.1/TuringMachine.dll
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/obj/Debug/netcoreapp3.1/TuringMachine.pdb
+/Users/alex/sixth_semestr/algorithms/TuringMachine/TuringMachine/obj/Debug/netcoreapp3.1/TuringMachine.genruntimeconfig.cache

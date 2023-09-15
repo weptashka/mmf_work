@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>CNN Top Stories</title>
+    <link href="https://edition.cnn.com/services/rss"/>
+    <updated>2020-03-28T18:30:02Z</updated>
+    <author>
+        <name>CNN</name>
+    </author>
+    <id>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6</id>
+
+    <entry>
+        <title>Bill Gates makes prediction about when coronavirus will peak</title>
+        <link href="https://www.cnn.com/videos/business/2020/03/27/bill-gates-coronavirus-town-hall-shutdown-april-peak-sot-vpx.cnn"/>
+        <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
+        <updated>2020-03-28T18:30:02Z</updated>
+        <summary>Bill and Melinda Gates Foundation co-founder Bill Gates says that the US should shutdown the entire country for a short period of time to control the spread of the coronavirus and predicts that the number of cases will peak in late April.</summary>
+        <category term="SARS-CoV-2" label="SARS-CoV-2"></category>
+    </entry>
+
+    <entry>
+        <title>Air pollution drops as Europeans stay at home</title>
+        <link href="https://www.cnn.com/2020/03/27/europe/europe-pollution-decline-coronavirus-lockdown-intl/index.html"/>
+        <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa66</id>
+        <updated>2020-03-27T14:30:02Z</updated>
+        <summary>Most Europeans are currently living under severe restrictions, stuck at home, desperately hoping for the coronavirus pandemic to pass soon.</summary>
+        <category term="SARS-CoV-2" label="SARS-CoV-2"></category>
+    </entry>
+
+    <entry>
+        <title>New York nightlife shut down. Now its workers need help</title>
+        <link href="https://www.cnn.com/videos/business/2020/03/27/nyc-nightlife-workers-coronavirus-sg-orig.cnn"/>
+        <id>urn:uuid:1225c695-cfb8-3ebb-aaaa-80da344efa66</id>
+        <updated>2020-03-27T11:30:02Z</updated>
+        <summary>When New York City shut down bars and restaurants to control the coronavirus pandemic, hundreds of thousands of workers and freelancers lost their incomes. Hear their stories.</summary>
+        <category term="SARS-CoV-2" label="SARS-CoV-2"></category>
+    </entry>
+
+    <entry>
+        <title>Zoom's massive 'overnight success' actually took nine years</title>
+        <link href="https://www.cnn.com/2020/03/27/tech/zoom-app-coronavirus/index.html"/>
+        <id>urn:uuid:5225c695-cfb8-3ebb-aaaa-80da344efa66</id>
+        <updated>2020-03-27T16:20:02Z</updated>
+        <summary>When you think of a social network, you probably imagine news feeds, birthday reminders and baby photos. But the social network of the moment -- the one that's currently getting more app downloads than either Snapchat or TikTok -- looks a little different: It's a videoconferencing service called Zoom, where many peoples' work and social lives now unfold.</summary>
+        <category term="Business" label="Business"></category>
+    </entry>
+</feed>

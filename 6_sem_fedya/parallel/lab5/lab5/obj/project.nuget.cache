@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "WYKIWfuNshIS1JNn/eRJK3WPeC9SNE0ZpczxfEEKcINzDJM6Pf3kESHpboAvvefJtIX/ukciAWtOzUDxCnGkFQ==",
+  "success": true,
+  "projectFilePath": "D:\\University\\6_sem\\parallel\\lab5\\lab5\\lab5.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\scottplot\\4.1.41\\scottplot.4.1.41.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.drawing.common\\4.6.1\\system.drawing.common.4.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}

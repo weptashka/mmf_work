@@ -1,0 +1,1203 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     40667,       1195]
+NotebookOptionsPosition[     35506,       1034]
+NotebookOutlinePosition[     38038,       1123]
+CellTagsIndexPosition[     37561,       1102]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["\:0417\:0430\:0434\:0430\:0447\:0430 1 ",
+ FontWeight->"Plain"]], "TaskTitle",
+ CellChangeTimes->{{3.7933350614706893`*^9, 3.793335061772558*^9}, {
+  3.7933452064405365`*^9, 3.7933452068570533`*^9}},
+ CellTags->"2.21"],
+
+Cell[TextData[{
+ StyleBox["\:0418\:0437 \:0441\:043f\:0438\:0441\:043a\:0430 ",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"l", "=", 
+    RowBox[{"{", 
+     RowBox[{
+     "a", ",", "1", ",", "b", ",", "0", ",", "c", ",", "0", ",", "0", ",", 
+      "d"}], "}"}]}], TraditionalForm]],
+  FontWeight->"Plain"],
+ StyleBox[" \:0438\:0441\:043a\:043b\:044e\:0447\:0438\:0442\:044c \:0432\
+\:0441\:0435 \:043d\:0443\:043b\:0435\:0432\:044b\:0435 \:044d\:043b\:0435\
+\:043c\:0435\:043d\:0442\:044b. \:041f\:0440\:0438\:0434\:0443\:043c\:0430\
+\:0442\:044c \:0435\:0449\:0435 \:0434\:0432\:0430 \:0441\:043f\:0438\:0441\
+\:043a\:0430 \:0438 \:0438\:0441\:043a\:043b\:044e\:0447\:0438\:0442\:044c \
+\:0432\:0441\:0435 \:043d\:0443\:043b\:0435\:0432\:044b\:0435 \:044d\:043b\
+\:0435\:043c\:0435\:043d\:0442\:044b \:0438\:0437 \:043d\:0438\:0445 \:043e\
+\:0434\:043d\:043e\:0439 \:043a\:043e\:043c\:0430\:043d\:0434\:043e\:0439 \
+\:0434\:043b\:044f \:043e\:0431\:043e\:0438\:0445.",
+  FontWeight->"Plain"]
+}], "TaskText",
+ CellChangeTimes->{{3.793344972790267*^9, 3.7933450535759115`*^9}},
+ FontSize->14,
+ FontWeight->"Bold",
+ Background->None,
+ CellTags->"Delete"],
+
+Cell["\:0420\:0435\:0448\:0435\:043d\:0438\:0435:", "ExampleSolution"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"l", ",", "a", ",", "b", ",", "c", ",", "d"}], "]"}], 
+  ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"l", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "a", ",", "1", ",", "b", ",", "0", ",", "c", ",", "0", ",", "0", ",", 
+     "d"}], "}"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Delete", "[", 
+  RowBox[{"l", ",", 
+   RowBox[{"Position", "[", 
+    RowBox[{"l", ",", "0"}], "]"}]}], "]"}]], "Input"],
+
+Cell[TextData[StyleBox["\:0417\:0430\:0434\:0430\:0447\:0430 2",
+ FontWeight->"Plain"]], "TaskTitle",
+ CellChangeTimes->{{3.7933351918377323`*^9, 3.7933351933080616`*^9}, {
+  3.793345209592806*^9, 3.7933452099949203`*^9}},
+ CellTags->"2.22"],
+
+Cell[TextData[{
+ StyleBox["\:041d\:0430\:0439\:0442\:0438 \:0441\:0443\:043c\:043c\:0443 \
+\:043e\:0442\:0440\:0438\:0446\:0430\:0442\:0435\:043b\:044c\:043d\:044b\:0445\
+ \:0447\:0438\:0441\:0435\:043b \:0432 \:0441\:043f\:0438\:0441\:043a\:0435 ",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"l", "=", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "2", ",", 
+      RowBox[{"-", "1"}], ",", "b", ",", "c", ",", 
+      RowBox[{"-", "3"}]}], "}"}]}], TraditionalForm]],
+  FontWeight->"Plain"],
+ StyleBox[". \:041f\:0440\:0438\:0434\:0443\:043c\:0430\:0442\:044c \:0435\
+\:0449\:0435 \:0434\:0432\:0430 \:0441\:043f\:0438\:0441\:043a\:0430 \:0438 \
+\:043d\:0430\:0439\:0442\:0438 \:0441\:0443\:043c\:043c\:0443 \:043e\:0442\
+\:0440\:0438\:0446\:0430\:0442\:0435\:043b\:044c\:043d\:044b\:0445 \:0447\
+\:0438\:0441\:0435\:043b \:0432 \:043d\:0438\:0445  \:043e\:0434\:043d\:043e\
+\:0439 \:043a\:043e\:043c\:0430\:043d\:0434\:043e\:0439.",
+  FontWeight->"Plain"]
+}], "TaskText",
+ CellChangeTimes->{
+  3.7933451017011395`*^9, {3.793345138568743*^9, 3.79334518174988*^9}},
+ FontSize->14,
+ FontWeight->"Bold",
+ Background->None,
+ CellTags->{"Plus", "Select", "Negative"}],
+
+Cell["\:0420\:0435\:0448\:0435\:043d\:0438\:0435:", "ExampleSolution"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"l", ",", "a", ",", "b", ",", "c"}], "]"}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"l", "=", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "2", ",", 
+     RowBox[{"-", "1"}], ",", "b", ",", "c", ",", 
+     RowBox[{"-", "3"}]}], "}"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Plus", "@@", 
+  RowBox[{"Select", "[", 
+   RowBox[{"l", ",", "Negative"}], "]"}]}]], "Input"],
+
+Cell[TextData[StyleBox["\:0417\:0430\:0434\:0430\:0447\:0430 3",
+ FontWeight->"Plain"]], "TaskTitle",
+ CellChangeTimes->{{3.79333567568545*^9, 3.793335677225379*^9}, {
+  3.793345213946678*^9, 3.793345214750967*^9}},
+ CellTags->"2.23"],
+
+Cell[TextData[{
+ StyleBox["\:041d\:0430\:0439\:0442\:0438 \
+\:0441\:0440\:0435\:0434\:043d\:0435\:0435 \:043a\:0432\:0430\:0434\:0440\
+\:0430\:0442\:0438\:0447\:043d\:043e\:0435 \:044d\:043b\:0435\:043c\:0435\
+\:043d\:0442\:043e\:0432 \:0441\:043f\:0438\:0441\:043a\:0430 ",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"l", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "3"}], ",", "4", ",", 
+      RowBox[{"-", "7"}], ",", "0", ",", "11"}], "}"}]}], TraditionalForm]],
+  FontWeight->"Plain"],
+ StyleBox[", \:0430 \:0442\:0430\:043a\:0436\:0435 \
+k1={{-5,2,-1,4},{-3,4,-7,0},{4,-7,0,11},{-3,0,-2,1}}. ",
+  FontWeight->"Plain"]
+}], "TaskText",
+ CellChangeTimes->{{3.793345359426036*^9, 3.793345534482524*^9}},
+ FontSize->14,
+ FontWeight->"Bold",
+ Background->None],
+
+Cell["\:0420\:0435\:0448\:0435\:043d\:0438\:0435:", "ExampleSolution"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"l", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "3"}], ",", "4", ",", 
+     RowBox[{"-", "7"}], ",", "0", ",", "11"}], "}"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+ SqrtBox[
+  RowBox[{
+   UnderoverscriptBox["\[Sum]", 
+    RowBox[{"i", "=", "1"}], 
+    RowBox[{"Length", "[", "l", "]"}]], 
+   SuperscriptBox[
+    RowBox[{"l", "[", 
+     RowBox[{"[", "i", "]"}], "]"}], "2"]}]]], "Input"],
+
+Cell[TextData[StyleBox["\:0417\:0430\:0434\:0430\:0447\:0430 4",
+ FontWeight->"Plain"]], "TaskTitle",
+ CellChangeTimes->{{3.793337400073725*^9, 3.7933374010318675`*^9}, {
+  3.793345824860981*^9, 3.7933458252242823`*^9}},
+ CellTags->"2.24"],
+
+Cell[TextData[{
+ StyleBox["\:041f\:0440\:0435\:043e\:0431\:0440\:0430\:0437\:043e\:0432\:0430\
+\:0442\:044c \:0447\:0438\:0441\:043b\:043e\:0432\:043e\:0439 \:0441\:043f\
+\:0438\:0441\:043e\:043a",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", "l"}], TraditionalForm]]],
+ StyleBox[" \:0432 True, \:0435\:0441\:043b\:0438 \:0432 \:043d\:0435\:043c \
+\:0435\:0441\:0442\:044c \:043f\:0440\:043e\:0441\:0442\:044b\:0435 \:0447\
+\:0438\:0441\:043b\:0430, \:0438\:043b\:0438 \:0432 False \:0432 \:043f\:0440\
+\:043e\:0442\:0438\:0432\:043d\:043e\:043c \:0441\:043b\:0443\:0447\:0430\
+\:0435.  \:041f\:0440\:0438\:0434\:0443\:043c\:0430\:0442\:044c \:0441\:0432\
+\:043e\:0438 \:0432\:0430\:0440\:0438\:0430\:043d\:0442\:044b \:0441\:043f\
+\:0438\:0441\:043a\:0430 ",
+  FontWeight->"Plain"],
+ Cell[BoxData[
+  FormBox["l", TraditionalForm]]],
+ " \:0441 \:0447\:0438\:0441\:043b\:043e\:043c = \:0442\:0440\:0438 \:043f\
+\:043e\:0441\:043b\:0435\:0434\:043d\:0438\:0445 \:0446\:0438\:0444\:0440\
+\:044b \:0441\:0442\:0443\:0434\:0435\:043d\:0447\:0435\:0441\:043a\:043e\
+\:0433\:043e  ",
+ StyleBox["\:0438 \:043f\:043e\:0432\:0442\:043e\:0440\:0438\:0442\:044c \
+\:043a\:043e\:043c\:0430\:043d\:0434\:044b. \:041f\:043e\:044f\:0441\:043d\
+\:0438\:0442\:044c \:0440\:0430\:0431\:043e\:0442\:0443 \:043a\:0430\:0436\
+\:0434\:043e\:0439 \:043a\:043e\:043c\:0430\:043d\:0434\:044b.",
+  FontWeight->"Plain"]
+}], "TaskText",
+ CellChangeTimes->{{3.7933456725453873`*^9, 3.7933457948465853`*^9}, {
+  3.826845644470846*^9, 3.826845702697177*^9}},
+ FontSize->14,
+ FontWeight->"Bold",
+ Background->None,
+ CellTags->"PrimeQ"],
+
+Cell["\:0420\:0435\:0448\:0435\:043d\:0438\:0435:", "ExampleSolution"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Clear", "[", "l", "]"}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"l", "=", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", " ", "8", " ", ",", "10", ",", "144", ",", "52"}], 
+    "}"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Or", "@@", 
+  RowBox[{"PrimeQ", "/@", "l"}]}]], "Input",
+ FontSize->13],
+
+Cell[BoxData[
+ RowBox[{"l", "=", 
+  RowBox[{"{", 
+   RowBox[{"6", ",", " ", "8", " ", ",", "10", ",", "101", ",", "52"}], 
+   "}"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Or", "@@", 
+  RowBox[{"PrimeQ", "/@", "l"}]}]], "Input",
+ FontSize->13],
+
+Cell["\:0417\:0430\:0434\:0430\:0447\:0430 5", "TaskTitle",
+ CellChangeTimes->{{3.79333716863822*^9, 3.7933371696281357`*^9}, {
+  3.793345829411837*^9, 3.7933458299448423`*^9}},
+ FontWeight->"Plain",
+ FontVariations->{"Underline"->False},
+ CellTags->"2.25"],
+
+Cell[TextData[{
+ "\:0414\:0430\:043d\:0430 \:043c\:0430\:0442\:0440\:0438\:0446\:0430 ",
+ Cell[BoxData[
+  FormBox["M", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \:0438 \:0441\:0442\:043e\:043b\:0431\:0435\:0446 ",
+ Cell[BoxData[
+  FormBox["l", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". \:041a\:0430\:043a \:0432\:0441\:0442\:0430\:0432\:0438\:0442\:044c \
+\:0441\:0442\:043e\:043b\:0431\:0435\:0446",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"  ", 
+    RowBox[{"l", "  ", "k"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "-\:043c \:0441\:0442\:043e\:043b\:0431\:0446\:043e\:043c \:0432 \
+\:043c\:0430\:0442\:0440\:0438\:0446\:0443? \:0421\:043e\:0441\:0442\:0430\
+\:0432\:0438\:0442\:044c \:0441\:0432\:043e\:044e \:0441\:0442\:0440\:043e\
+\:043a\:0443 \:0438 \:0432\:0441\:0442\:0430\:0432\:0438\:0442\:044c \:0435\
+\:0435 ",
+ Cell[BoxData[
+  FormBox["k", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " -\:043e\:0439 \:0441\:0442\:0440\:043e\:043a\:043e\:0439 \:0432 \:043c\
+\:0430\:0442\:0440\:0438\:0446\:0443."
+}], "TaskText",
+ CellChangeTimes->{{3.793337258228697*^9, 3.7933372719141645`*^9}, {
+  3.793345842996155*^9, 3.7933459109198823`*^9}, {3.79334596606993*^9, 
+  3.7933460001046047`*^9}},
+ FontSize->14,
+ Background->None,
+ CellTags->{"MatrInsert", "Transpose", "Insert"}],
+
+Cell["\:0420\:0435\:0448\:0435\:043d\:0438\:0435:", "ExampleSolution"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{
+   "MM", ",", "l", ",", "k", ",", "a", ",", "b", ",", "c", ",", "d", ",", 
+    "f"}], "]"}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MatrInsert", "[", 
+   RowBox[{"M_", ",", "l_", ",", "k_"}], "]"}], ":=", 
+  RowBox[{"Transpose", "[", 
+   RowBox[{"Insert", "[", 
+    RowBox[{
+     RowBox[{"Transpose", "[", "M", "]"}], ",", "l", ",", "k"}], "]"}], 
+   "]"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"M", "=", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"Random", "[", 
+       RowBox[{"Integer", ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "20"}], "}"}]}], "]"}], ",", 
+      RowBox[{"{", "5", "}"}], ",", 
+      RowBox[{"{", "5", "}"}]}], "]"}]}], ")"}], "//", 
+  "MatrixForm"}]], "Input",
+ FontSize->13],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"l", "=", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", " ", ",", "c", ",", "d", ",", "f"}], "}"}]}], 
+  ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MatrInsert", "[", 
+   RowBox[{"M", ",", "l", ",", "2"}], "]"}], "//", "MatrixForm"}]], "Input",
+ FontSize->13],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MatrInsert", "[", 
+   RowBox[{"M", ",", "l", ",", "6"}], "]"}], "//", "MatrixForm"}]], "Input"],
+
+Cell["\:0417\:0430\:0434\:0430\:0447\:0430 6", "TaskTitle",
+ CellChangeTimes->{{3.793337362782135*^9, 3.7933373642038736`*^9}, {
+  3.7933460103542166`*^9, 3.79334601118808*^9}},
+ FontWeight->"Plain",
+ FontVariations->{"Underline"->False},
+ CellTags->"2.29"],
+
+Cell[TextData[{
+ "\:0414\:0430\:043d \:0441\:043f\:0438\:0441\:043e\:043a \:043f\:0435\:0440\
+\:0435\:043c\:0435\:043d\:043d\:044b\:0445 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["l",
+     FontWeight->"Plain",
+     FontSlant->"Plain",
+     FontTracking->"Plain",
+     FontVariations->{"CompatibilityType"->0,
+     "Outline"->False,
+     "Shadow"->False,
+     "StrikeThrough"->False,
+     "Underline"->False},
+     FontVariations -> {"Masked" -> False},
+     FontVariations -> {"RotationAngle" -> 0}], "=", 
+    RowBox[{"{", 
+     RowBox[{
+      StyleBox["x",
+       FontSlant->"Plain",
+       FontTracking->"Plain",
+       FontVariations->{"CompatibilityType"->0,
+       "Outline"->False,
+       "Shadow"->False,
+       "StrikeThrough"->False,
+       "Underline"->False},
+       FontVariations -> {"Masked" -> False},
+       FontVariations -> {"RotationAngle" -> 0}], ",", 
+      StyleBox["y",
+       FontSlant->"Plain",
+       FontTracking->"Plain",
+       FontVariations->{"CompatibilityType"->0,
+       "Outline"->False,
+       "Shadow"->False,
+       "StrikeThrough"->False,
+       "Underline"->False},
+       FontVariations -> {"Masked" -> False},
+       FontVariations -> {"RotationAngle" -> 0}], ",", 
+      StyleBox["z",
+       FontSlant->"Plain",
+       FontTracking->"Plain",
+       FontVariations->{"CompatibilityType"->0,
+       "Outline"->False,
+       "Shadow"->False,
+       "StrikeThrough"->False,
+       "Underline"->False},
+       FontVariations -> {"Masked" -> False},
+       FontVariations -> {"RotationAngle" -> 0}]}], "}"}]}], 
+   TraditionalForm]]],
+ " \:0438 \:0441\:043f\:0438\:0441\:043e\:043a \:0438\:0437 \
+\:0437\:043d\:0430\:0447\:0435\:043d\:0438\:0439 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"m", "=", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], TraditionalForm]]],
+ ". \:041f\:043e\:043b\:0443\:0447\:0438\:0442\:044c \:0441\:043f\:0438\:0441\
+\:043e\:043a \:043f\:043e\:0434\:0441\:0442\:0430\:043d\:043e\:0432\:043e\
+\:043a ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["r",
+     FontSlant->"Plain",
+     FontTracking->"Plain",
+     FontVariations->{"CompatibilityType"->0,
+     "Outline"->False,
+     "Shadow"->False,
+     "StrikeThrough"->False,
+     "Underline"->False},
+     FontVariations -> {"Masked" -> False},
+     FontVariations -> {"RotationAngle" -> 0}], "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       StyleBox["x",
+        FontSlant->"Plain",
+        FontTracking->"Plain",
+        FontVariations->{"CompatibilityType"->0,
+        "Outline"->False,
+        "Shadow"->False,
+        "StrikeThrough"->False,
+        "Underline"->False},
+        FontVariations -> {"Masked" -> False},
+        FontVariations -> {"RotationAngle" -> 0}], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       StyleBox["y",
+        FontSlant->"Plain",
+        FontTracking->"Plain",
+        FontVariations->{"CompatibilityType"->0,
+        "Outline"->False,
+        "Shadow"->False,
+        "StrikeThrough"->False,
+        "Underline"->False},
+        FontVariations -> {"Masked" -> False},
+        FontVariations -> {"RotationAngle" -> 0}], "\[Rule]", "2"}], ",", 
+      RowBox[{
+       StyleBox["z",
+        FontSlant->"Plain",
+        FontTracking->"Plain",
+        FontVariations->{"CompatibilityType"->0,
+        "Outline"->False,
+        "Shadow"->False,
+        "StrikeThrough"->False,
+        "Underline"->False},
+        FontVariations -> {"Masked" -> False},
+        FontVariations -> {"RotationAngle" -> 0}], "\[Rule]", "3"}]}], 
+     "}"}]}], TraditionalForm]]],
+ "."
+}], "TaskText",
+ FontSize->16,
+ Background->None,
+ CellTags->{"Subs", "Thread", "Rule"}],
+
+Cell["\:0420\:0435\:0448\:0435\:043d\:0438\:0435:", "ExampleSolution"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{
+   "l", ",", "m", ",", "x", ",", "y", ",", "z", ",", "a", ",", "b", ",", 
+    "c"}], "]"}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Subs", "[", 
+   RowBox[{"l_", ",", "m_"}], "]"}], ":=", 
+  RowBox[{"Thread", "[", 
+   RowBox[{"Rule", "[", 
+    RowBox[{"l", ",", "m"}], "]"}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"l", "=", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], ";", " ", 
+  RowBox[{"m", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Subs", "[", 
+  RowBox[{"l", ",", "m"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Subs", "[", 
+  RowBox[{"l", ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", 
+     RowBox[{"a", "+", "b"}], ",", 
+     RowBox[{"a", "+", "b", "+", "c"}]}], "}"}]}], "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\:041a\:043e\:043c\:0430\:043d\:0434\:0430 ",
+ StyleBox["While",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"]
+}], "Section",
+ CellChangeTimes->{{3.7643857600850496`*^9, 3.764385765530012*^9}, {
+  3.76438582854931*^9, 3.764385840105757*^9}, {3.7651715064377766`*^9, 
+  3.7651715204056406`*^9}},
+ FontFamily->"Times New Roman"],
+
+Cell[TextData[{
+ StyleBox["While[",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox["test",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox[",",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox[" ",
+  FontFamily->"Times New Roman"],
+ StyleBox["expr",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["]\n",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox["\:0432\:044b\:043f\:043e\:043b\:043d\:044f\:0435\:0442 \
+\:0432\:044b\:0447\:0438\:0441\:043b\:0435\:043d\:0438\:0435 \:0432\:044b\
+\:0440\:0430\:0436\:0435\:043d\:0438\:0439 ",
+  FontFamily->"Times New Roman"],
+ StyleBox["test",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox[" \:0438 ",
+  FontFamily->"Times New Roman"],
+ StyleBox["expr",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox[" \:0434\:043e \:0442\:0435\:0445 \:043f\:043e\:0440, \:043f\:043e\
+\:043a\:0430 \:0440\:0435\:0437\:0443\:043b\:044c\:0442\:0430\:0442 ",
+  FontFamily->"Times New Roman"],
+ StyleBox["test",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox[" \:0440\:0430\:0432\:0435\:043d ",
+  FontFamily->"Times New Roman"],
+ StyleBox["True",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox[".",
+  FontFamily->"Times New Roman"]
+}], "Text",
+ CellChangeTimes->{
+  3.765171548534319*^9, {3.7651716145802608`*^9, 3.7651716225829897`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"n", "=", "1"}], ";", 
+  RowBox[{"While", "[", 
+   RowBox[{
+    RowBox[{"n", "<", "4"}], ",", 
+    RowBox[{
+     RowBox[{"Print", "[", "n", "]"}], ";", 
+     RowBox[{"n", "++"}]}]}], "]"}]}]], "Input",
+ CellID->5017],
+
+Cell[TextData[{
+ StyleBox["\:0414\:043b\:044f \:043a\:0430\:043a\:0438\:0445 \:043f\:0435\
+\:0440\:0432\:044b\:0445 \:043f\:0440\:043e\:0441\:0442\:044b\:0445 \:0447\
+\:0438\:0441\:0435\:043b ",
+  FontFamily->"Times New Roman Cyr",
+  FontSize->14],
+ Cell[BoxData[
+  SubscriptBox["p", "1"]],
+  FontFamily->"Times New Roman"],
+ StyleBox[" = 2, ",
+  FontFamily->"Times New Roman",
+  FontSize->14],
+ Cell[BoxData[
+  SubscriptBox["p", "2"]],
+  FontFamily->"Times New Roman"],
+ StyleBox[" = 3 , ",
+  FontFamily->"Times New Roman",
+  FontSize->14],
+ Cell[BoxData[
+  SubscriptBox["p", "3"]],
+  FontFamily->"Times New Roman"],
+ StyleBox["= 5, ...",
+  FontFamily->"Times New Roman",
+  FontSize->14],
+ StyleBox[" \:0447\:0438\:0441\:043b\:043e ",
+  FontFamily->"Times New Roman Cyr",
+  FontSize->14],
+ Cell[BoxData[
+  SuperscriptBox["2", 
+   SubscriptBox["p", "k"]]],
+  FontFamily->"Times New Roman"],
+ Cell[BoxData[
+  FormBox["-", TraditionalForm]],
+  FontFamily->"Times New Roman"],
+ StyleBox["1 \:044f\:0432\:043b\:044f\:0435\:0442\:0441\:044f \:043f\:0440\
+\:043e\:0441\:0442\:044b\:043c?",
+  FontFamily->"Times New Roman"]
+}], "Text",
+ CellChangeTimes->{{3.765180793745165*^9, 3.7651808051217375`*^9}, {
+  3.7887709183329687`*^9, 3.7887709326815042`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"i", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"While", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"i", "++"}], ";", 
+    RowBox[{"PrimeQ", "[", 
+     RowBox[{"a", "=", 
+      RowBox[{
+       RowBox[{"2", "^", 
+        RowBox[{"Prime", "[", "i", "]"}]}], "-", "1"}]}], "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+    "\"\<\:0414\:043b\:044f i=\>\"", ",", "i", ",", 
+     "\"\< \:0447\:0438\:0441\:043b\:043e \
+\:043f\:0440\:043e\:0441\:0442\:043e\:0435 (\>\"", ",", "a", ",", 
+     "\"\<)\>\""}], "]"}]}], "]"}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{"FactorInteger", "[", 
+  RowBox[{
+   RowBox[{"2", "^", 
+    RowBox[{"Prime", "[", "5", "]"}]}], "-", "1"}], "]"}]], "Input"],
+
+Cell[TextData[{
+ StyleBox["\:041d\:0430\:0439\:0442\:0438  \:0444\:0443\:043d\:043a\:0446\
+\:0438\:0438, ",
+  FontColor->RGBColor[1, 0, 0]],
+ StyleBox["NestWhile",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0, 0]],
+ StyleBox[", ",
+  FontColor->RGBColor[1, 0, 0]],
+ StyleBox["NestWhileList",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0, 0]],
+ StyleBox[" \:0432 Help.\n\:0412\:044b\:0431\:0440\:0430\:0442\:044c \:0438\
+\:0437 Help->",
+  FontColor->RGBColor[1, 0, 0]],
+ StyleBox["Examples",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0, 0]],
+ StyleBox[" \
+\:0441\:043a\:043e\:043f\:0438\:0440\:043e\:0432\:0430\:0442\:044c \:0432 \
+\:0441\:0432\:043e\:0439 \:0431\:043b\:043e\:043a\:043d\:043e\:0442 \:043d\
+\:0435\:0441\:043a\:043e\:043b\:044c\:043a\:043e \:043f\:0440\:0438\:043c\
+\:0435\:0440\:043e\:0432 (\:0431\:043e\:043b\:044c\:0448\:0435 2) \:0438 \
+\:0432\:044b\:043f\:043e\:043b\:043d\:0438\:0442\:044c \:0438\:0445. \:041e\
+\:043f\:0438\:0441\:0430\:0442\:044c \:0432 \:0442\:0435\:043a\:0441\:0442\
+\:043e\:0432\:044b\:0445 \:044f\:0447\:0435\:0439\:043a\:0430\:0445 \:0440\
+\:0430\:0431\:043e\:0442\:0443 \:0444\:0443\:043d\:043a\:0446\:0438\:0438 \
+\:0432 ",
+  FontColor->RGBColor[1, 0, 0]],
+ StyleBox["\:043a\:0430\:0436\:0434\:043e\:043c",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0, 0]],
+ StyleBox[" \:043f\:0440\:0438\:043c\:0435\:0440\:0435.",
+  FontColor->RGBColor[1, 0, 0]]
+}], "TaskText",
+ ShowCellBracket->True,
+ CellChangeTimes->{{3.7668073351041527`*^9, 3.7668073816029897`*^9}, {
+   3.7668074284945908`*^9, 3.7668074295255957`*^9}, {3.766807462607399*^9, 
+   3.766807551776249*^9}, {3.7668095834930396`*^9, 3.766809587870097*^9}, {
+   3.7668113694043713`*^9, 3.766811437683552*^9}, {3.7668114677262516`*^9, 
+   3.7668115268017664`*^9}, {3.766811562963772*^9, 3.766811628602229*^9}, {
+   3.793346079203103*^9, 3.793346082370912*^9}, 3.793346168483941*^9, 
+   3.7933465161916084`*^9, {3.793346548832057*^9, 3.7933466698577204`*^9}},
+ FontSize->16],
+
+Cell[TextData[StyleBox["\:0417\:0430\:0434\:0430\:043d\:0438\:0435! \:0420\
+\:0430\:0437\:043e\:0431\:0440\:0430\:0442\:044c\:0441\:044f, \:043a\:0430\
+\:043a \:0440\:0430\:0431\:043e\:0442\:0430\:0435\:0442 \:043f\:043e\:0441\
+\:043b\:0435\:0434\:043e\:0432\:0430\:0442\:0435\:043b\:044c\:043d\:043e\:0441\
+\:0442\:044c \:043a\:043e\:043c\:0430\:043d\:0434, \:043f\:0440\:0438\:0432\
+\:0435\:0434\:0435\:043d\:043d\:044b\:0445 \:043d\:0438\:0436\:0435. ",
+ FontSize->20,
+ FontColor->RGBColor[1, 0, 0]]], "Text",
+ CellChangeTimes->{{3.7651810819560895`*^9, 3.765181101491621*^9}, {
+  3.7932471129055085`*^9, 3.793247118813179*^9}, {3.793247827035324*^9, 
+  3.7932478337708883`*^9}, {3.793247885262344*^9, 3.793247985215479*^9}}],
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{
+   "i", "<", 
+    "\"\<\:0441\:0440\:0435\:0434\:043d\:0435\:043a\:0432\:0430\:0434\:0440\
+\:0430\:0442\:0438\:0447\:043d\:043e\:0435 \:0442\:0440\:0435\:0445 \:043f\
+\:043e\:0441\:043b\:0435\:0434\:043d\:0438\:0445 \:0446\:0438\:0444\:0440 \
+\:0441\:0442\:0443\:0434\:0435\:043d\:0447\:0435\:0441\:043a\:043e\:0433\:043e\
+\>\""}], ",", 
+   RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"PrimeQ", "[", 
+      RowBox[{"a", "=", 
+       RowBox[{
+        RowBox[{"2", "^", 
+         RowBox[{"Prime", "[", "i", "]"}]}], "-", "1"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Print", "[", 
+      RowBox[{
+      "\"\<\:0414\:043b\:044f i=\>\"", ",", "i", ",", 
+       "\"\< \:0447\:0438\:0441\:043b\:043e (\>\"", ",", "a", ",", 
+       "\"\<) - \:043f\:0440\:043e\:0441\:0442\:043e\:0435\>\""}], "]"}]}], 
+    "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.826846501989894*^9, 3.826846522667076*^9}, {
+  3.8268469502015295`*^9, 3.826846997553238*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:0421\:0444\:043e\:0440\:043c\:0443\:043b\:0438\:0440\:043e\:0432\
+\:0430\:0442\:044c \:0443\:0441\:043b\:043e\:0432\:0438\:0435 \:0437\:0430\
+\:0434\:0430\:0447\:0438, \:0440\:0435\:0448\:0435\:043d\:0438\:0435 \:043a\
+\:043e\:0442\:043e\:0440\:043e\:0439 ",
+  FontSize->20,
+  FontColor->RGBColor[1, 0, 0]],
+ StyleBox["\:0440\:0435\:0430\:043b\:0438\:0437\:0443\:0435\:0442 \
+\:044d\:0442\:0430 \:043f\:043e\:0441\:043b\:0435\:0434\:043e\:0432\:0430\
+\:0442\:0435\:043b\:044c\:043d\:043e\:0441\:0442\:044c \:043a\:043e\:043c\
+\:0430\:043d\:0434.",
+  FontSize->18,
+  FontColor->RGBColor[1, 0, 0]]
+}], "Text",
+ CellChangeTimes->{
+  3.793247993776188*^9, {3.7932480367096105`*^9, 3.7932480535992613`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\:041a\:043e\:043c\:0430\:043d\:0434\:0430 ",
+ StyleBox["Do",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"]
+}], "Section",
+ CellChangeTimes->{{3.7643857600850496`*^9, 3.764385765530012*^9}, {
+   3.76438582854931*^9, 3.764385840105757*^9}, {3.7651715064377766`*^9, 
+   3.7651715204056406`*^9}, 3.765171724478916*^9},
+ FontFamily->"Times New Roman"],
+
+Cell[TextData[{
+ StyleBox["Do[",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox["expr",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox[", {",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox["k",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["1",
+  FontFamily->"Times New Roman",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox[",",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox[" min",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["1",
+  FontFamily->"Times New Roman",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox[",",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox[" max",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["1",
+  FontFamily->"Times New Roman",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox[",",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox[" step",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["1",
+  FontFamily->"Times New Roman",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox["}, {",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox["k",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["2",
+  FontFamily->"Times New Roman",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox[",",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox[" min",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["2",
+  FontFamily->"Times New Roman",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox[",",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox[" max",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["2",
+  FontFamily->"Times New Roman",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox[",",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox[" step",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["2",
+  FontFamily->"Times New Roman",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox["},",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox["...",
+  FontFamily->"Times New Roman"],
+ StyleBox[",\n                                       {",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox["k",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["n",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox[",",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox[" min",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["n",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox[",",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox[" max",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["n",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox[",",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox[" step",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox["n",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic",
+  FontVariations->{"CompatibilityType"->"Subscript"}],
+ StyleBox["}]\n",
+  FontFamily->"Times New Roman",
+  FontWeight->"Bold"],
+ StyleBox["\:0432\:044b\:043f\:043e\:043b\:043d\:044f\:0435\:0442 \
+\:0432\:044b\:0447\:0438\:0441\:043b\:0435\:043d\:0438\:0435 \:0432\:044b\
+\:0440\:0430\:0436\:0435\:043d\:0438\:044f ",
+  FontFamily->"Times New Roman"],
+ StyleBox["expr",
+  FontFamily->"Times New Roman",
+  FontSlant->"Italic"],
+ StyleBox[" \:0441\:0442\:043e\:043b\:044c\:043a\:043e \:0440\:0430\:0437, \
+\:0441\:043a\:043e\:043b\:044c\:043a\:043e \:043f\:0440\:0435\:0434\:043f\
+\:0438\:0441\:044b\:0432\:0430\:044e\:0442 \:0438\:0442\:0435\:0440\:0430\
+\:0442\:043e\:0440\:044b.",
+  FontFamily->"Times New Roman"]
+}], "Text",
+ CellChangeTimes->{
+  3.7651811818290033`*^9, {3.7651813146967773`*^9, 3.7651813154618173`*^9}, {
+   3.7932481177836933`*^9, 3.7932481186741033`*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:0415\:0441\:0442\:044c \
+\:043a\:043e\:043c\:0430\:043d\:0434\:0430 \:0441 \:043f\:0440\:0438\:043c\
+\:0435\:043d\:0435\:043d\:0438\:0435\:043c \:0446\:0438\:043a\:043b\:0430 Do \
+\:0434\:043b\:044f \:0441\:043e\:0437\:0434\:0430\:043d\:0438\:044f \:0446\
+\:0435\:043f\:043d\:043e\:0439 \:0434\:0440\:043e\:0431\:0438:",
+  FontSize->24,
+  FontColor->RGBColor[1, 0, 0]],
+ Cell[BoxData[
+  GraphicsBox[
+   TagBox[RasterBox[CompressedData["
+1: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
+AAAAAAAAAAAAAADAwP0LGdVXbw==
+     "], {{0, 139}, {242, 0}}, {0, 255},
+     ColorFunction->RGBColor],
+    BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+    Selectable->False],
+   DefaultBaseStyle->"ImageGraphics",
+   ImageSize->Automatic,
+   ImageSizeRaw->{242, 139},
+   PlotRange->{{0, 242}, {0, 139}}]], "Input"]
+}], "TaskText",
+ CellChangeTimes->{{3.793346344547228*^9, 3.7933464012007785`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", 
+  RowBox[{"x", ",", "y"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7668175778679786`*^9, 3.766817593948099*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"x", "=", "\:0443"}], ";", " ", 
+   RowBox[{"Do", "[", 
+    RowBox[{
+     RowBox[{"x", "=", 
+      RowBox[{"1", "/", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", 
+         RowBox[{"k", " ", "x"}]}], ")"}]}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "k", ",", "2", ",", 
+       "\"\<\:0441\:0443\:043c\:043c\:0430 \:0442\:0440\:0435\:0445 \:043f\
+\:043e\:0441\:043b\:0435\:0434\:043d\:0438\:0445 \:0446\:0438\:0444\:0440 \
+\:0441\:0442\:0443\:0434\:0435\:043d\:0447\:0435\:0441\:043a\:043e\:0433\:043e\
+\>\"", ",", "2"}], "}"}]}], "]"}], ";", "x"}],
+  FontFamily->"Times New Roman"]], "Input",
+ CellChangeTimes->{
+  3.765171548534319*^9, {3.7651716145802608`*^9, 3.7651716225829897`*^9}, 
+   3.7668166519940023`*^9, {3.7668171244305964`*^9, 3.766817124446214*^9}, 
+   3.7668172793434258`*^9, {3.766817466212643*^9, 3.766817541852477*^9}, {
+   3.76681761547867*^9, 3.7668176453694873`*^9}, {3.766817683435181*^9, 
+   3.766817698107075*^9}, 3.7933462637607937`*^9, {3.8268471487438855`*^9, 
+   3.8268471767464876`*^9}}],
+
+Cell[TextData[{
+ StyleBox["\:0418\:0441\:043f\:0440\:0430\:0432\:0438\:0442\:044c \
+\:0444\:0443\:043d\:043a\:0446\:0438\:044e ",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0, 0]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", " "}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0, 0]],
+ StyleBox["\:0442\:0430\:043a, \:0447\:0442\:043e\:0431\:044b \:0440\:0435\
+\:0437\:0443\:043b\:044c\:0442\:0430\:0442\:044b \:0441\:043e\:0432\:043f\
+\:0430\:0434\:0430\:043b\:0438.",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0, 0]]
+}], "TaskText",
+ CellChangeTimes->{
+  3.7657761950048704`*^9, {3.793346398643301*^9, 3.7933464352922754`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "k_", "]"}], ":=", 
+   RowBox[{"1", "/", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"f", "[", 
+       RowBox[{"k", "-", "1"}], "]"}]}], " ", ")"}]}]}], ";", 
+  RowBox[{
+   RowBox[{"f", "[", "1", "]"}], "=", "x"}], ";", 
+  RowBox[{"f", "[", "5", "]"}]}]], "Input",
+ CellChangeTimes->{{3.7668167736093388`*^9, 3.76681691512868*^9}, {
+   3.766816988371024*^9, 3.7668170527288485`*^9}, {3.7668177396156707`*^9, 
+   3.7668177973915505`*^9}, {3.766817937588972*^9, 3.766817943978529*^9}, {
+   3.766817987780321*^9, 3.7668180271229467`*^9}, {3.766818123775915*^9, 
+   3.766818171212368*^9}, 3.7668267007573233`*^9, 3.7668267324642134`*^9, 
+   3.7668267644520855`*^9, 3.7933464779209027`*^9}]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{739, 808},
+WindowMargins->{{0, Automatic}, {Automatic, 3}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->FrontEnd`FileName[{
+   ParentDirectory[
+    ParentDirectory[]], "\:0422\:043e\:043b\:043e\:0447\:043a\:043e -nb"}, 
+  "Styles_TOL.nb", CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Delete"->{
+  Cell[803, 26, 1170, 26, 41, "TaskText",
+   CellTags->"Delete"]},
+ "Insert"->{
+  Cell[8787, 256, 1331, 32, 41, "TaskText",
+   CellTags->{"MatrInsert", "Transpose", "Insert"}]},
+ "MatrInsert"->{
+  Cell[8787, 256, 1331, 32, 41, "TaskText",
+   CellTags->{"MatrInsert", "Transpose", "Insert"}]},
+ "Negative"->{
+  Cell[2765, 82, 1176, 26, 41, "TaskText",
+   CellTags->{"Plus", "Select", "Negative"}]},
+ "Plus"->{
+  Cell[2765, 82, 1176, 26, 41, "TaskText",
+   CellTags->{"Plus", "Select", "Negative"}]},
+ "PrimeQ"->{
+  Cell[6238, 185, 1623, 33, 62, "TaskText",
+   CellTags->"PrimeQ"]},
+ "Rule"->{
+  Cell[11722, 349, 3641, 113, 47, "TaskText",
+   CellTags->{"Subs", "Thread", "Rule"}]},
+ "Select"->{
+  Cell[2765, 82, 1176, 26, 41, "TaskText",
+   CellTags->{"Plus", "Select", "Negative"}]},
+ "Subs"->{
+  Cell[11722, 349, 3641, 113, 47, "TaskText",
+   CellTags->{"Subs", "Thread", "Rule"}]},
+ "Thread"->{
+  Cell[11722, 349, 3641, 113, 47, "TaskText",
+   CellTags->{"Subs", "Thread", "Rule"}]},
+ "Transpose"->{
+  Cell[8787, 256, 1331, 32, 41, "TaskText",
+   CellTags->{"MatrInsert", "Transpose", "Insert"}]},
+ "2.21"->{
+  Cell[558, 20, 242, 4, 23, "TaskTitle",
+   CellTags->"2.21"]},
+ "2.22"->{
+  Cell[2521, 76, 241, 4, 23, "TaskTitle",
+   CellTags->"2.22"]},
+ "2.23"->{
+  Cell[4461, 130, 234, 4, 23, "TaskTitle",
+   CellTags->"2.23"]},
+ "2.24"->{
+  Cell[5996, 179, 239, 4, 23, "TaskTitle",
+   CellTags->"2.24"]},
+ "2.25"->{
+  Cell[8527, 249, 257, 5, 23, "TaskTitle",
+   CellTags->"2.25"]},
+ "2.29"->{
+  Cell[11462, 342, 257, 5, 23, "TaskTitle",
+   CellTags->"2.29"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Delete", 35978, 1048},
+ {"Insert", 36058, 1051},
+ {"MatrInsert", 36173, 1054},
+ {"Negative", 36286, 1057},
+ {"Plus", 36387, 1060},
+ {"PrimeQ", 36490, 1063},
+ {"Rule", 36570, 1066},
+ {"Select", 36672, 1069},
+ {"Subs", 36773, 1072},
+ {"Thread", 36875, 1075},
+ {"Transpose", 36980, 1078},
+ {"2.21", 37089, 1081},
+ {"2.22", 37164, 1084},
+ {"2.23", 37240, 1087},
+ {"2.24", 37317, 1090},
+ {"2.25", 37394, 1093},
+ {"2.29", 37471, 1096}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 242, 4, 23, "TaskTitle",
+ CellTags->"2.21"],
+Cell[803, 26, 1170, 26, 41, "TaskText",
+ CellTags->"Delete"],
+Cell[1976, 54, 70, 0, 23, "ExampleSolution"],
+Cell[2049, 56, 133, 4, 47, "Input"],
+Cell[2185, 62, 187, 6, 30, "Input"],
+Cell[2375, 70, 143, 4, 47, "Input"],
+Cell[2521, 76, 241, 4, 23, "TaskTitle",
+ CellTags->"2.22"],
+Cell[2765, 82, 1176, 26, 41, "TaskText",
+ CellTags->{"Plus", "Select", "Negative"}],
+Cell[3944, 110, 70, 0, 23, "ExampleSolution"],
+Cell[4017, 112, 120, 3, 47, "Input"],
+Cell[4140, 117, 198, 6, 30, "Input"],
+Cell[4341, 125, 117, 3, 47, "Input"],
+Cell[4461, 130, 234, 4, 23, "TaskTitle",
+ CellTags->"2.23"],
+Cell[4698, 136, 791, 21, 41, "TaskText"],
+Cell[5492, 159, 70, 0, 23, "ExampleSolution"],
+Cell[5565, 161, 189, 6, 30, "Input"],
+Cell[5757, 169, 236, 8, 68, "Input"],
+Cell[5996, 179, 239, 4, 23, "TaskTitle",
+ CellTags->"2.24"],
+Cell[6238, 185, 1623, 33, 62, "TaskText",
+ CellTags->"PrimeQ"],
+Cell[7864, 220, 70, 0, 23, "ExampleSolution"],
+Cell[7937, 222, 76, 2, 47, "Input"],
+Cell[8016, 226, 165, 5, 30, "Input"],
+Cell[8184, 233, 95, 3, 47, "Input"],
+Cell[8282, 238, 144, 4, 30, "Input"],
+Cell[8429, 244, 95, 3, 47, "Input"],
+Cell[8527, 249, 257, 5, 23, "TaskTitle",
+ CellTags->"2.25"],
+Cell[8787, 256, 1331, 32, 41, "TaskText",
+ CellTags->{"MatrInsert", "Transpose", "Insert"}],
+Cell[10121, 290, 70, 0, 23, "ExampleSolution"],
+Cell[10194, 292, 170, 5, 47, "Input"],
+Cell[10367, 299, 272, 8, 47, "Input"],
+Cell[10642, 309, 379, 13, 47, "Input"],
+Cell[11024, 324, 154, 5, 30, "Input"],
+Cell[11181, 331, 145, 4, 47, "Input"],
+Cell[11329, 337, 130, 3, 47, "Input"],
+Cell[11462, 342, 257, 5, 23, "TaskTitle",
+ CellTags->"2.29"],
+Cell[11722, 349, 3641, 113, 47, "TaskText",
+ CellTags->{"Subs", "Thread", "Rule"}],
+Cell[15366, 464, 70, 0, 23, "ExampleSolution"],
+Cell[15439, 466, 169, 5, 47, "Input"],
+Cell[15611, 473, 197, 6, 47, "Input"],
+Cell[15811, 481, 223, 7, 30, "Input"],
+Cell[16037, 490, 80, 2, 30, "Input"],
+Cell[16120, 494, 201, 6, 30, "Input"],
+Cell[CellGroupData[{
+Cell[16346, 504, 353, 9, 64, "Section"],
+Cell[16702, 515, 1430, 45, 51, "Text"],
+Cell[18135, 562, 250, 9, 47, "Input",
+ CellID->5017],
+Cell[18388, 573, 1249, 39, 30, "Text"],
+Cell[19640, 614, 603, 18, 103, "Input"],
+Cell[20246, 634, 147, 4, 47, "Input"],
+Cell[20396, 640, 1988, 43, 67, "TaskText"],
+Cell[22387, 685, 728, 10, 63, "Text"],
+Cell[23118, 697, 1107, 27, 121, "Input"],
+Cell[24228, 726, 731, 15, 61, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24996, 746, 374, 9, 64, "Section"],
+Cell[25373, 757, 4230, 142, 88, "Text"],
+Cell[29606, 901, 3206, 59, 175, "TaskText"],
+Cell[32815, 962, 149, 3, 47, "Input"],
+Cell[32967, 967, 1073, 25, 47, "Input"],
+Cell[34043, 994, 690, 18, 23, "TaskText"],
+Cell[34736, 1014, 754, 17, 30, "Input"]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GTSG1JnbaGOC/13dtDOiZabzCmewxcQfYpSFbsymwqzT26cA9SKhFyTJm9ul/T1sXLPen0iGlhCDinV9tf68BQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LS\\Documents\\Университет\\3 курс\\c#\\algoritms\\LonelyKing\\lonelyking\\BitOperations\\LonelyKing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LS\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}

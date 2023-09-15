@@ -1,0 +1,5 @@
+D:\University\6_sem\algorithms\lab6\lab6\obj\Debug\net6.0\lab6.csproj.AssemblyReference.cache
+D:\University\6_sem\algorithms\lab6\lab6\obj\Debug\net6.0\lab6.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\6_sem\algorithms\lab6\lab6\obj\Debug\net6.0\lab6.AssemblyInfoInputs.cache
+D:\University\6_sem\algorithms\lab6\lab6\obj\Debug\net6.0\lab6.AssemblyInfo.cs
+D:\University\6_sem\algorithms\lab6\lab6\obj\Debug\net6.0\lab6.csproj.CoreCompileInputs.cache

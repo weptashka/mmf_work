@@ -1,0 +1,12 @@
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/bin/Debug/netcoreapp3.1/BinPacking.deps.json
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/bin/Debug/netcoreapp3.1/BinPacking.runtimeconfig.json
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/bin/Debug/netcoreapp3.1/BinPacking.runtimeconfig.dev.json
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/bin/Debug/netcoreapp3.1/BinPacking.dll
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/bin/Debug/netcoreapp3.1/BinPacking.pdb
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/obj/Debug/netcoreapp3.1/BinPacking.csprojAssemblyReference.cache
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/obj/Debug/netcoreapp3.1/BinPacking.AssemblyInfoInputs.cache
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/obj/Debug/netcoreapp3.1/BinPacking.AssemblyInfo.cs
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/obj/Debug/netcoreapp3.1/BinPacking.csproj.CoreCompileInputs.cache
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/obj/Debug/netcoreapp3.1/BinPacking.dll
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/obj/Debug/netcoreapp3.1/BinPacking.pdb
+/Users/alex/sixth_semestr/algorithms/BinPacking/BinPacking/obj/Debug/netcoreapp3.1/BinPacking.genruntimeconfig.cache

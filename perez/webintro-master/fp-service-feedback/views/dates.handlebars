@@ -1,0 +1,5 @@
+  <select>	
+ 	 {{#each dates}}
+		<option id="{{this}}">{{formatDate this day="numeric" month="long" year="numeric"}}</li>
+	{{/each}}
+  </select>

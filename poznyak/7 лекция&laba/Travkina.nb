@@ -1,0 +1,1837 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     64722,       1829]
+NotebookOptionsPosition[     60553,       1717]
+NotebookOutlinePosition[     60931,       1733]
+CellTagsIndexPosition[     60888,       1730]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+1. ParametricPlot \[LongDash] \:0441\:0442\:0440\:043e\:0438\:0442 \:0433\
+\:0440\:0430\:0444\:0438\:043a \:043a\:0440\:0438\:0432\:044b\:0445, \:0437\
+\:0430\:0434\:0430\:0432\:0430\:0435\:043c\:044b\:0445 \:043f\:0430\:0440\
+\:0430\:043c\:0435\:0442\:0440\:0438\:0447\:0435\:0441\:043a\:0438 X=X(t), \
+Y=Y(t).\
+\>", "Text",
+ CellChangeTimes->{
+  3.829284173502444*^9, {3.829578676017581*^9, 3.8295786781542273`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Sin", "[", "u", "]"}], ",", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"2", "u"}], "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"u", ",", "0", ",", 
+     RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295759274309196`*^9, 3.829575929062957*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"ParametricPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Sin", "[", "u", "]"}], ",", 
+       RowBox[{"a", "  ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"2", "u"}], "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"u", ",", "0", ",", 
+       RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829285066555625*^9, 3.8292850722913737`*^9}, {
+  3.829285103953141*^9, 3.829285253503889*^9}, {3.829572429342929*^9, 
+  3.8295724330250893`*^9}, {3.8295724778344836`*^9, 3.8295725334255147`*^9}, {
+  3.829572702753538*^9, 3.8295727670823493`*^9}, {3.8295728017853208`*^9, 
+  3.829572820319501*^9}, {3.829578692653844*^9, 3.829578725377868*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"ParametricPlot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Sin", "[", "u", "]"}], ",", 
+        RowBox[{"a", "  ", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"2", "u"}], "]"}]}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"u", ",", "0", ",", 
+        RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}]], "Input"],
+
+Cell["\<\
+2. ParametricPlot3D \[LongDash] \:0444\:0443\:043d\:043a\:0446\:0438\:044f \
+\:0434\:043b\:044f \:043f\:043e\:0441\:0442\:0440\:043e\:0435\:043d\:0438\
+\:044f \:0442\:0440\:0435\:0445\:043c\:0435\:0440\:043d\:044b\:0445 \:043a\
+\:0440\:0438\:0432\:044b\:0445 \:0438 \:0442\:0440\:0435\:0445\:043c\:0435\
+\:0440\:043d\:044b\:0445 \:043f\:043e\:0432\:0435\:0440\:0445\:043d\:043e\
+\:0441\:0442\:0435\:0439,\
+\>", "Text",
+ CellChangeTimes->{3.829572980058005*^9}],
+
+Cell[BoxData[
+ RowBox[{"ParametricPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", " ", 
+    RowBox[{
+     RowBox[{"Sin", "[", "u", "]"}], ",", 
+     RowBox[{"Cos", "[", "u", " ", "]"}], ",", 
+     RowBox[{"u", "/", "10"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"u", ",", "0", ",", "20"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295759404802837`*^9, 3.8295759435200777`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"ParametricPlot3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"a", " ", 
+        RowBox[{"Sin", "[", "u", "]"}]}], ",", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"u", " ", "+", 
+         RowBox[{"2", "a"}]}], "]"}], ",", 
+       RowBox[{"u", "/", "10"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"u", ",", "0", ",", "20"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295730308122573`*^9, 3.829573036367301*^9}, {
+  3.829573179385271*^9, 3.8295732221462955`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"ParametricPlot3D", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"a", " ", 
+         RowBox[{"Sin", "[", "u", "]"}]}], ",", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"u", " ", "+", 
+          RowBox[{"2", "a"}]}], "]"}], ",", 
+        RowBox[{"u", "/", "10"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"u", ",", "0", ",", "20"}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.8295788163325396`*^9}],
+
+Cell["\<\
+3. ContourPlot \[LongDash] \:0444\:0443\:043d\:043a\:0446\:0438\:044f \:0434\
+\:043b\:044f \:043f\:043e\:0441\:0442\:0440\:043e\:0435\:043d\:0438\:044f \
+\:0433\:0440\:0430\:0444\:0438\:043a\:043e\:0432 \:043a\:0440\:0438\:0432\
+\:044b\:0445, \:0437\:0430\:0434\:0430\:043d\:043d\:044b\:0445 \:043d\:0435\
+\:044f\:0432\:043d\:044b\:043c \:0443\:0440\:0430\:0432\:043d\:0435\:043d\
+\:0438\:0435\:043c (\:042d\:0442\:0430 \:0444\:0443\:043d\:043a\:0446\:0438\
+\:044f \:043f\:043e\:0445\:043e\:0436\:0430 \:043d\:0430 Plot, \:0442\:043e\
+\:043b\:044c\:043a\:043e \:0432\:043c\:0435\:0441\:0442\:043e \:044f\:0432\
+\:043d\:043e\:0433\:043e \:0432\:044b\:0440\:0430\:0436\:0435\:043d\:0438\
+\:044f,\:0441\:043e\:0434\:0435\:0440\:0436\:0430\:0449\:0435\:0433\:043e \
+\:043e\:0434\:043d\:0443 \:043f\:0435\:0440\:0435\:043c\:0435\:043d\:043d\
+\:0443\:044e, \:0432\:044b \:0437\:0430\:0434\:0430\:0435\:0442\:0435 \:0443\
+\:0440\:0430\:0432\:043d\:0435\:043d\:0438\:0435, \:0441\:043e\:0434\:0435\
+\:0440\:0436\:0430\:0449\:0435\:0435 \:0434\:0432\:0435 \:043f\:0435\:0440\
+\:0435\:043c\:0435\:043d\:043d\:044b\:0445),\
+\>", "Text",
+ CellChangeTimes->{3.829574101928419*^9}],
+
+Cell[BoxData[
+ RowBox[{"ContourPlot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Cos", "[", "x", "]"}], "+", 
+    RowBox[{"Cos", "[", "y", "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"4", "Pi"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", "0", ",", 
+     RowBox[{"4", "Pi"}]}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"ContourPlot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       RowBox[{"x", " ", "+", " ", 
+        RowBox[{"7", "a"}]}], "]"}], "+", 
+      RowBox[{
+       RowBox[{"Cos", "[", "y", "]"}], " ", "a"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", 
+       RowBox[{"4", "Pi"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", 
+       RowBox[{"4", "Pi"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295741545218687`*^9, 3.8295741940570865`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"ContourPlot", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        RowBox[{"x", " ", "+", " ", 
+         RowBox[{"7", "a"}]}], "]"}], "+", 
+       RowBox[{
+        RowBox[{"Cos", "[", "y", "]"}], " ", "a"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", 
+        RowBox[{"4", "Pi"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", "0", ",", 
+        RowBox[{"4", "Pi"}]}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.8295788404574127`*^9}],
+
+Cell["\<\
+4. Plot \[LongDash]  \:0441 \:043f\:043e\:043c\:043e\:0449\:044c\:044e \:044d\
+\:0442\:043e\:0439 \:0444\:0443\:043d\:043a\:0446\:0438\:0438 \:0441\:0442\
+\:0440\:043e\:0438\:0442\:0441\:044f \:0433\:0440\:0430\:0444\:0438\:043a \
+\:0444\:0443\:043d\:043a\:0446\:0438\:0438, \:0437\:0430\:0434\:0430\:043d\
+\:043d\:043e\:0439 \:044f\:0432\:043d\:044b\:043c \:0443\:0440\:0430\:0432\
+\:043d\:0435\:043d\:0438\:0435\:043c y=f(x),\
+\>", "Text",
+ CellChangeTimes->{3.829285304160418*^9, 3.8295745675244303`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Sin", "[", "x", "]"}], "+", 
+    RowBox[{"Sin", "[", "x", "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "2"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295758926116953`*^9, 3.8295759002562094`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Sin", "[", 
+       RowBox[{"a", "+", "x"}], "]"}], "+", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"x", "-", "a"}], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "10"}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "2"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "1", ",", "5"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829574279787325*^9, 3.829574333035168*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        RowBox[{"a", "+", "x"}], "]"}], "+", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"x", "-", "a"}], "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "10"}], "}"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", "2"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "1", ",", "5"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.82957887770992*^9, 3.829578889695923*^9}}],
+
+Cell["\<\
+5.ContourPlot3D \[LongDash] \:044d\:0442\:0430 \:0444\:0443\:043d\:043a\:0446\
+\:0438\:044f \:043f\:0440\:0435\:0434\:043d\:0430\:0437\:043d\:0430\:0447\
+\:0435\:043d\:0430 \:0434\:043b\:044f \:043f\:043e\:0441\:0442\:0440\:043e\
+\:0435\:043d\:0438\:044f \:043f\:043e\:0432\:0435\:0440\:0445\:043d\:043e\
+\:0441\:0442\:0435\:0439 \:043f\:043e\:0441\:0442\:043e\:044f\:043d\:043d\
+\:043e\:0433\:043e \:0437\:043d\:0430\:0447\:0435\:043d\:0438\:044f (\:043f\
+\:043e\:0432\:0435\:0440\:0445\:043d\:043e\:0441\:0442\:0435\:0439 \:0443\
+\:0440\:043e\:0432\:043d\:044f) \:0444\:0443\:043d\:043a\:0446\:0438\:0439 \
+\:0442\:0440\:0435\:0445 \:043f\:0435\:0440\:0435\:043c\:0435\:043d\:043d\
+\:044b\:0445 ,\
+\>", "Text",
+ CellChangeTimes->{3.8295743634824424`*^9}],
+
+Cell[BoxData[
+ RowBox[{"ContourPlot3D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "^", "3"}], " ", "+", " ", "2", " ", "+", 
+    RowBox[{"y", "^", "2"}], "-", 
+    RowBox[{"z", "^", "2"}]}], " ", ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295759624214153`*^9, 3.8295759656853285`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"ContourPlot3D", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "^", "3"}], " ", "+", " ", 
+      RowBox[{"2", " ", "a"}], "+", 
+      RowBox[{"y", "^", "2"}], "-", 
+      RowBox[{
+       RowBox[{"z", "^", "a"}], " ", "2"}]}], " ", ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "1", ",", "2"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295744510580635`*^9, 3.8295745544127283`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"ContourPlot3D", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "^", "3"}], " ", "+", " ", 
+       RowBox[{"2", " ", "a"}], "+", 
+       RowBox[{"y", "^", "2"}], "-", 
+       RowBox[{
+        RowBox[{"z", "^", "a"}], " ", "2"}]}], " ", ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", 
+        RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"z", ",", 
+        RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "1", ",", "2"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.829578913898924*^9}],
+
+Cell[TextData[{
+ "6. Plot3D \[LongDash] \:0444\:0443\:043d\:043a\:0446\:0438\:044f \:043f\
+\:0440\:0435\:0434\:043d\:0430\:0437\:043d\:0430\:0447\:0435\:043d\:0430 \
+\:0434\:043b\:044f \:043f\:043e\:0441\:0442\:0440\:043e\:0435\:043d\:0438\
+\:044f \:043f\:043e\:0432\:0435\:0440\:0445\:043d\:043e\:0441\:0442\:0438 \
+\:0444\:0443\:043d\:043a\:0446\:0438\:0438 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"z", "=", 
+    RowBox[{"f", "(", 
+     RowBox[{"x", ",", "y"}], ")"}]}], TraditionalForm]]],
+ ","
+}], "Text",
+ CellChangeTimes->{3.8292853862566433`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Plot3D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Cos", "[", 
+     RowBox[{
+      RowBox[{"x", "^", "2"}], "+", 
+      RowBox[{"y", "^", "2"}]}], "]"}], " ", 
+    RowBox[{"E", "^", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "x"}], "/", "2"}], "-", 
+       RowBox[{"y", "/", "2"}]}], ")"}]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1.5"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1.5"}], ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829575983493952*^9, 3.8295759922131324`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"x", "+", "a"}], ")"}], "^", "2"}], "+", 
+        RowBox[{"y", "^", "2"}], "-", "a"}], "]"}], " ", 
+      RowBox[{"E", "^", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "x"}], "/", "2"}], "-", 
+         RowBox[{"y", "/", "2"}]}], ")"}]}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "1.5"}], ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "1.5"}], ",", "2"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "1", ",", "2"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295746071614175`*^9, 3.8295746588588514`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Plot3D", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"x", "+", "a"}], ")"}], "^", "2"}], "+", 
+         RowBox[{"y", "^", "2"}], "-", "a"}], "]"}], " ", 
+       RowBox[{"E", "^", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "x"}], "/", "2"}], "-", 
+          RowBox[{"y", "/", "2"}]}], ")"}]}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "1.5"}], ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", 
+        RowBox[{"-", "1.5"}], ",", "2"}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "1", ",", "2"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295789366328015`*^9, 3.829578938250059*^9}}],
+
+Cell["7. DiscretePlot \[LongDash] \:0441\:043e\:0437\:0434\:0430\:0451\:0442 \
+\:0433\:0440\:0430\:0444\:0438\:043a \:043f\:043e\:0441\:043b\:0435\:0434\
+\:043e\:0432\:0430\:0442\:0435\:043b\:044c\:043d\:043e\:0441\:0442\:0435\:0439\
+,", "Text",
+ CellChangeTimes->{{3.8295746915764256`*^9, 3.829574694347658*^9}, {
+  3.8295763485552216`*^9, 3.82957637110629*^9}}],
+
+Cell[BoxData[
+ RowBox[{"DiscretePlot", "[", 
+  RowBox[{
+   RowBox[{"PrimePi", "[", "k", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"k", ",", "1", ",", "20"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295760020745964`*^9, 3.8295760022658653`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"DiscretePlot", "[", 
+    RowBox[{
+     RowBox[{"PrimePi", "[", "k", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"k", ",", "a", ",", "20"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "2", ",", "7"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829574730574723*^9, 3.829574733476905*^9}, {
+  3.829574767262835*^9, 3.829574893678546*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"DiscretePlot", "[", 
+     RowBox[{
+      RowBox[{"PrimePi", "[", "k", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"k", ",", "a", ",", "20"}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "2", ",", "7"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.8295789701265783`*^9}],
+
+Cell["\<\
+8. PlotLayout \[LongDash] \:043e\:043f\:0446\:0438\:044f, \:0438\:0441\:043f\
+\:043e\:043b\:044c\:0437\:0443\:0435\:043c\:0430\:044f \:0434\:043b\:044f \
+\:0443\:043a\:0430\:0437\:0430\:043d\:0438\:044f \:043c\:0430\:043a\:0435\
+\:0442\:0430 \:043d\:0435\:0441\:043a\:043e\:043b\:044c\:043a\:0438\:0445 \
+\:0433\:0440\:0430\:0444\:0438\:043a\:043e\:0432.\
+\>", "Text",
+ CellChangeTimes->{{3.829574925137473*^9, 3.8295749262230816`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"WaveletListPlot", "[", 
+  RowBox[{
+   RowBox[{"StationaryWaveletTransform", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"Range", "[", "30", "]"}], "2"], "/", "50"}], "]"}], ",", 
+     "Automatic", ",", "3"}], "]"}], ",", 
+   RowBox[{"PlotLayout", "\[Rule]", "\"\<CommonXAxis\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295760164768753`*^9, 3.8295760166960382`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"WaveletListPlot", "[", 
+    RowBox[{
+     RowBox[{"StationaryWaveletTransform", "[", 
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"Range", "[", 
+           RowBox[{"30", "+", "a"}], "]"}], "2"], "/", "50"}], "]"}], ",", 
+       "Automatic", ",", "3"}], "]"}], ",", 
+     RowBox[{"PlotLayout", "\[Rule]", "\"\<CommonXAxis\>\""}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "2", ",", "70"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829575006753603*^9, 3.8295751096635036`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"WaveletListPlot", "[", 
+     RowBox[{
+      RowBox[{"StationaryWaveletTransform", "[", 
+       RowBox[{
+        RowBox[{"Sin", "[", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"Range", "[", 
+            RowBox[{"30", "+", "a"}], "]"}], "2"], "/", "50"}], "]"}], ",", 
+        "Automatic", ",", "3"}], "]"}], ",", 
+      RowBox[{"PlotLayout", "\[Rule]", "\"\<CommonXAxis\>\""}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "2", ",", "70"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.8295790024368353`*^9}],
+
+Cell["\<\
+9. DiscretePlot3D \[LongDash] \:0441\:0442\:0440\:043e\:0438\:0442 \:0442\
+\:0440\:0435\:0445\:043c\:0435\:0440\:043d\:044b\:0439 \:0433\:0440\:0430\
+\:0444\:0438\:043a \:0437\:043d\:0430\:0447\:0435\:043d\:0438\:0439 \:0432\
+\:044b\:0440\:0430\:0436\:0435\:043d\:0438\:044f \:0444\:0443\:043d\:043a\
+\:0446\:0438\:0438,\
+\>", "Text",
+ CellChangeTimes->{
+  3.8295751401736574`*^9, {3.829575723027627*^9, 3.829575726246777*^9}}],
+
+Cell[BoxData[
+ RowBox[{"DiscretePlot3D", "[", 
+  RowBox[{
+   RowBox[{"PDF", "[", 
+    RowBox[{
+     RowBox[{"MultivariatePoissonDistribution", "[", 
+      RowBox[{"3", ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "u"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "1", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"u", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"ExtentSize", "\[Rule]", "Full"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295760351419015`*^9, 3.829576035215088*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"DiscretePlot3D", "[", 
+    RowBox[{
+     RowBox[{"PDF", "[", 
+      RowBox[{
+       RowBox[{"MultivariatePoissonDistribution", "[", 
+        RowBox[{"3", ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1"}], "}"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "u"}], "}"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "1", ",", "10"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"u", ",", "0", ",", "a"}], "}"}], ",", 
+     RowBox[{"ExtentSize", "\[Rule]", "Full"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.8295750039522476`*^9, {3.8295752213839245`*^9, 3.8295752458624134`*^9}, {
+   3.8295753148414774`*^9, 3.8295753926153603`*^9}, 3.829579079224578*^9}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"DiscretePlot3D", "[", 
+     RowBox[{
+      RowBox[{"PDF", "[", 
+       RowBox[{
+        RowBox[{"MultivariatePoissonDistribution", "[", 
+         RowBox[{"3", ",", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "1"}], "}"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"t", ",", "u"}], "}"}]}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "1", ",", "10"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"u", ",", "0", ",", "a"}], "}"}], ",", 
+      RowBox[{"ExtentSize", "\[Rule]", "Full"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "10"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.829579064523756*^9}],
+
+Cell["\<\
+10. PlotLegends \[LongDash] \:044d\:0442\:043e \:043e\:043f\:0446\:0438\:044f \
+\:0434\:043b\:044f \:0444\:0443\:043d\:043a\:0446\:0438\:0439 \:0441\:044e\
+\:0436\:0435\:0442\:0430, \:043e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\
+\:044e\:0449\:0430\:044f, \:043a\:0430\:043a\:0438\:0435 \:043b\:0435\:0433\
+\:0435\:043d\:0434\:044b \:0438\:0441\:043f\:043e\:043b\:044c\:0437\:043e\
+\:0432\:0430\:0442\:044c.\
+\>", "Text",
+ CellChangeTimes->{3.829575415821826*^9, 3.8295754514638834`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"1", "/", "2"}], "-", " ", 
+      RowBox[{"Sin", "[", "x", "]"}]}], ",", 
+     RowBox[{"Cos", "[", "x", "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"PlotLegends", "\[Rule]", "Automatic"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295760596259127`*^9, 3.829576062150278*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"1", "/", "2"}], "a"}], "-", " ", 
+        RowBox[{"Sin", "[", "x", "]"}]}], ",", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"x", "+", "a"}], "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", 
+       RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829575464780588*^9, 3.8295754887377863`*^9}, {
+   3.829575591366357*^9, 3.8295756171139746`*^9}, 3.8295791116654453`*^9}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"1", "/", "2"}], "a"}], "-", " ", 
+         RowBox[{"Sin", "[", "x", "]"}]}], ",", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"x", "+", "a"}], "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", 
+        RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+      RowBox[{"PlotLegends", "\[Rule]", "Automatic"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "10"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.82957911694761*^9}],
+
+Cell["\<\
+11. PlotPoints \[LongDash] \:044d\:0442\:043e \:043e\:043f\:0446\:0438\:044f \
+\:0434\:043b\:044f \:043f\:043e\:0441\:0442\:0440\:043e\:0435\:043d\:0438\
+\:044f \:0433\:0440\:0430\:0444\:0438\:043a\:043e\:0432 \:0444\:0443\:043d\
+\:043a\:0446\:0438\:0439, \:0443\:043a\:0430\:0437\:044b\:0432\:0430\:044e\
+\:0449\:0430\:044f, \:0441\:043a\:043e\:043b\:044c\:043a\:043e \:0442\:043e\
+\:0447\:0435\:043a \:043d\:0430\:0447\:0430\:043b\:044c\:043d\:043e\:0439 \
+\:0432\:044b\:0431\:043e\:0440\:043a\:0438 \:0441\:043b\:0435\:0434\:0443\
+\:0435\:0442 \:0438\:0441\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\
+\:0442\:044c (\:043f\:043e \:0443\:043c\:043e\:043b\:0447\:0430\:043d\:0438\
+\:044e \:0440\:0430\:0432\:043d\:0430\:044f 50).,\
+\>", "Text",
+ CellChangeTimes->{3.829575758379034*^9}],
+
+Cell[BoxData[
+ RowBox[{"Plot3D", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", 
+    RowBox[{"x", " ", "y"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", "0", ",", "2"}], "}"}], ",", 
+   RowBox[{"PlotPoints", "\[Rule]", "10"}], ",", 
+   RowBox[{"Mesh", "\[Rule]", "All"}], ",", 
+   RowBox[{"MaxRecursion", "\[Rule]", "0"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"x", " ", "y", " ", "a"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "2"}], "}"}], ",", 
+     RowBox[{"PlotPoints", "\[Rule]", "10"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "All"}], ",", 
+     RowBox[{"MaxRecursion", "\[Rule]", "0"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295762490144014`*^9, 3.829576263170164*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Plot3D", "[", 
+     RowBox[{
+      RowBox[{"Sin", "[", 
+       RowBox[{"x", " ", "y", " ", "a"}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", "0", ",", "2"}], "}"}], ",", 
+      RowBox[{"PlotPoints", "\[Rule]", "10"}], ",", 
+      RowBox[{"Mesh", "\[Rule]", "All"}], ",", 
+      RowBox[{"MaxRecursion", "\[Rule]", "0"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "10"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.8295791431057997`*^9}],
+
+Cell["12. GraphPlot \[LongDash] \:0433\:0435\:043d\:0435\:0440\:0438\:0440\
+\:0443\:0435\:0442 \:0433\:0440\:0430\:0444\:0438\:043a \:0433\:0440\:0430\
+\:0444\:0438\:043a\:0430,", "Text",
+ CellChangeTimes->{3.829576398715453*^9}],
+
+Cell[BoxData[
+ RowBox[{"GraphPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "\[Rule]", "2"}], ",", 
+     RowBox[{"2", "\[Rule]", "1"}], ",", 
+     RowBox[{"3", "\[Rule]", "1"}], ",", 
+     RowBox[{"3", "\[Rule]", "2"}], ",", 
+     RowBox[{"4", "\[Rule]", "1"}], ",", 
+     RowBox[{"4", "\[Rule]", "2"}], ",", 
+     RowBox[{"4", "\[Rule]", "4"}]}], "}"}], ",", 
+   RowBox[{"VertexLabeling", "\[Rule]", "True"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"GraphPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1", "\[Rule]", 
+        RowBox[{"2", "a"}]}], ",", 
+       RowBox[{"2", "\[Rule]", "1"}], ",", 
+       RowBox[{"3", "\[Rule]", "1"}], ",", 
+       RowBox[{"3", "\[Rule]", "2"}], ",", 
+       RowBox[{"4", "\[Rule]", "1"}], ",", 
+       RowBox[{"4", "\[Rule]", "2"}], ",", 
+       RowBox[{"4", "\[Rule]", "a"}]}], "}"}], ",", 
+     RowBox[{"VertexLabeling", "\[Rule]", "True"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "13"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829576577020802*^9, 3.8295766695163608`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"GraphPlot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"1", "\[Rule]", 
+         RowBox[{"2", "a"}]}], ",", 
+        RowBox[{"2", "\[Rule]", "1"}], ",", 
+        RowBox[{"3", "\[Rule]", "1"}], ",", 
+        RowBox[{"3", "\[Rule]", "2"}], ",", 
+        RowBox[{"4", "\[Rule]", "1"}], ",", 
+        RowBox[{"4", "\[Rule]", "2"}], ",", 
+        RowBox[{"4", "\[Rule]", "a"}]}], "}"}], ",", 
+      RowBox[{"VertexLabeling", "\[Rule]", "True"}]}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "13"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.8295791624845977`*^9}],
+
+Cell["\<\
+13. PlotRange \[LongDash] \:043e\:043f\:0446\:0438\:044f \:0434\:043b\:044f \
+\:0433\:0440\:0430\:0444\:0438\:0447\:0435\:0441\:043a\:0438\:0445 \:0444\
+\:0443\:043d\:043a\:0446\:0438\:0439, \:0443\:043a\:0430\:0437\:044b\:0432\
+\:0430\:044e\:0449\:0430\:044f, \:043a\:0430\:043a\:043e\:0439 \:0434\:0438\
+\:0430\:043f\:0430\:0437\:043e\:043d \:043a\:043e\:043e\:0440\:0434\:0438\
+\:043d\:0430\:0442 \:0432\:043a\:043b\:044e\:0447\:0430\:0442\:044c \:0432 \
+\:0433\:0440\:0430\:0444\:0438\:043a,\
+\>", "Text",
+ CellChangeTimes->{3.8295767088349648`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Tan", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "Automatic"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Tan", "[", 
+      RowBox[{"x", "+", "a"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "10"}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "Automatic"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "13"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829576731495289*^9, 3.8295767399055405`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"Tan", "[", 
+       RowBox[{"x", "+", "a"}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "10"}], "}"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", "Automatic"}]}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "13"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.8295791816080217`*^9}],
+
+Cell["14. GraphPlot3D \[LongDash] \:0433\:0435\:043d\:0435\:0440\:0438\:0440\
+\:0443\:0435\:0442 \:0442\:0440\:0435\:0445\:043c\:0435\:0440\:043d\:044b\
+\:0439 \:0433\:0440\:0430\:0444\:0438\:043a \:0433\:0440\:0430\:0444\:0438\
+\:043a\:0430,", "Text",
+ CellChangeTimes->{3.8295768190966578`*^9}],
+
+Cell[BoxData[
+ RowBox[{"GraphPlot3D", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"1", "\[Rule]", "2"}], ",", 
+    RowBox[{"1", "\[Rule]", "3"}], ",", 
+    RowBox[{"1", "\[Rule]", "4"}], ",", 
+    RowBox[{"1", "\[Rule]", "5"}], ",", 
+    RowBox[{"2", "\[Rule]", "3"}], ",", 
+    RowBox[{"2", "\[Rule]", "4"}], ",", 
+    RowBox[{"2", "\[Rule]", "5"}], ",", 
+    RowBox[{"3", "\[Rule]", "4"}], ",", 
+    RowBox[{"3", "\[Rule]", "5"}], ",", 
+    RowBox[{"4", "\[Rule]", "5"}]}], "}"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"GraphPlot3D", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "2"}], ",", 
+      RowBox[{"1", "\[Rule]", "a"}], ",", 
+      RowBox[{"1", "\[Rule]", 
+       RowBox[{"2", "a"}]}], ",", 
+      RowBox[{"1", "\[Rule]", "5"}], ",", 
+      RowBox[{"2", "\[Rule]", "3"}], ",", 
+      RowBox[{"2", "\[Rule]", "4"}], ",", 
+      RowBox[{"2", "\[Rule]", "5"}], ",", 
+      RowBox[{"3", "\[Rule]", "4"}], ",", 
+      RowBox[{"3", "\[Rule]", "5"}], ",", 
+      RowBox[{"4", "\[Rule]", "5"}]}], "}"}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "13"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829576844789893*^9, 3.8295768655291595`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"GraphPlot3D", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"1", "\[Rule]", "2"}], ",", 
+        RowBox[{"1", "\[Rule]", "a"}], ",", 
+        RowBox[{"1", "\[Rule]", 
+         RowBox[{"2", "a"}]}], ",", 
+        RowBox[{"1", "\[Rule]", "5"}], ",", 
+        RowBox[{"2", "\[Rule]", "3"}], ",", 
+        RowBox[{"2", "\[Rule]", "4"}], ",", 
+        RowBox[{"2", "\[Rule]", "5"}], ",", 
+        RowBox[{"3", "\[Rule]", "4"}], ",", 
+        RowBox[{"3", "\[Rule]", "5"}], ",", 
+        RowBox[{"4", "\[Rule]", "5"}]}], "}"}], ",", " ", 
+      RowBox[{"VertexLabeling", "\[Rule]", "True"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "13"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.829576905700857*^9, 3.829576925094869*^9}}],
+
+Cell["\<\
+15. PlotRangeClipping \[LongDash] \:044d\:0442\:043e \:043e\:043f\:0446\:0438\
+\:044f \:0434\:043b\:044f \:0433\:0440\:0430\:0444\:0438\:0447\:0435\:0441\
+\:043a\:0438\:0445 \:0444\:0443\:043d\:043a\:0446\:0438\:0439, \:043a\:043e\
+\:0442\:043e\:0440\:0430\:044f \:0443\:043a\:0430\:0437\:044b\:0432\:0430\
+\:0435\:0442, \:0434\:043e\:043b\:0436\:043d\:044b \:043b\:0438 \:0433\:0440\
+\:0430\:0444\:0438\:0447\:0435\:0441\:043a\:0438\:0435 \:043e\:0431\:044a\
+\:0435\:043a\:0442\:044b \:043e\:0431\:0440\:0435\:0437\:0430\:0442\:044c\
+\:0441\:044f \:043f\:043e \:043a\:0440\:0430\:044e \:043e\:0431\:043b\:0430\
+\:0441\:0442\:0438, \:043e\:043f\:0440\:0435\:0434\:0435\:043b\:0435\:043d\
+\:043d\:043e\:0439 PlotRange, \:0438\:043b\:0438 \:0440\:0430\:0437\:0440\
+\:0435\:0448\:0435\:043d\:043e \:0440\:0430\:0441\:0448\:0438\:0440\:044f\
+\:0442\:044c\:0441\:044f \:0434\:043e \:043a\:0440\:0430\:044f \:0438\:0437\
+\:043e\:0431\:0440\:0430\:0436\:0435\:043d\:0438\:044f.,\
+\>", "Text",
+ CellChangeTimes->{3.8295769990672903`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Pink", ",", 
+     RowBox[{"Disk", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", "5"}], "]"}]}], "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "4"}], ",", 
+   RowBox[{"PlotRangeClipping", "\[Rule]", "False"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Pink", ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"a", ",", "0"}], "}"}], ",", 
+         RowBox[{"5", "-", "a"}]}], "]"}]}], "}"}], ",", 
+     RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "4"}], ",", 
+     RowBox[{"PlotRangeClipping", "\[Rule]", "False"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "1", ",", "2"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829577030475097*^9, 3.8295771118422284`*^9}}],
+
+Cell["\<\
+16. ListContourPlot \[LongDash] \:0443\:043f\:043e\:0440\:044f\:0434\:043e\
+\:0447\:0438\:0432\:0430\:0435\:0442 \:043f\:043e\:0441\:043b\:0435\:0434\
+\:043e\:0432\:0430\:0442\:0435\:043b\:044c\:043d\:044b\:0435 \:0441\:0442\
+\:0440\:043e\:043a\:0438 \:043c\:0430\:0441\:0441\:0438\:0432\:0430 \:0432\
+\:0432\:0435\:0440\:0445 \:043f\:043e \:0441\:0442\:0440\:0430\:043d\:0438\
+\:0446\:0435 \:0438 \:043f\:043e\:0441\:043b\:0435\:0434\:043e\:0432\:0430\
+\:0442\:0435\:043b\:044c\:043d\:044b\:0435 \:0441\:0442\:043e\:043b\:0431\
+\:0446\:044b,\
+\>", "Text",
+ CellChangeTimes->{
+  3.8295771374838047`*^9, {3.8295793267513876`*^9, 3.829579327280922*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListContourPlot", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Sin", "[", 
+     RowBox[{"i", "+", 
+      RowBox[{"j", "^", "2"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "0", ",", "3", ",", "0.1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"j", ",", "0", ",", "3", ",", "0.1"}], "}"}]}], "]"}], 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"ListContourPlot", "[", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"Sin", "[", 
+       RowBox[{
+        RowBox[{"a", " ", "i"}], "+", 
+        RowBox[{
+         RowBox[{"j", "^", "2"}], "a"}]}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "0", ",", "3", ",", "0.1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"j", ",", "0", ",", "3", ",", "0.1"}], "}"}]}], "]"}], "]"}], 
+   ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "2", ",", "7"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829577346503793*^9, 3.8295773696604357`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"ListContourPlot", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        RowBox[{
+         RowBox[{"a", " ", "i"}], "+", 
+         RowBox[{
+          RowBox[{"j", "^", "2"}], "a"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "0", ",", "3", ",", "0.1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"j", ",", "0", ",", "3", ",", "0.1"}], "}"}]}], "]"}], "]"}], 
+    ",", "  ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "2", ",", "7"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295774155976887`*^9, 3.829577420938813*^9}}],
+
+Cell["\<\
+PlotStyle \[LongDash] \:044d\:0442\:043e \:043e\:043f\:0446\:0438\:044f \
+\:0434\:043b\:044f \:043f\:043e\:0441\:0442\:0440\:043e\:0435\:043d\:0438\
+\:044f \:0438 \:0441\:0432\:044f\:0437\:0430\:043d\:043d\:044b\:0445 \:0444\
+\:0443\:043d\:043a\:0446\:0438\:0439, \:043a\:043e\:0442\:043e\:0440\:0430\
+\:044f \:043e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:0442 \:0441\
+\:0442\:0438\:043b\:0438, \:0432 \:043a\:043e\:0442\:043e\:0440\:044b\:0445 \
+\:0434\:043e\:043b\:0436\:043d\:044b \:0431\:044b\:0442\:044c \:043d\:0430\
+\:0440\:0438\:0441\:043e\:0432\:0430\:043d\:044b \:043e\:0431\:044a\:0435\
+\:043a\:0442\:044b,\
+\>", "Text",
+ CellChangeTimes->{{3.829579334519244*^9, 3.829579336790016*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Evaluate", "@", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"BesselJ", "[", 
+       RowBox[{"n", ",", "x"}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "3"}], "}"}]}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "15"}], "}"}], ",", 
+   RowBox[{"PlotStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Orange", ",", "Dashed", ",", "Thick"}], "}"}]}]}], 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Evaluate", "@", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"BesselJ", "[", 
+         RowBox[{
+          RowBox[{"n", "+", "a"}], ",", "x"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n", ",", "3"}], "}"}]}], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "15"}], "}"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"Orange", ",", "Dashed", ",", "Thick"}], "}"}]}]}], "]"}], ",",
+    " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "2", ",", "7"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.82957935271614*^9, 3.829579368843754*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"Evaluate", "@", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"BesselJ", "[", 
+          RowBox[{
+           RowBox[{"n", "+", "a"}], ",", "x"}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"n", ",", "3"}], "}"}]}], "]"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "0", ",", "15"}], "}"}], ",", 
+      RowBox[{"PlotStyle", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"Orange", ",", "Dashed", ",", "Thick"}], "}"}]}]}], "]"}], 
+    ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "2", ",", "7"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.8295793865925975`*^9}],
+
+Cell["\<\
+17. ListContourPlot3D \[LongDash] \:0433\:0435\:043d\:0435\:0440\:0438\:0440\
+\:0443\:0435\:0442 \:043a\:043e\:043d\:0442\:0443\:0440\:043d\:044b\:0439 \
+\:0433\:0440\:0430\:0444\:0438\:043a \:0438\:0437 \:0442\:0440\:0435\:0445\
+\:043c\:0435\:0440\:043d\:043e\:0433\:043e \:043c\:0430\:0441\:0441\:0438\
+\:0432\:0430 \:0437\:043d\:0430\:0447\:0435\:043d\:0438\:0439.\
+\>", "Text",
+ CellChangeTimes->{3.829577447887063*^9}],
+
+Cell[BoxData[
+ RowBox[{"ListContourPlot3D", "[", 
+  RowBox[{
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x", "^", "2"}], "+", 
+      RowBox[{"y", "^", "2"}], "-", 
+      RowBox[{"z", "^", "2"}], "+", 
+      RowBox[{"RandomReal", "[", "0.1", "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}]}], "]"}], ",", 
+   RowBox[{"Contours", "\[Rule]", "3"}], ",", 
+   RowBox[{"Mesh", "\[Rule]", "None"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"ListContourPlot3D", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"x", "^", "2"}], "a"}], "+", 
+        RowBox[{"y", "^", "2"}], "-", 
+        RowBox[{"z", " ", 
+         RowBox[{"a", "^", "2"}]}], "+", 
+        RowBox[{"RandomReal", "[", "0.1", "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"y", ",", 
+         RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"z", ",", 
+         RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}]}], "]"}], ",", 
+     RowBox[{"Contours", "\[Rule]", "3"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "None"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295774797966013`*^9, 3.829577526544744*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"ListContourPlot3D", "[", 
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"x", "^", "2"}], "a"}], "+", 
+         RowBox[{"y", "^", "2"}], "-", 
+         RowBox[{"z", " ", 
+          RowBox[{"a", "^", "2"}]}], "+", 
+         RowBox[{"RandomReal", "[", "0.1", "]"}]}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", 
+          RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"y", ",", 
+          RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"z", ",", 
+          RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}]}], "]"}], ",", 
+      RowBox[{"Contours", "\[Rule]", "3"}], ",", 
+      RowBox[{"Mesh", "\[Rule]", "None"}]}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "1", ",", "3"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295775211458607`*^9, 3.829577535321761*^9}}],
+
+Cell["\<\
+18. PolarPlot \[LongDash] \:0433\:0435\:043d\:0435\:0440\:0438\:0440\:0443\
+\:0435\:0442 \:043f\:043e\:043b\:044f\:0440\:043d\:044b\:0439 \:0433\:0440\
+\:0430\:0444\:0438\:043a \:043a\:0440\:0438\:0432\:043e\:0439 \:0441 \:0443\
+\:043a\:0430\:0437\:0430\:043d\:043d\:044b\:043c \:0440\:0430\:0434\:0438\
+\:0443\:0441\:043e\:043c \:043a\:0430\:043a \:0444\:0443\:043d\:043a\:0446\
+\:0438\:044e \:0443\:043a\:0430\:0437\:0430\:043d\:043d\:043e\:0433\:043e \
+\:0443\:0433\:043b\:0430,\
+\>", "Text",
+ CellChangeTimes->{3.8295775638861637`*^9}],
+
+Cell[BoxData[
+ RowBox[{"PolarPlot", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", 
+    RowBox[{"3", "t"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "Pi"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.829577587892909*^9}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"PolarPlot", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{
+       RowBox[{"3", "t"}], "+", "a"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "Pi"}], "}"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "1", ",", "10"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295776072510643`*^9, 3.8295776167593613`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"PolarPlot", "[", 
+     RowBox[{
+      RowBox[{"Sin", "[", 
+       RowBox[{
+        RowBox[{"3", "t"}], "+", "a"}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "0", ",", "Pi"}], "}"}]}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "1", ",", "10"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.8295776564526443`*^9}],
+
+Cell["19. ListLinePlot \[LongDash] \:0440\:0438\:0441\:0443\:0435\:0442 \
+\:043b\:0438\:043d\:0438\:044e \:0447\:0435\:0440\:0435\:0437 \:0443\:043a\
+\:0430\:0437\:0430\:043d\:043d\:044b\:0435 \:0442\:043e\:0447\:043a\:0438", \
+"Text",
+ CellChangeTimes->{3.8295776791954527`*^9}],
+
+Cell[BoxData[
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{"Prime", "[", 
+    RowBox[{"Range", "[", "25", "]"}], "]"}], ",", 
+   RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"ListLinePlot", "[", 
+    RowBox[{
+     RowBox[{"Prime", "[", 
+      RowBox[{"Range", "[", 
+       RowBox[{"25", "+", 
+        RowBox[{"2", "a"}]}], "]"}], "]"}], ",", 
+     RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "2", ",", "15"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295777988695374`*^9, 3.8295778102334423`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"ListLinePlot", "[", 
+     RowBox[{
+      RowBox[{"Prime", "[", 
+       RowBox[{"Range", "[", 
+        RowBox[{"25", "+", 
+         RowBox[{"2", "a"}]}], "]"}], "]"}], ",", 
+      RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "2", ",", "15"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.8295778300346713`*^9}],
+
+Cell["\<\
+20. RegionPlot \[LongDash]  \:0441\:0442\:0440\:043e\:0438\:0442 \:0433\:0440\
+\:0430\:0444\:0438\:043a, \:043f\:043e\:043a\:0430\:0437\:044b\:0432\:0430\
+\:044e\:0449\:0438\:0439 \:043e\:0431\:043b\:0430\:0441\:0442\:044c, \:043e\
+\:043f\:0440\:0435\:0434\:0435\:043b\:0435\:043d\:043d\:0443\:044e \:043d\
+\:0435\:0440\:0430\:0432\:0435\:043d\:0441\:0442\:0432\:043e\:043c.\
+\>", "Text",
+ CellChangeTimes->{{3.8295778535719533`*^9, 3.829577870557386*^9}, 
+   3.8295794912135935`*^9}],
+
+Cell[BoxData[
+ RowBox[{"RegionPlot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", "^", "2"}], "+", 
+     RowBox[{"y", "^", "3"}]}], "<", "2"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.8295779112610483`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"RegionPlot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "^", "2"}], "+", 
+       RowBox[{"y", "^", "3"}]}], "<", 
+      RowBox[{"2", "+", 
+       RowBox[{"8", "a"}]}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829577940360772*^9, 3.8295779489173737`*^9}, {
+  3.829577985285077*^9, 3.8295779913111258`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"RegionPlot", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"x", "^", "2"}], "+", 
+        RowBox[{"y", "^", "3"}]}], "<", 
+       RowBox[{"2", "+", 
+        RowBox[{"8", "a"}]}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", 
+        RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.829578039987525*^9}],
+
+Cell["\<\
+21. TreePlot \[LongDash] \:0433\:0435\:043d\:0435\:0440\:0438\:0440\:0443\
+\:0435\:0442 \:0434\:0440\:0435\:0432\:043e\:0432\:0438\:0434\:043d\:044b\
+\:0439 \:0433\:0440\:0430\:0444\:0438\:043a \:0443\:043a\:0430\:0437\:0430\
+\:043d\:043d\:043e\:0433\:043e \:0433\:0440\:0430\:0444\:0438\:043a\:0430,\
+\>", "Text",
+ CellChangeTimes->{3.829578071017855*^9}],
+
+Cell[BoxData[
+ RowBox[{"TreePlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "\[Rule]", "4"}], ",", 
+     RowBox[{"1", "\[Rule]", "6"}], ",", 
+     RowBox[{"1", "\[Rule]", "8"}], ",", 
+     RowBox[{"2", "\[Rule]", "6"}], ",", 
+     RowBox[{"3", "\[Rule]", "8"}], ",", 
+     RowBox[{"4", "\[Rule]", "5"}], ",", 
+     RowBox[{"7", "\[Rule]", "8"}]}], "}"}], ",", 
+   RowBox[{"VertexLabeling", "\[Rule]", "True"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"TreePlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"1", "+", "a"}], "\[Rule]", "4"}], ",", 
+       RowBox[{"1", "\[Rule]", "6"}], ",", 
+       RowBox[{"1", "\[Rule]", 
+        RowBox[{"8", "-", "a"}]}], ",", 
+       RowBox[{"2", "\[Rule]", "6"}], ",", 
+       RowBox[{
+        RowBox[{"3", "a"}], "\[Rule]", "8"}], ",", 
+       RowBox[{"4", "\[Rule]", "5"}], ",", 
+       RowBox[{
+        RowBox[{"2", "a"}], "\[Rule]", "8"}]}], "}"}], ",", 
+     RowBox[{"VertexLabeling", "\[Rule]", "True"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829578112183837*^9, 3.829578165068046*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"TreePlot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"1", "+", "a"}], "\[Rule]", "4"}], ",", 
+        RowBox[{"1", "\[Rule]", "6"}], ",", 
+        RowBox[{"1", "\[Rule]", 
+         RowBox[{"8", "-", "a"}]}], ",", 
+        RowBox[{"2", "\[Rule]", "6"}], ",", 
+        RowBox[{
+         RowBox[{"3", "a"}], "\[Rule]", "8"}], ",", 
+        RowBox[{"4", "\[Rule]", "5"}], ",", 
+        RowBox[{
+         RowBox[{"2", "a"}], "\[Rule]", "8"}]}], "}"}], ",", 
+      RowBox[{"VertexLabeling", "\[Rule]", "True"}]}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "10"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.829578180817051*^9}],
+
+Cell["22. VectorPlot \[LongDash] \:0433\:0435\:043d\:0435\:0440\:0438\:0440\
+\:0443\:0435\:0442 \:0432\:0435\:043a\:0442\:043e\:0440\:043d\:044b\:0439 \
+\:0433\:0440\:0430\:0444\:0438\:043a \:0432\:0435\:043a\:0442\:043e\:0440\
+\:043d\:043e\:0433\:043e,", "Text",
+ CellChangeTimes->{{3.829578211173439*^9, 3.829578227641588*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "x"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "y"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "3"}], ",", "3"}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"VectorPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"y", ",", 
+         RowBox[{"x", "+", 
+          RowBox[{"2", "a"}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"a", " ", "x"}], ",", 
+         RowBox[{"a", "-", "y"}]}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "3"}], ",", "3"}], "}"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "2", ",", "22"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829578261886376*^9, 3.8295782961747046`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"VectorPlot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"y", ",", 
+          RowBox[{"x", "+", 
+           RowBox[{"2", "a"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"a", " ", "x"}], ",", 
+          RowBox[{"a", "-", "y"}]}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", 
+        RowBox[{"-", "3"}], ",", "3"}], "}"}]}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "2", ",", "22"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295783211259155`*^9, 3.8295783253036203`*^9}}],
+
+Cell["\<\
+23. ListVectorPlot3D \[LongDash] \:0433\:0435\:043d\:0435\:0440\:0438\:0440\
+\:0443\:0435\:0442 \:0442\:0440\:0435\:0445\:043c\:0435\:0440\:043d\:044b\
+\:0439 \:0432\:0435\:043a\:0442\:043e\:0440\:043d\:044b\:0439 \:0433\:0440\
+\:0430\:0444\:0438\:043a \:0438\:0437 \:0442\:0440\:0435\:0445\:043c\:0435\
+\:0440\:043d\:043e\:0433\:043e \:043c\:0430\:0441\:0441\:0438\:0432\:0430 \
+\:0437\:043d\:0430\:0447\:0435\:043d\:0438\:0439 \:0432\:0435\:043a\:0442\
+\:043e\:0440\:043d\:043e\:0433\:043e \:043f\:043e\:043b\:044f,\
+\>", "Text",
+ CellChangeTimes->{3.829578364727249*^9}],
+
+Cell[BoxData[
+ RowBox[{"ListVectorPlot3D", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", "y", ",", "z"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", 
+        RowBox[{"x", "-", 
+         RowBox[{"x", "^", "3"}]}], ",", "z"}], "}"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"-", "1.5"}], ",", "1.5", ",", "0.2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", 
+      RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", 
+      RowBox[{"-", "1"}], ",", "1", ",", "0.1"}], "}"}]}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8295784120038924`*^9, 3.829578420232586*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"ListVectorPlot3D", "[", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"x", ",", "y", ",", "z"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"y", "-", "a"}], ",", 
+          RowBox[{"x", "-", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"x", "+", 
+              RowBox[{"2", "a"}]}], ")"}], "^", "3"}]}], ",", "z"}], "}"}]}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "1.5"}], ",", "1.5", ",", "0.2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", 
+        RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"z", ",", 
+        RowBox[{"-", "1"}], ",", "1", ",", "0.1"}], "}"}]}], "]"}], "]"}], 
+   ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829578444477704*^9, 3.829578456197997*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"ListVectorPlot3D", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"x", ",", "y", ",", "z"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"y", "-", "a"}], ",", 
+           RowBox[{"x", "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"x", "+", 
+               RowBox[{"2", "a"}]}], ")"}], "^", "3"}]}], ",", "z"}], "}"}]}],
+         "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "1.5"}], ",", "1.5", ",", "0.2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"y", ",", 
+         RowBox[{"-", "2"}], ",", "2", ",", "0.2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"z", ",", 
+         RowBox[{"-", "1"}], ",", "1", ",", "0.1"}], "}"}]}], "]"}], "]"}], 
+    ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "10"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.829578474997304*^9}],
+
+Cell["\<\
+24. VectorPlot3D \[LongDash] \:0433\:0435\:043d\:0435\:0440\:0438\:0440\:0443\
+\:0435\:0442 \:0442\:0440\:0435\:0445\:043c\:0435\:0440\:043d\:044b\:0439 \
+\:0432\:0435\:043a\:0442\:043e\:0440\:043d\:044b\:0439 \:0433\:0440\:0430\
+\:0444\:0438\:043a \:0432\:0435\:043a\:0442\:043e\:0440\:043d\:043e\:0433\
+\:043e \:043f\:043e\:043b\:044f.\
+\>", "Text",
+ CellChangeTimes->{{3.8295785053990684`*^9, 3.829578519299737*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Animate", "[", 
+  RowBox[{
+   RowBox[{"VectorPlot3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"x", "+", "a"}], ",", 
+       RowBox[{"y", " ", "a"}], ",", 
+       RowBox[{"z", "-", "a"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"z", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8295785481127973`*^9, 3.8295785710621986`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ListAnimate", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"VectorPlot3D", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"x", "+", "a"}], ",", 
+        RowBox[{"y", " ", "a"}], ",", 
+        RowBox[{"z", "-", "a"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"y", ",", 
+        RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"z", ",", 
+        RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "0", ",", "10"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.8295785930321198`*^9}]
+},
+WindowSize->{1536, 781},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>0.8 Inherited,
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"MyStyle.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 428, 8, 25, "Text"],
+Cell[989, 30, 381, 11, 39, "Input"],
+Cell[1373, 43, 904, 21, 39, "Input"],
+Cell[2280, 66, 529, 16, 39, "Input"],
+Cell[2812, 84, 470, 8, 25, "Text"],
+Cell[3285, 94, 384, 10, 39, "Input"],
+Cell[3672, 106, 703, 19, 39, "Input"],
+Cell[4378, 127, 620, 18, 39, "Input"],
+Cell[5001, 147, 1177, 17, 25, "Text"],
+Cell[6181, 166, 347, 11, 39, "Input"],
+Cell[6531, 179, 703, 20, 39, "Input"],
+Cell[7237, 201, 671, 20, 39, "Input"],
+Cell[7911, 223, 517, 8, 25, "Text"],
+Cell[8431, 233, 346, 9, 39, "Input"],
+Cell[8780, 244, 588, 16, 39, "Input"],
+Cell[9371, 262, 577, 16, 39, "Input"],
+Cell[9951, 280, 766, 12, 25, "Text"],
+Cell[10720, 294, 558, 16, 39, "Input"],
+Cell[11281, 312, 812, 23, 39, "Input"],
+Cell[12096, 337, 781, 23, 39, "Input"],
+Cell[12880, 362, 553, 13, 25, "Text"],
+Cell[13436, 377, 618, 20, 39, "Input"],
+Cell[14057, 399, 903, 27, 39, "Input"],
+Cell[14963, 428, 902, 27, 39, "Input"],
+Cell[15868, 457, 363, 5, 25, "Text"],
+Cell[16234, 464, 253, 6, 39, "Input"],
+Cell[16490, 472, 482, 12, 39, "Input"],
+Cell[16975, 486, 396, 11, 39, "Input"],
+Cell[17374, 499, 446, 7, 25, "Text"],
+Cell[17823, 508, 450, 11, 43, "Input"],
+Cell[18276, 521, 675, 17, 43, "Input"],
+Cell[18954, 540, 642, 17, 43, "Input"],
+Cell[19599, 559, 437, 8, 25, "Text"],
+Cell[20039, 569, 593, 16, 39, "Input"],
+Cell[20635, 587, 903, 23, 39, "Input"],
+Cell[21541, 612, 767, 21, 39, "Input"],
+Cell[22311, 635, 499, 8, 25, "Text"],
+Cell[22813, 645, 464, 13, 39, "Input"],
+Cell[23280, 660, 793, 21, 39, "Input"],
+Cell[24076, 683, 684, 20, 39, "Input"],
+Cell[24763, 705, 801, 12, 25, "Text"],
+Cell[25567, 719, 412, 11, 39, "Input"],
+Cell[25982, 732, 687, 17, 39, "Input"],
+Cell[26672, 751, 654, 17, 39, "Input"],
+Cell[27329, 770, 229, 3, 25, "Text"],
+Cell[27561, 775, 454, 12, 39, "Input"],
+Cell[28018, 789, 750, 19, 39, "Input"],
+Cell[28771, 810, 719, 19, 39, "Input"],
+Cell[29493, 831, 563, 9, 25, "Text"],
+Cell[30059, 842, 227, 6, 39, "Input"],
+Cell[30289, 850, 514, 13, 39, "Input"],
+Cell[30806, 865, 477, 13, 39, "Input"],
+Cell[31286, 880, 296, 4, 25, "Text"],
+Cell[31585, 886, 501, 13, 39, "Input"],
+Cell[32089, 901, 798, 20, 39, "Input"],
+Cell[32890, 923, 878, 22, 39, "Input"],
+Cell[33771, 947, 1039, 15, 25, "Text"],
+Cell[34813, 964, 399, 11, 39, "Input"],
+Cell[35215, 977, 698, 18, 39, "Input"],
+Cell[35916, 997, 661, 11, 25, "Text"],
+Cell[36580, 1010, 368, 11, 39, "Input"],
+Cell[36951, 1023, 690, 19, 39, "Input"],
+Cell[37644, 1044, 684, 19, 39, "Input"],
+Cell[38331, 1065, 716, 11, 25, "Text"],
+Cell[39050, 1078, 478, 15, 39, "Input"],
+Cell[39531, 1095, 782, 22, 39, "Input"],
+Cell[40316, 1119, 757, 22, 39, "Input"],
+Cell[41076, 1143, 433, 7, 25, "Text"],
+Cell[41512, 1152, 718, 20, 39, "Input"],
+Cell[42233, 1174, 1060, 28, 39, "Input"],
+Cell[43296, 1204, 1062, 28, 39, "Input"],
+Cell[44361, 1234, 549, 9, 25, "Text"],
+Cell[44913, 1245, 238, 7, 39, "Input"],
+Cell[45154, 1254, 486, 13, 39, "Input"],
+Cell[45643, 1269, 447, 13, 39, "Input"],
+Cell[46093, 1284, 279, 4, 25, "Text"],
+Cell[46375, 1290, 195, 5, 39, "Input"],
+Cell[46573, 1297, 507, 13, 39, "Input"],
+Cell[47083, 1312, 468, 13, 39, "Input"],
+Cell[47554, 1327, 494, 8, 25, "Text"],
+Cell[48051, 1337, 401, 13, 39, "Input"],
+Cell[48455, 1352, 729, 21, 39, "Input"],
+Cell[49187, 1375, 646, 20, 39, "Input"],
+Cell[49836, 1397, 366, 6, 25, "Text"],
+Cell[50205, 1405, 453, 12, 39, "Input"],
+Cell[50661, 1419, 829, 22, 39, "Input"],
+Cell[51493, 1443, 801, 22, 39, "Input"],
+Cell[52297, 1467, 329, 4, 25, "Text"],
+Cell[52629, 1473, 434, 15, 39, "Input"],
+Cell[53066, 1490, 803, 24, 39, "Input"],
+Cell[53872, 1516, 803, 24, 39, "Input"],
+Cell[54678, 1542, 583, 9, 25, "Text"],
+Cell[55264, 1553, 745, 22, 39, "Input"],
+Cell[56012, 1577, 1100, 32, 39, "Input"],
+Cell[57115, 1611, 1082, 32, 39, "Input"],
+Cell[58200, 1645, 429, 7, 25, "Text"],
+Cell[58632, 1654, 407, 13, 39, "Input"],
+Cell[59042, 1669, 767, 22, 39, "Input"],
+Cell[59812, 1693, 737, 22, 39, "Input"]
+}
+]
+*)
+

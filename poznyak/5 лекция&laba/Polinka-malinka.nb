@@ -1,0 +1,79 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1728,         69]
+NotebookOptionsPosition[      1410,         53]
+NotebookOutlinePosition[      1760,         68]
+CellTagsIndexPosition[      1717,         65]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"Clear", "[", 
+  RowBox[{"x", ",", "y"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "k_", "]"}], ":=", 
+   RowBox[{"1", "/", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{"k", "-", "1"}], ")"}], " ", 
+       RowBox[{"f", "[", 
+        RowBox[{"k", "-", "1"}], "]"}]}]}], " ", ")"}]}]}], ";", 
+  RowBox[{
+   RowBox[{"f", "[", "1", "]"}], "=", "y"}], ";", 
+  RowBox[{"f", "[", "5", "]"}]}]}], "Input"],
+
+Cell[BoxData[
+ FractionBox["1", 
+  RowBox[{"1", "+", 
+   FractionBox["8", 
+    RowBox[{"1", "+", 
+     FractionBox["6", 
+      RowBox[{"1", "+", 
+       FractionBox["4", 
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "y"}]}]]}]]}]]}]]], "Output",
+ CellChangeTimes->{3.8290493764619813`*^9}]
+}, Open  ]]
+},
+WindowSize->{715, 747},
+WindowMargins->{{282, Automatic}, {-101, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 513, 16, 68, "Input"],
+Cell[1096, 40, 298, 10, 71, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

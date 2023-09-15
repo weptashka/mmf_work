@@ -1,0 +1,12 @@
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/obj/Debug/netcoreapp3.1/local-search.csprojAssemblyReference.cache
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/obj/Debug/netcoreapp3.1/local-search.AssemblyInfoInputs.cache
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/obj/Debug/netcoreapp3.1/local-search.AssemblyInfo.cs
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/obj/Debug/netcoreapp3.1/local-search.csproj.CoreCompileInputs.cache
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/bin/Debug/netcoreapp3.1/local-search.deps.json
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/bin/Debug/netcoreapp3.1/local-search.runtimeconfig.json
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/bin/Debug/netcoreapp3.1/local-search.runtimeconfig.dev.json
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/bin/Debug/netcoreapp3.1/local-search.dll
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/bin/Debug/netcoreapp3.1/local-search.pdb
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/obj/Debug/netcoreapp3.1/local-search.dll
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/obj/Debug/netcoreapp3.1/local-search.pdb
+/Users/alex/sixth_semestr/algorithms/local-search/local-search/obj/Debug/netcoreapp3.1/local-search.genruntimeconfig.cache

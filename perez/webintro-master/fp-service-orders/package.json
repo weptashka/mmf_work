@@ -1,0 +1,33 @@
+{
+  "name": "fp-api-orders",
+  "version": "0.0.1",
+  "private": true,
+  "description": "OrdersAPI",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
+    "scripts": {
+    "start": "swagger_mockMode=true node app.js",
+    "test": "swagger project test"
+  },
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "chance": "^1.1.4",
+    "express": "^4.12.3",
+    "express-healthcheck": "^0.1.0",
+    "faker": "^4.1.0",
+    "json-schema-faker": "^0.5.0-rcv.24",
+    "path": "^0.12.7",
+    "swagger-express-mw": "^0.1.0",
+    "swagger-stats": "^0.95.17",
+    "winston": "^3.2.1",
+    "xmlbuilder": "^15.1.1"
+  },
+  "devDependencies": {
+    "genversion": "^2.2.1",
+    "should": "^7.1.0",
+    "supertest": "^1.0.0",
+    "versiony": "^2.0.1"
+  }
+}

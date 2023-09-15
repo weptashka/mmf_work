@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Index</h2>
+
+<p>Hello from our View Template!</p>
+<div class="text-center">
+    <ul>
+        @for (int i = 0; i < (int)ViewData["NumTimes"]!; i++)
+        {
+                <li>@ViewData["Message"]</li>
+        }
+    </ul>
+</div>

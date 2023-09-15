@@ -1,0 +1,41 @@
+# WARNING
+# This is used only in direct docker run with uncommented provider in traefik.toml
+# if used in docker-compose the same parameters needs to be duplicated in labels
+# so THIS IS NOT USED in docker-compose mode
+
+
+# http routing section
+[http]
+  [http.routers]
+    # Define a connection between requests and services
+    [http.routers.fp-feedback]
+      entryPoints = ["web"]
+      rule = "PathPrefix(`/feedback`)"
+      service = "fp-feedback"
+
+    [http.routers.fp-orders]
+      entryPoints = ["web"]
+      rule = "PathPrefix(`/api/v1/tea`)"
+      service = "fp-orders"
+
+  [http.services]
+    # Define how to reach an existing service on our infrastructure
+    [http.services.fp-feedback.loadBalancer]
+      [http.services.fp-feedback.loadBalancer.healthCheck]
+        path = "/health"
+        interval = "5s"
+        timeout = "3s"
+
+      [[http.services.fp-feedback.loadBalancer.servers]]
+        url = "http://172.17.0.1:3000/"
+      [[http.services.fp-feedback.loadBalancer.servers]]
+        url = "http://172.17.0.1:3001/"
+
+    [http.services.fp-orders.loadBalancer]
+      [http.services.fp-orders.loadBalancer.healthCheck]
+        path = "/health"
+        interval = "5s"
+        timeout = "3s"
+
+      [[http.services.fp-orders.loadBalancer.servers]]
+        url = "http://172.17.0.1:10011/"

@@ -1,0 +1,25 @@
+html, body, body > header, body > footer {
+    margin: 0;
+    padding: 0;
+}
+body > header {
+    top: 0px;
+}
+body > main {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+body > footer {
+    bottom: 0px;
+}
+body > header, body > footer {
+    text-align: center;
+    font-weight: smaller;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: hsla(180, 50%, 50%, 0.5);
+}
+

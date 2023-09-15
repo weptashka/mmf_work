@@ -1,0 +1,16 @@
+D:\University\6_sem\parallel\lab1\lab1\bin\Debug\net5.0\lab1.exe
+D:\University\6_sem\parallel\lab1\lab1\bin\Debug\net5.0\lab1.deps.json
+D:\University\6_sem\parallel\lab1\lab1\bin\Debug\net5.0\lab1.runtimeconfig.json
+D:\University\6_sem\parallel\lab1\lab1\bin\Debug\net5.0\lab1.runtimeconfig.dev.json
+D:\University\6_sem\parallel\lab1\lab1\bin\Debug\net5.0\lab1.dll
+D:\University\6_sem\parallel\lab1\lab1\bin\Debug\net5.0\ref\lab1.dll
+D:\University\6_sem\parallel\lab1\lab1\bin\Debug\net5.0\lab1.pdb
+D:\University\6_sem\parallel\lab1\lab1\obj\Debug\net5.0\lab1.csproj.AssemblyReference.cache
+D:\University\6_sem\parallel\lab1\lab1\obj\Debug\net5.0\lab1.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\6_sem\parallel\lab1\lab1\obj\Debug\net5.0\lab1.AssemblyInfoInputs.cache
+D:\University\6_sem\parallel\lab1\lab1\obj\Debug\net5.0\lab1.AssemblyInfo.cs
+D:\University\6_sem\parallel\lab1\lab1\obj\Debug\net5.0\lab1.csproj.CoreCompileInputs.cache
+D:\University\6_sem\parallel\lab1\lab1\obj\Debug\net5.0\lab1.dll
+D:\University\6_sem\parallel\lab1\lab1\obj\Debug\net5.0\ref\lab1.dll
+D:\University\6_sem\parallel\lab1\lab1\obj\Debug\net5.0\lab1.pdb
+D:\University\6_sem\parallel\lab1\lab1\obj\Debug\net5.0\lab1.genruntimeconfig.cache

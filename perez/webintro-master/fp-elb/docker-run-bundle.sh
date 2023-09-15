@@ -1,0 +1,11 @@
+docker run -d --name=fp-elb --rm  -p 8080:8080 -p 80:80 \
+    -v $PWD/traefik/traefik.toml:/etc/traefik/traefik.toml -v /var/run/docker.sock:/var/run/docker.sock fp/elb \
+      --providers.docker \
+      --providers.docker.exposedbydefault=false \
+      --entryPoints.http.address=":80" \
+      --traefik.port=8080 \
+      --accesslog \
+      --log.level=DEBUG \
+      --api.insecure=true \
+      --api.dashboard=true \
+      --providers.docker.constraints="Label('constraints.zone', 'fp')" 

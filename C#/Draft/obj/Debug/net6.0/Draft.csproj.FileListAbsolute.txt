@@ -1,0 +1,15 @@
+D:\C#\Draft\bin\Debug\net6.0\Draft.exe
+D:\C#\Draft\bin\Debug\net6.0\Draft.deps.json
+D:\C#\Draft\bin\Debug\net6.0\Draft.runtimeconfig.json
+D:\C#\Draft\bin\Debug\net6.0\Draft.dll
+D:\C#\Draft\bin\Debug\net6.0\Draft.pdb
+D:\C#\Draft\obj\Debug\net6.0\Draft.csproj.AssemblyReference.cache
+D:\C#\Draft\obj\Debug\net6.0\Draft.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Draft\obj\Debug\net6.0\Draft.AssemblyInfoInputs.cache
+D:\C#\Draft\obj\Debug\net6.0\Draft.AssemblyInfo.cs
+D:\C#\Draft\obj\Debug\net6.0\Draft.csproj.CoreCompileInputs.cache
+D:\C#\Draft\obj\Debug\net6.0\Draft.dll
+D:\C#\Draft\obj\Debug\net6.0\refint\Draft.dll
+D:\C#\Draft\obj\Debug\net6.0\Draft.pdb
+D:\C#\Draft\obj\Debug\net6.0\Draft.genruntimeconfig.cache
+D:\C#\Draft\obj\Debug\net6.0\ref\Draft.dll

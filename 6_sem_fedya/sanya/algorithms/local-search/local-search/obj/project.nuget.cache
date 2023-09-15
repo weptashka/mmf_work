@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "xm6MK0JHZJwWNyA2OxS2ErEUK0uDdb4atJ5uapU/on7GgpMV4lWo1SLxeHklaR0RKFLmjOWreeahTiT8eemA+w==",
+  "success": true,
+  "projectFilePath": "D:\\University\\6_sem\\sanya\\algorithms\\local-search\\local-search\\local-search.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.23\\microsoft.netcore.app.host.win-x64.3.1.23.nupkg.sha512"
+  ],
+  "logs": []
+}

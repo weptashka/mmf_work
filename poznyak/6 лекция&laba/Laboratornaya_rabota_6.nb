@@ -1,0 +1,964 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     34605,        956]
+NotebookOptionsPosition[     29955,        809]
+NotebookOutlinePosition[     32467,        892]
+CellTagsIndexPosition[     32102,        876]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\:0412\:0438\:0437\:0443\:0430\:043b\:0438\:0437\:0430\:0446\:0438\:044f\
+ \:0434\:0430\:043d\:043d\:044b\:0445", "Title",
+ CellChangeTimes->{{3.7933507605104914`*^9, 3.7933507689310236`*^9}}],
+
+Cell[TextData[{
+ "1. ",
+ StyleBox["\:041a\:043e\:043c\:0430\:043d\:0434\:044b \
+\:043f\:043e\:0441\:0442\:0440\:043e\:0435\:043d\:0438\:044f \:0433\:0440\
+\:0430\:0444\:0438\:043a\:043e\:0432. \:041f\:0440\:0438\:043c\:0438\:0442\
+\:0438\:0432\:044b \:0438 \:0434\:0438\:0440\:0435\:043a\:0442\:0438\:0432\
+\:044b \:0434\:0432\:0443\:043c\:0435\:0440\:043d\:043e\:0439 \:0433\:0440\
+\:0430\:0444\:0438\:043a\:0438. ",
+  FontFamily->"Arial"]
+}], "Subtitle",
+ CellChangeTimes->{{3.793350788281271*^9, 3.7933508742409277`*^9}},
+ CellTags->"1.10"],
+
+Cell[CellGroupData[{
+
+Cell["\:0413\:0440\:0430\:0444\:0438\:043a \:0441 \:0443\:0441\:0442\:0430\
+\:043d\:043e\:0432\:043a\:0430\:043c\:0438 \:043f\:043e \:0443\:043c\:043e\
+\:043b\:0447\:0430\:043d\:0438\:044e", "Section",
+ CellChangeTimes->{3.7637952802921658`*^9},
+ FontFamily->"Times New Roman"],
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Clear", "[", "f1", "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f1", "[", "x_", "]"}], ":=", 
+    RowBox[{"Sin", "[", 
+     RowBox[{"x", "^", "2"}], "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f2", "[", "x_", "]"}], ":=", 
+    RowBox[{"x", "+", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"2", " ", 
+       RowBox[{"x", "^", "2.5"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f3", "[", "x_", "]"}], ":=", 
+    RowBox[{
+     RowBox[{"x", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"1.5", " ", 
+        RowBox[{"x", "^", "3"}]}], "]"}]}], "-", "x"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.763795404466642*^9, 3.763795484043442*^9}, {
+  3.7637955178157225`*^9, 3.7637955656519647`*^9}, {3.7934158994640403`*^9, 
+  3.793415906967108*^9}}],
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Clear", "[", "f1", "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f11", "[", "x_", "]"}], ":=", 
+    RowBox[{"Sin", "[", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"x", "+", "n"}], ")"}], "^", "2"}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f22", "[", "x_", "]"}], ":=", 
+    RowBox[{"x", "+", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"2", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"x", "+", 
+          RowBox[{"1", "/", 
+           RowBox[{"(", 
+            RowBox[{"n", "+", "1"}], ")"}]}]}], ")"}], "^", "2.5"}]}], 
+      "]"}]}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"f33", "[", "x_", "]"}], ":=", 
+    RowBox[{
+     RowBox[{"x", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"n", "+", "1"}], ")"}], " ", 
+        RowBox[{"x", "^", "3"}]}], "]"}]}], "-", "x"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.763795404466642*^9, 3.763795484043442*^9}, {
+  3.7637955178157225`*^9, 3.7637955656519647`*^9}, {3.7934158994640403`*^9, 
+  3.793415906967108*^9}, {3.8278839616623344`*^9, 3.827883971542899*^9}, {
+  3.8278840702145433`*^9, 3.8278840768219213`*^9}, {3.827884107701687*^9, 
+  3.8278841438617554`*^9}, {3.8278841827259784`*^9, 3.827884236022027*^9}}],
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 1", "TaskTitle",
+ CellChangeTimes->{{3.793418960178088*^9, 3.7934189621620007`*^9}, {
+  3.827885422199872*^9, 3.8278854226789*^9}}],
+
+Cell[TextData[StyleBox["\:0417\:0430\:043f\:0438\:0441\:0430\:0442\:044c \
+\:043a\:043e\:043c\:0430\:043d\:0434\:0443 Plot \:0434\:043b\:044f \:043f\
+\:043e\:0441\:0442\:0440\:043e\:0435\:043d\:0438\:044f \:0433\:0440\:0430\
+\:0444\:0438\:043a\:043e\:0432 \:0432\:0441\:0435\:0445 \:0437\:0430\:0434\
+\:0430\:043d\:043d\:044b\:0445 \:0432\:044b\:0448\:0435 \:0444\:0443\:043d\
+\:043a\:0446\:0438\:0439 \:043d\:0430 \:043e\:0434\:043d\:043e\:043c \:0440\
+\:0438\:0441\:0443\:043d\:043a\:0435. \:0423\:043a\:0430\:0437\:0430\:0442\
+\:044c \:0438\:0437\:043c\:0435\:043d\:0435\:043d\:0438\:0435 \:043f\:0435\
+\:0440\:0435\:043c\:0435\:043d\:043d\:043e\:0439 \:043e\:0442 -3 \:0434\:043e \
++3. ",
+ FontWeight->"Bold",
+ FontColor->RGBColor[1, 0, 0]]], "TaskText",
+ CellChangeTimes->{{3.7933535585643888`*^9, 3.7933535841348085`*^9}, {
+   3.7934369345048647`*^9, 3.793437054788344*^9}, {3.793500478385293*^9, 
+   3.793500478572734*^9}, {3.793510245206477*^9, 3.793510264895569*^9}, 
+   3.827883828732731*^9}]
+}, Open  ]],
+
+Cell["\:0412\:044b\:0432\:043e\:0434 \:0434\:0432\:0443\:0445 \:0433\:0440\
+\:0430\:0444\:0438\:0447\:0435\:0441\:043a\:0438\:0445 \:043e\:0431\:044a\
+\:0435\:043a\:0442\:043e\:0432 \:0432 \:043e\:0434\:0438\:043d \:0440\:044f\
+\:0434", "Section",
+ CellChangeTimes->{
+  3.7637952802921658`*^9, {3.7637959159825997`*^9, 3.763795937200757*^9}},
+ FontFamily->"Times New Roman"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"imageSize", "=", "310"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"grf1", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"f1", "[", "x", "]"}], ",", 
+       RowBox[{"f2", "[", "x", "]"}], ",", 
+       RowBox[{"f3", "[", "x", "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "3"}], "}"}], ",", " ", 
+     RowBox[{"ImageSize", "->", "imageSize"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"grf2", "=", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"f1", "[", "x", "]"}], ",", 
+       RowBox[{"f2", "[", "x", "]"}], ",", 
+       RowBox[{"f3", "[", "x", "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "3"}], "}"}], ",", " ", 
+     RowBox[{"ImageSize", "->", "imageSize"}], ",", " ", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"Blue", ",", "Thin"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"Green", ",", "Thick", ",", "Dashed"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"Red", ",", "Thick"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"AxesStyle", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Directive", "[", 
+         RowBox[{"Black", ",", "Thick", ",", "14"}], "]"}], ",", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"Blue", ",", "Thick", ",", "14"}], "]"}]}], "}"}]}], ",", 
+     RowBox[{"GridLines", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1.5", ",", "2", ",", "2.5", ",", "3"}], "}"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "6"}], ",", 
+          RowBox[{"-", "3"}], ",", "2", ",", "4"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"GridLinesStyle", "\[Rule]", 
+      RowBox[{"Directive", "[", 
+       RowBox[{"Gray", ",", " ", "Dashed"}], "]"}]}], ",", 
+     RowBox[{"PlotLabel", "\[Rule]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"Framed", "[", 
+         RowBox[{
+         "\"\<\:0414\:0435\:043c\:043e\:043d\:0441\:0442\:0440\:0430\:0446\
+\:0438\:043e\:043d\:043d\:044b\:0439 \:0433\:0440\:0430\:0444\:0438\:043a \
+\:0441 \:043e\:0444\:043e\:0440\:043c\:043b\:0435\:043d\:0438\:0435\:043c\>\"\
+", ",", 
+          RowBox[{"FrameStyle", "\[Rule]", "Red"}], ",", 
+          RowBox[{"RoundingRadius", "\[Rule]", "5"}]}], "]"}], ",", "12", ",",
+         "Plain", ",", "Blue", ",", 
+        RowBox[{"Background", "\[Rule]", "LightYellow"}]}], "]"}]}]}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"grf1", ",", "grf2"}], "}"}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.7637959662987213`*^9, 3.7637960801975007`*^9}, {
+   3.763804021540762*^9, 3.763804246363423*^9}, 3.7638042930908637`*^9, {
+   3.7638043483359156`*^9, 3.7638044115561633`*^9}, {3.7638044774789543`*^9, 
+   3.763804545268731*^9}, {3.7638046098566217`*^9, 3.7638047402269096`*^9}, {
+   3.7638636607869215`*^9, 3.7638636874461164`*^9}, {3.763863735269933*^9, 
+   3.76386374244217*^9}, 3.7638637798539095`*^9, {3.7638638300857925`*^9, 
+   3.763864131887184*^9}, 3.7638642019762383`*^9, {3.7933552380430703`*^9, 
+   3.793355238784285*^9}, {3.793355269093015*^9, 3.793355305183848*^9}, {
+   3.7934143835943775`*^9, 3.793414385674157*^9}, 3.7934144930821624`*^9, 
+   3.7935005485357037`*^9}],
+
+Cell["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 2", "TaskTitle",
+ CellChangeTimes->{{3.793418960178088*^9, 3.7934189621620007`*^9}, {
+  3.8278856779835024`*^9, 3.827885678583536*^9}}],
+
+Cell[TextData[{
+ StyleBox["1. \:0418\:0441\:043f\:0440\:0430\:0432\:044c\:0442\:0435 \:0432 \
+\:043f\:0440\:0438\:0432\:0435\:0434\:0435\:043d\:043d\:043e\:043c \:0432\
+\:044b\:0448\:0435 \:043a\:043e\:0434\:0435 \:043a\:043e\:043c\:0430\:043d\
+\:0434\:044b \:0442\:0430\:043a, \:0447\:0442\:043e\:0431\:044b \:0440\:0438\
+\:0441\:0443\:043d\:043a\:0438 \:0432\:044b\:0432\:043e\:0434\:0438\:043b\
+\:0438\:0441\:044c \:043d\:0430 \:044d\:043a\:0440\:0430\:043d. \n\n2. \:041e\
+\:043f\:0438\:0448\:0438\:0442\:0435 \:043d\:0430\:0437\:043d\:0430\:0447\
+\:0435\:043d\:0438\:0435: \n",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0, 0]],
+ StyleBox["ImageSize, \n\n\
+PlotStyle\[Rule]{{Blue,Thin},{Green,Thick,Dashed},{Red,Thick}},\n\nAxesStyle\
+\[Rule]{Directrix[Black,Thick,14],Directive[Blue,Thick,14]},\n\nGridLines\
+\[Rule]{{1,1.5,2,2.5,3},{-6,-3,2,4}},\n\nGridLinesStyle\[Rule]Directive[Gray, \
+Dashed],\n\nPlotLabel\[Rule]Style[Framed[\[OpenCurlyDoubleQuote]\:0434\:0435\
+\:043c\:043e\:0433\:0440\:0430\:0444\:0438\:043a \:0441 \:043e\:0444\:043e\
+\:0440\:043c\:043b\:0435\:043d\:0438\:0435\:043c\[CloseCurlyDoubleQuote],\
+FrameStyle\[Rule]Red,RoundingRadius\[Rule]5],12,Plain,Blue,Background\[Rule]\
+LightYellow]]\n",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0.5, 0.5]],
+ StyleBox["\n\:0423\:043a\:0430\:0437\:0430\:0442\:044c \:0438\:0437\:043c\
+\:0435\:043d\:0435\:043d\:0438\:0435 \:043f\:0435\:0440\:0435\:043c\:0435\
+\:043d\:043d\:043e\:0439  -3 \:0434\:043e +3 \:0438 \:0432\:044b\:043f\:043e\
+\:043b\:043d\:0438\:0442\:044c \:043f\:043e\:0441\:0442\:0440\:043e\:0435\
+\:043d\:0438\:0435 \:0437\:0430\:043d\:043e\:0432\:043e. ",
+  FontWeight->"Bold",
+  FontColor->RGBColor[1, 0, 0]]
+}], "TaskText",
+ CellChangeTimes->{{3.7933535585643888`*^9, 3.7933535841348085`*^9}, {
+   3.7934369345048647`*^9, 3.793437054788344*^9}, {3.793500478385293*^9, 
+   3.793500478572734*^9}, {3.79350057483633*^9, 3.793500637426655*^9}, {
+   3.793500677520796*^9, 3.7935007949992604`*^9}, {3.7935008318486814`*^9, 
+   3.793500879090908*^9}, 3.793500917676666*^9, {3.793500950697714*^9, 
+   3.7935009691970387`*^9}, {3.793501009313572*^9, 3.7935010364438534`*^9}, {
+   3.793672429987107*^9, 3.7936724452303877`*^9}, {3.7950578480376043`*^9, 
+   3.7950578647645755`*^9}, {3.795057904824237*^9, 3.795057920177012*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:0447\:0430 1", "TaskTitle",
+ CellChangeTimes->{{3.7935015772535315`*^9, 3.793501577690523*^9}},
+ FontWeight->"Plain",
+ CellTags->"2.18"],
+
+Cell[TextData[{
+ "\:041f\:043e\:0441\:0442\:0440\:043e\:0438\:0442\:044c \:0441\:043e\:0432\
+\:043c\:0435\:0441\:0442\:043d\:044b\:0435 \:0433\:0440\:0430\:0444\:0438\
+\:043a\:0438 \:0444\:0443\:043d\:043a\:0446\:0438\:0439 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{"5", 
+      SuperscriptBox["x", "4"]}], "-", 
+     RowBox[{"12", 
+      SuperscriptBox["x", "3"]}], "+", 
+     RowBox[{"8", 
+      SuperscriptBox["x", "2"]}], "+", "2"}]}], TraditionalForm]]],
+ "  \:0438 \:0435\:0451 \
+\:043f\:0440\:043e\:0438\:0437\:0432\:043e\:0434\:043d\:043e\:0439 \:043d\
+\:0430 \:0438\:043d\:0442\:0435\:0440\:0432\:0430\:043b\:0435 (-1+n, \
+2+1/(n+1)). \:0421\:0440\:0430\:0432\:043d\:0438\:0442\:0435 \:0438\:043d\
+\:0442\:0435\:0440\:0432\:0430\:043b\:044b \:0443\:0431\:044b\:0432\:0430\
+\:043d\:0438\:044f \:0438 \:0432\:043e\:0437\:0440\:0430\:0441\:0442\:0430\
+\:043d\:0438\:044f \:0444\:0443\:043d\:043a\:0446\:0438\:0438 \:0441\:043e \
+\:0437\:043d\:0430\:043a\:043e\:043c \:043f\:0440\:043e\:0438\:0437\:0432\
+\:043e\:0434\:043d\:043e\:0439.\n",
+ StyleBox["\:0418\:0437\:043c\:0435\:043d\:0438\:0442\:0435 \
+\:0446\:0432\:0435\:0442 \:0433\:0440\:0430\:0444\:0438\:043a\:0430 \:0444\
+\:0443\:043d\:043a\:0446\:0438\:0438 \:043d\:0430 \:0437\:0435\:043b\:0435\
+\:043d\:044b\:0439, \:0430 \:043f\:0440\:043e\:0438\:0437\:0432\:043e\:0434\
+\:043d\:043e\:0439 \:043d\:0430 \:0441\:0438\:043d\:0438\:0439.",
+  FontColor->RGBColor[1, 0, 0]]
+}], "TaskText",
+ CellChangeTimes->{{3.7935016204911375`*^9, 3.7935016345389614`*^9}, {
+  3.7935016710940638`*^9, 3.7935017133196273`*^9}, {3.79367251156773*^9, 
+  3.793672513813322*^9}, {3.8278861646433372`*^9, 3.8278861984902735`*^9}},
+ FontSize->14,
+ Background->None],
+
+Cell[CellGroupData[{
+
+Cell["\:0420\:0435\:0448\:0435\:043d\:0438\:0435:", "ExampleSolution"],
+
+Cell[BoxData[
+ RowBox[{"D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"5", 
+     SuperscriptBox["x", "4"]}], "-", 
+    RowBox[{"12", 
+     SuperscriptBox["x", "3"]}], "+", 
+    RowBox[{"8", 
+     SuperscriptBox["x", "2"]}], "+", "2"}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"5", 
+       SuperscriptBox["x", "4"]}], "-", 
+      RowBox[{"12", 
+       SuperscriptBox["x", "3"]}], "+", 
+      RowBox[{"8", 
+       SuperscriptBox["x", "2"]}], "+", "2"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"16", " ", "x"}], "-", 
+      RowBox[{"36", " ", 
+       SuperscriptBox["x", "2"]}], "+", 
+      RowBox[{"20", " ", 
+       SuperscriptBox["x", "3"]}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"RGBColor", "[", 
+       RowBox[{"0", ",", "0", ",", "0"}], "]"}], ",", 
+      RowBox[{"RGBColor", "[", 
+       RowBox[{"0", ",", "0", ",", "0"}], "]"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{3.793501108705679*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell["2. \:0422\:0440\:0435\:0445\:043c\:0435\:0440\:043d\:0430\:044f \:0433\
+\:0440\:0430\:0444\:0438\:043a\:0430.", "Subtitle",
+ CellChangeTimes->{{3.793417258485405*^9, 3.7934172665209923`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:0447\:0430 2", "TaskTitle",
+ CellChangeTimes->{{3.7935017362114058`*^9, 3.7935017366171737`*^9}},
+ FontWeight->"Plain",
+ CellTags->"2.27"],
+
+Cell[TextData[{
+ "\:0414\:0430\:043d\:0430 \:0444\:0443\:043d\:043a\:0446\:0438\:044f ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{
+     RowBox[{"f", "(", 
+      RowBox[{"x", ",", "y"}], ")"}], "=", 
+     RowBox[{
+      StyleBox[
+       RowBox[{
+        StyleBox["x",
+         FontTracking->"Plain",
+         FontVariations->{"Outline"->False,
+         "Shadow"->False,
+         "StrikeThrough"->False,
+         "Underline"->False},
+         FontVariations -> {"Masked" -> False},
+         FontVariations -> {"RotationAngle" -> 0}], "y"}],
+       FontSlant->"Plain",
+       FontVariations->{"CompatibilityType"->0}], "+", 
+      StyleBox["z",
+       FontSlant->"Plain",
+       FontVariations->{"CompatibilityType"->0}]}]}],
+    FontFamily->"Times New Roman"], TraditionalForm]]],
+ ". \:041f\:043e\:0434\:0441\:0447\:0438\:0442\:0430\:0442\:044c \:0433\:0440\
+\:0430\:0434\:0438\:0435\:043d\:0442 \:044d\:0442\:043e\:0439 \:0444\:0443\
+\:043d\:043a\:0446\:0438\:0438."
+}], "TaskText",
+ FontSize->14,
+ Background->None,
+ CellTags->{
+  "Grad", "First", "PlotField3D", "RealTime3D", "PlotVectorField3D", 
+   "PlotGradientField3D"}],
+
+Cell["\:0420\:0435\:0448\:0435\:043d\:0438\:0435:", "ExampleSolution"],
+
+Cell[BoxData[
+ RowBox[{"Grad", "[", 
+  RowBox[{
+   RowBox[{"f", "[", 
+    RowBox[{"x", ",", "y", ",", "z"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"Grad", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", " ", "y"}], "+", "z"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"<<", "VectorFieldPlots`"}], ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"VectorFieldPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"y", ",", "x", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", "1", ",", "1.5"}], "}"}], ",", 
+   RowBox[{"PlotPoints", "\[Rule]", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.7935017580900006`*^9, 3.7935020176941366`*^9, 3.7935065748985815`*^9, {
+   3.793511127937561*^9, 3.793511133594785*^9}, {3.7935111817246337`*^9, 
+   3.793511227523094*^9}}],
+
+Cell[BoxData[
+ RowBox[{"VectorFieldPlot3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"y", ",", "x", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"PlotPoints", "\[Rule]", "5"}], ",", 
+   RowBox[{"VectorHeads", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.7935079377467995`*^9, {3.7935112701381273`*^9, 3.793511310391412*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"GradientFieldPlot3D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", " ", "y"}], "+", "z"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"PlotPoints", "\[Rule]", "10"}], ",", 
+   RowBox[{"VectorHeads", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.793501760760809*^9, 3.793508084359206*^9, {3.7935104662139907`*^9, 
+   3.793510481481455*^9}}],
+
+Cell["\:0415\:0449\:0451 \:043f\:0440\:0438\:043c\:0435\:0440 \:0432\:0435\
+\:043a\:0442\:043e\:0440\:043d\:043e\:0433\:043e \:043f\:043e\:043b\:044f", \
+"ExampleSolution"],
+
+Cell[BoxData[
+ RowBox[{"VectorFieldPlot3D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"y", ",", 
+      RowBox[{"-", "x"}], ",", "0"}], "}"}], "/", "z"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", "1", ",", "3"}], "}"}], ",", 
+   RowBox[{"PlotPoints", "\[Rule]", "10"}], ",", 
+   RowBox[{"VectorHeads", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.7935017637016096`*^9, 3.7935081965054865`*^9}],
+
+Cell[TextData[{
+ "\:041f\:043e\:043b\:0435 \:0433\:0440\:0430\:0434\:0438\:0435\:043d\:0442\
+\:043e\:0432 \:0434\:043b\:044f \:0444\:0443\:043d\:043a\:0446\:0438\:0438 ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{
+    RowBox[{"f", 
+     RowBox[{"(", 
+      RowBox[{"x", ",", "y", ",", "z"}], ")"}]}], "=", 
+    RowBox[{"x", " ", "y", " ", "z"}]}],
+   FontFamily->"Times New Roman"]]]
+}], "ExampleSolution"],
+
+Cell[BoxData[
+ RowBox[{"GradientFieldPlot3D", "[", 
+  RowBox[{
+   RowBox[{"x", " ", "y", " ", "z"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"PlotPoints", "\[Rule]", "10"}], ",", 
+   RowBox[{"VectorHeads", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{3.7935017653887143`*^9, 3.7935082140532107`*^9, 
+  3.793508259094014*^9}]
+}, Open  ]],
+
+Cell[TextData[StyleBox["\:0417\:0430\:0434\:0430\:043d\:0438\:0435 3",
+ FontWeight->"Bold"]], "TaskTitle",
+ CellChangeTimes->{{3.7934345815243654`*^9, 3.793434588027523*^9}, {
+  3.8278866552804003`*^9, 3.8278866560644455`*^9}},
+ FontWeight->"Plain"],
+
+Cell[TextData[StyleBox["\:041a\:043b\:0438\:043a\:043d\:0438\:0442\:0435 \
+\:043f\:0440\:0430\:0432\:043e\:0439 \:043a\:043d\:043e\:043f\:043a\:043e\
+\:0439 \:043c\:044b\:0448\:0438 \:043f\:043e \:043f\:043e\:0441\:0442\:0440\
+\:043e\:0435\:043d\:043d\:043e\:043c\:0443 \:0433\:0440\:0430\:0444\:0438\
+\:043a\:0443. \:0412 \:043c\:0435\:043d\:044e \:043f\:0440\:043e\:0432\:0435\
+\:0440\:044c\:0442\:0435 \:0440\:0430\:0431\:043e\:0442\:0443 \:0432\:0441\
+\:0435\:0445 \:043f\:0443\:043d\:043a\:0442\:043e\:0432, \:043a\:043e\:0442\
+\:043e\:0440\:044b\:0435 \:043e\:0442\:0432\:0435\:0447\:0430\:044e\:0442 \
+\:0437\:0430 \:043f\:0440\:043e\:0441\:043c\:043e\:0442\:0440.",
+ FontColor->RGBColor[1, 0, 0]]], "TaskText",
+ CellChangeTimes->{{3.793434637943137*^9, 3.7934347695120497`*^9}, {
+  3.793435794971218*^9, 3.793435851781941*^9}, {3.7934359088512545`*^9, 
+  3.7934359604021754`*^9}, {3.793436056182962*^9, 3.79343605936974*^9}},
+ FontWeight->"Bold"],
+
+Cell[CellGroupData[{
+
+Cell["\:0417\:0430\:0434\:0430\:0447\:0430 3", "TaskTitle",
+ CellChangeTimes->{{3.79351150481651*^9, 3.793511506991727*^9}},
+ FontWeight->"Plain",
+ CellTags->"2.28"],
+
+Cell[TextData[{
+ "\:0414\:0430\:043d\:043e \:0432\:0435\:043a\:0442\:043e\:0440\:043d\:043e\
+\:0435 \:043f\:043e\:043b\:0435 ",
+ Cell[BoxData[
+  FormBox["v", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \:0432 \:0442\:0440\:0435\:0445\:043c\:0435\:0440\:043d\:043e\:043c \:043f\
+\:0440\:043e\:0441\:0442\:0440\:0430\:043d\:0441\:0442\:0432\:0435 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["v",
+     FontVariations->{"CompatibilityType"->0},
+     FontVariations -> {"Masked" -> False},
+     FontVariations -> {"RotationAngle" -> 0}], 
+    StyleBox["=",
+     FontSlant->"Italic"], 
+    RowBox[{
+     StyleBox["{",
+      FontSlant->"Italic"], 
+     StyleBox[" ",
+      FontSlant->"Italic"], 
+     RowBox[{
+      RowBox[{
+       StyleBox["f",
+        FontSlant->"Plain",
+        FontVariations->{"CompatibilityType"->0}], 
+       StyleBox[" ",
+        FontSlant->"Plain",
+        FontVariations->{"CompatibilityType"->0}], 
+       StyleBox[
+        RowBox[{"(", 
+         RowBox[{
+          StyleBox["x",
+           FontSlant->"Plain",
+           FontTracking->"Plain",
+           FontVariations->{"CompatibilityType"->0,
+           "Outline"->False,
+           "Shadow"->False,
+           "StrikeThrough"->False,
+           "Underline"->False},
+           FontVariations -> {"Masked" -> False},
+           FontVariations -> {"RotationAngle" -> 0}], ",", 
+          StyleBox["y",
+           FontSlant->"Plain",
+           FontVariations->{"CompatibilityType"->0}], ",", 
+          StyleBox["z",
+           FontSlant->"Plain",
+           FontVariations->{"CompatibilityType"->0}]}], ")"}],
+        FontSlant->"Italic"]}], 
+      StyleBox[",",
+       FontFamily->"Times New Roman",
+       FontSlant->"Italic"], 
+      StyleBox[
+       RowBox[{
+        StyleBox["g",
+         FontSlant->"Plain",
+         FontVariations->{"CompatibilityType"->0}], 
+        StyleBox["(",
+         FontSlant->"Italic"], 
+        StyleBox[
+         RowBox[{
+          StyleBox["x",
+           FontSlant->"Plain",
+           FontTracking->"Plain",
+           FontVariations->{"CompatibilityType"->0,
+           "Outline"->False,
+           "Shadow"->False,
+           "StrikeThrough"->False,
+           "Underline"->False},
+           FontVariations -> {"Masked" -> False},
+           FontVariations -> {"RotationAngle" -> 0}], ",", 
+          StyleBox["y",
+           FontSlant->"Plain",
+           FontVariations->{"CompatibilityType"->0}], ",", 
+          StyleBox["z",
+           FontSlant->"Plain",
+           FontVariations->{"CompatibilityType"->0}]}],
+         FontSlant->"Italic"], 
+        StyleBox[")",
+         FontSlant->"Italic"]}],
+       FontFamily->"Times New Roman"], 
+      StyleBox[",",
+       FontFamily->"Times New Roman",
+       FontSlant->"Italic"], 
+      StyleBox[
+       RowBox[{
+        StyleBox["h",
+         FontFamily->"Times New Roman",
+         FontSlant->"Plain",
+         FontVariations->{"CompatibilityType"->0}], 
+        StyleBox["(",
+         FontFamily->"Times New Roman",
+         FontSlant->"Italic"], 
+        StyleBox[
+         RowBox[{
+          StyleBox["x",
+           FontSlant->"Plain",
+           FontTracking->"Plain",
+           FontVariations->{"CompatibilityType"->0,
+           "Outline"->False,
+           "Shadow"->False,
+           "StrikeThrough"->False,
+           "Underline"->False},
+           FontVariations -> {"Masked" -> False},
+           FontVariations -> {"RotationAngle" -> 0}], 
+          StyleBox[",",
+           FontSlant->"Italic"], 
+          StyleBox["y",
+           FontSlant->"Plain",
+           FontVariations->{"CompatibilityType"->0}], 
+          StyleBox[",",
+           FontSlant->"Italic"], 
+          StyleBox["z",
+           FontSlant->"Plain",
+           FontVariations->{"CompatibilityType"->0}]}],
+         FontFamily->"Times New Roman"], 
+        StyleBox[")",
+         FontSlant->"Italic"]}],
+       FontSlant->"Italic"]}], 
+     StyleBox["}",
+      FontSlant->"Italic"]}]}], TraditionalForm]]],
+ ". \:041f\:043e\:043b\:0443\:0447\:0438\:0442\:044c \:0432\:044b\:0440\:0430\
+\:0436\:0435\:043d\:0438\:0435 \:0434\:043b\:044f \:0434\:0438\:0432\:0435\
+\:0440\:0433\:0435\:043d\:0446\:0438\:0438 \:044d\:0442\:043e\:0433\:043e \
+\:0432\:0435\:043a\:0442\:043e\:0440\:043d\:043e\:0433\:043e \:043f\:043e\
+\:043b\:044f."
+}], "TaskText",
+ CellChangeTimes->{{3.7935069968123064`*^9, 3.7935070161586065`*^9}, {
+  3.7935070508978453`*^9, 3.7935070508978453`*^9}},
+ FontSize->16,
+ Background->None,
+ CellTags->{"Diver", "Plot3D"}],
+
+Cell["\:0420\:0435\:0448\:0435\:043d\:0438\:0435:", "ExampleSolution"],
+
+Cell[BoxData[
+ RowBox[{"Div", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", " ", ",", 
+     RowBox[{"x", " ", "y"}], ",", 
+     RowBox[{"x", " ", "y", " ", "z"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.793508418453272*^9, 3.7935084187657166`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"gr1", "=", 
+  RowBox[{"Plot3D", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Div", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"x", " ", ",", 
+         RowBox[{"x", " ", "y"}], ",", 
+         RowBox[{"x", " ", "y", " ", "z"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], "]"}], "//", "Evaluate"}],
+     ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", 
+      RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{
+  3.7935067972137985`*^9, {3.793508439614416*^9, 3.793508439974019*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"gr2", "=", 
+  RowBox[{"VectorFieldPlot3D", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"x", " ", ",", 
+      RowBox[{"x", " ", "y"}], ",", 
+      RowBox[{"x", " ", "y", " ", "z"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", 
+      RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", 
+      RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+    RowBox[{"PlotPoints", "\[Rule]", "5"}], ",", 
+    RowBox[{"VectorHeads", "\[Rule]", "True"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{
+  3.793506798557231*^9, 3.793506880422662*^9, {3.7935115510204835`*^9, 
+   3.7935115554909024`*^9}, {3.793511714244932*^9, 3.793511743484538*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{"gr2", ",", 
+   RowBox[{"ViewPoint", "\[Rule]", "Front"}]}], "]"}]], "Input",
+ NumberMarks->False],
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{"gr2", ",", 
+   RowBox[{"ViewPoint", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "\[Infinity]", ",", "0"}], "}"}]}]}], "]"}]], "Input",
+ NumberMarks->False]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{"gr1", ",", "gr2"}], "]"}]], "Input",
+ CellChangeTimes->{3.7935068004504824`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[TextData[StyleBox["\:0417\:0430\:0434\:0430\:043d\:0438\:0435",
+ FontWeight->"Bold"]], "TaskTitle",
+ CellChangeTimes->{{3.7934345815243654`*^9, 3.793434588027523*^9}},
+ FontWeight->"Plain"],
+
+Cell[TextData[StyleBox["\:0412\:044b\:044f\:0441\:043d\:0438\:0442\:044c, \
+\:043c\:043e\:0436\:043d\:043e \:043b\:0438 \:0438\:0437\:043c\:0435\:043d\
+\:0438\:0442\:044c \:0432 \:043e\:043f\:0446\:0438\:044f\:0445 \:0434\:043b\
+\:0438\:043d\:0443 \:0448\:0442\:0440\:0438\:0445\:043e\:0432 \:0438 \:0432\
+\:0435\:043b\:0438\:0447\:0438\:043d\:0443 \:0441\:0442\:0440\:0435\:043b\
+\:043e\:0447\:0435\:043a?\n\:041f\:043e\:043f\:0440\:043e\:0431\:0443\:0439\
+\:0442\:0435 \:0441\:0434\:0435\:043b\:0430\:0442\:044c \:044d\:0442\:043e.",
+ FontColor->RGBColor[1, 0, 0]]], "TaskText",
+ CellChangeTimes->{{3.793434637943137*^9, 3.7934347695120497`*^9}, {
+   3.793435794971218*^9, 3.793435851781941*^9}, {3.7934359088512545`*^9, 
+   3.7934359604021754`*^9}, {3.793436056182962*^9, 3.79343605936974*^9}, {
+   3.7936727057105603`*^9, 3.793672751754774*^9}, {3.796352671311241*^9, 
+   3.7963527102574687`*^9}, 3.827883706874761*^9},
+ FontWeight->"Bold"]
+},
+WindowToolbars->"EditBar",
+CellGrouping->Manual,
+WindowSize->{740, 786},
+WindowMargins->{{5, Automatic}, {Automatic, 1}},
+Magnification:>1.25 Inherited,
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "D:", "1", 
+   "\:0421\:043f\:0435\:0446\:043a\:0443\:0440\:0441", 
+   "\:0421\:0421\:041a\:041c", "2021"}, "Style_math.nb", CharacterEncoding -> 
+  "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Diver"->{
+  Cell[21814, 572, 4508, 132, 79, "TaskText",
+   CellTags->{"Diver", "Plot3D"}]},
+ "First"->{
+  Cell[15055, 373, 1136, 33, 30, "TaskText",
+   CellTags->{
+    "Grad", "First", "PlotField3D", "RealTime3D", "PlotVectorField3D", 
+     "PlotGradientField3D"}]},
+ "Grad"->{
+  Cell[15055, 373, 1136, 33, 30, "TaskText",
+   CellTags->{
+    "Grad", "First", "PlotField3D", "RealTime3D", "PlotVectorField3D", 
+     "PlotGradientField3D"}]},
+ "PlotField3D"->{
+  Cell[15055, 373, 1136, 33, 30, "TaskText",
+   CellTags->{
+    "Grad", "First", "PlotField3D", "RealTime3D", "PlotVectorField3D", 
+     "PlotGradientField3D"}]},
+ "PlotGradientField3D"->{
+  Cell[15055, 373, 1136, 33, 30, "TaskText",
+   CellTags->{
+    "Grad", "First", "PlotField3D", "RealTime3D", "PlotVectorField3D", 
+     "PlotGradientField3D"}]},
+ "PlotVectorField3D"->{
+  Cell[15055, 373, 1136, 33, 30, "TaskText",
+   CellTags->{
+    "Grad", "First", "PlotField3D", "RealTime3D", "PlotVectorField3D", 
+     "PlotGradientField3D"}]},
+ "Plot3D"->{
+  Cell[21814, 572, 4508, 132, 79, "TaskText",
+   CellTags->{"Diver", "Plot3D"}]},
+ "RealTime3D"->{
+  Cell[15055, 373, 1136, 33, 30, "TaskText",
+   CellTags->{
+    "Grad", "First", "PlotField3D", "RealTime3D", "PlotVectorField3D", 
+     "PlotGradientField3D"}]},
+ "1.10"->{
+  Cell[781, 26, 543, 11, 95, "Subtitle",
+   CellTags->"1.10"]},
+ "2.18"->{
+  Cell[11383, 273, 168, 3, 46, "TaskTitle",
+   CellTags->"2.18"]},
+ "2.27"->{
+  Cell[14882, 368, 170, 3, 52, "TaskTitle",
+   CellTags->"2.27"]},
+ "2.28"->{
+  Cell[21646, 567, 165, 3, 46, "TaskTitle",
+   CellTags->"2.28"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Diver", 30507, 825},
+ {"First", 30601, 828},
+ {"Grad", 30775, 833},
+ {"PlotField3D", 30956, 838},
+ {"PlotGradientField3D", 31145, 843},
+ {"PlotVectorField3D", 31332, 848},
+ {"Plot3D", 31508, 853},
+ {"RealTime3D", 31607, 856},
+ {"1.10", 31781, 861},
+ {"2.18", 31856, 864},
+ {"2.27", 31934, 867},
+ {"2.28", 32012, 870}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 198, 2, 56, "Title"],
+Cell[781, 26, 543, 11, 95, "Subtitle",
+ CellTags->"1.10"],
+Cell[CellGroupData[{
+Cell[1349, 41, 277, 4, 46, "Section"],
+Cell[1629, 47, 853, 24, 109, "Input"],
+Cell[2485, 73, 1334, 37, 109, "Input"],
+Cell[3822, 112, 180, 2, 53, "TaskTitle"],
+Cell[4005, 116, 1002, 15, 72, "TaskText"]
+}, Open  ]],
+Cell[5022, 134, 374, 6, 46, "Section"],
+Cell[5399, 142, 3458, 84, 270, "Input"],
+Cell[8860, 228, 184, 2, 53, "TaskTitle"],
+Cell[9047, 232, 2311, 37, 412, "TaskText"],
+Cell[CellGroupData[{
+Cell[11383, 273, 168, 3, 46, "TaskTitle",
+ CellTags->"2.18"],
+Cell[11554, 278, 1769, 35, 94, "TaskText"],
+Cell[CellGroupData[{
+Cell[13348, 317, 70, 0, 23, "ExampleSolution"],
+Cell[13421, 319, 263, 9, 42, "Input"],
+Cell[13687, 330, 946, 28, 117, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[14660, 362, 197, 2, 65, "Subtitle"],
+Cell[CellGroupData[{
+Cell[14882, 368, 170, 3, 52, "TaskTitle",
+ CellTags->"2.27"],
+Cell[15055, 373, 1136, 33, 30, "TaskText",
+ CellTags->{
+  "Grad", "First", "PlotField3D", "RealTime3D", "PlotVectorField3D", 
+   "PlotGradientField3D"}],
+Cell[16194, 408, 70, 0, 23, "ExampleSolution"],
+Cell[16267, 410, 203, 6, 39, "Input"],
+Cell[16473, 418, 188, 6, 39, "Input"],
+Cell[16664, 426, 79, 2, 39, "Input"],
+Cell[CellGroupData[{
+Cell[16768, 432, 639, 17, 63, "Input"],
+Cell[17410, 451, 588, 16, 63, "Input"]
+}, Open  ]],
+Cell[18013, 470, 605, 17, 63, "Input"],
+Cell[18621, 489, 172, 2, 23, "ExampleSolution"],
+Cell[18796, 493, 611, 17, 63, "Input"],
+Cell[19410, 512, 402, 11, 23, "ExampleSolution"],
+Cell[19815, 525, 585, 16, 63, "Input"]
+}, Open  ]],
+Cell[20415, 544, 249, 4, 53, "TaskTitle"],
+Cell[20667, 550, 954, 13, 72, "TaskText"],
+Cell[CellGroupData[{
+Cell[21646, 567, 165, 3, 46, "TaskTitle",
+ CellTags->"2.28"],
+Cell[21814, 572, 4508, 132, 79, "TaskText",
+ CellTags->{"Diver", "Plot3D"}],
+Cell[26325, 706, 70, 0, 23, "ExampleSolution"],
+Cell[26398, 708, 332, 9, 39, "Input"],
+Cell[26733, 719, 730, 21, 86, "Input"],
+Cell[CellGroupData[{
+Cell[27488, 744, 789, 21, 63, "Input"],
+Cell[28280, 767, 145, 4, 39, "Input"],
+Cell[28428, 773, 212, 6, 39, "Input"]
+}, Open  ]],
+Cell[28655, 782, 128, 3, 39, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[28810, 789, 194, 3, 53, "TaskTitle"],
+Cell[29007, 794, 944, 13, 72, "TaskText"]
+}
+]
+*)
+

@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "local-search", "local-search\local-search.csproj", "{7476E3B8-CBF2-4E16-8A04-F0D4D956AE50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7476E3B8-CBF2-4E16-8A04-F0D4D956AE50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7476E3B8-CBF2-4E16-8A04-F0D4D956AE50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7476E3B8-CBF2-4E16-8A04-F0D4D956AE50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7476E3B8-CBF2-4E16-8A04-F0D4D956AE50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

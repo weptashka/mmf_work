@@ -1,0 +1,111 @@
+swagger: "2.0"
+info:
+  version: "0.1.0"
+  title: Event service
+# during dev, should point to your local machine
+host: localhost:10010
+# basePath prefixes all resource paths 
+basePath: /api/v1
+# 
+schemes:
+  # tip: remove http to make production-grade
+  - http
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /timetable:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: event-controller
+    get:
+      description: Returns list of city event, starting from a date
+      # used as the method name of the controller
+      operationId: events
+      parameters:
+        - name: date
+          in: query
+          description: Filtering date
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/EventsResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /timetable/{date}:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: event-controller
+    get:
+      description: Returns info on certain date events 
+      # used as the method name of the controller
+      operationId: event
+      parameters:
+        - name: date
+          in: path
+          description: target date
+          required: true
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/EventsResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"            
+  /swagger:
+    x-swagger-pipe: swagger_raw
+# complex objects have schema definitions
+definitions:
+  EventsResponse:
+      type: array
+      items:
+        $ref:  "#/definitions/Event"
+        
+  Event:
+    properties:
+      id:
+        type: string
+      date:
+        type: string 
+      band:
+        type: string
+      image:
+        type: string 
+      time:
+        type: string   
+      place:
+        type: string
+      songs:
+        type: array    
+        items:
+          $ref:  "#/definitions/Song"
+
+  Song:
+    properties:
+      id:
+        type: string
+      title:
+        type: string
+      time:
+        type: number
+  
+        
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string

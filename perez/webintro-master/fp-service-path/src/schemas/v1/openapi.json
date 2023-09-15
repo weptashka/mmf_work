@@ -1,0 +1,338 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Forest service",
+    "version" : "0.0.4"
+  },
+  "servers" : [ {
+    "url" : "http://localhost:10010/v1"
+  }, {
+    "url" : "https://localhost:10010/v1"
+  } ],
+  "paths" : {
+    "/path/cities" : {
+      "get" : {
+        "description" : "List of tea types to order",
+        "operationId" : "listCities",
+        "parameters" : [ {
+          "name" : "page",
+          "in" : "query",
+          "description" : "Page to iterate, 1 is default",
+          "schema" : {
+            "type" : "number"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/City"
+                  }
+                }
+              }
+            }
+          },
+          "default" : {
+            "description" : "Error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "x-swagger-router-controller" : "cities"
+    },
+    "/path" : {
+      "get" : {
+        "description" : "List of tea types to order",
+        "operationId" : "calculate time",
+        "parameters" : [ {
+          "name" : "from",
+          "in" : "query",
+          "description" : "City Id from",
+          "required" : true,
+          "schema" : {
+            "type" : "number"
+          }
+        }, {
+          "name" : "to",
+          "in" : "query",
+          "description" : "City Id to",
+          "required" : true,
+          "schema" : {
+            "type" : "number"
+          }
+        }, {
+          "name" : "day",
+          "in" : "query",
+          "description" : "Day to visit (e.g. monday is ok)",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/PathEstimationResponse"
+                }
+              }
+            }
+          },
+          "default" : {
+            "description" : "Error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "x-swagger-router-controller" : "cities"
+    },
+    "/tea/orders" : {
+      "get" : {
+        "description" : "List of tea types to order",
+        "operationId" : "listOrders",
+        "parameters" : [ {
+          "name" : "spotId",
+          "in" : "query",
+          "description" : "Tea spot to filter out",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "startTime",
+          "in" : "query",
+          "description" : "Start time of orders updates",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "endTime",
+          "in" : "query",
+          "description" : "End time of orders updates",
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "page",
+          "in" : "query",
+          "description" : "Page to iterate, 1 is default",
+          "schema" : {
+            "type" : "number"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/TeaOrder"
+                  }
+                }
+              }
+            }
+          },
+          "default" : {
+            "description" : "Error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "x-swagger-router-controller" : "orders"
+    },
+    "/tea/types" : {
+      "get" : {
+        "description" : "List of tea types to order",
+        "operationId" : "listTeaTypes",
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/TeaType"
+                  }
+                }
+              }
+            }
+          },
+          "default" : {
+            "description" : "Error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "x-swagger-router-controller" : "orders"
+    },
+    "/tea/spots" : {
+      "get" : {
+        "description" : "List of tea cafe and tea spot places",
+        "operationId" : "listSpots",
+        "parameters" : [ {
+          "name" : "tea",
+          "in" : "query",
+          "description" : "The name of the tea type for filtering",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/TeaSpot"
+                  }
+                }
+              }
+            }
+          },
+          "default" : {
+            "description" : "Error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "x-swagger-router-controller" : "orders"
+    },
+    "/swagger" : {
+      "x-swagger-pipe" : "swagger_raw"
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "TeaSpot" : {
+        "required" : [ "name" ],
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "geo" : {
+            "type" : "string"
+          },
+          "photo" : {
+            "type" : "string"
+          },
+          "teaTypes" : {
+            "type" : "array",
+            "description" : "Tea types that are available to order",
+            "items" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "TeaOrder" : {
+        "required" : [ "id" ],
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "takeOffId" : {
+            "type" : "number"
+          },
+          "teaType" : {
+            "type" : "string"
+          },
+          "time" : {
+            "type" : "string"
+          },
+          "status" : {
+            "type" : "string",
+            "description" : "queue | ready | taken"
+          }
+        }
+      },
+      "TeaType" : {
+        "required" : [ "id" ],
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          }
+        }
+      },
+      "City" : {
+        "required" : [ "id" ],
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          }
+        }
+      },
+      "PathEstimationResponse" : {
+        "required" : [ "time" ],
+        "type" : "object",
+        "properties" : {
+          "time" : {
+            "type" : "number",
+            "description" : "Time in minutes"
+          },
+          "distance" : {
+            "type" : "number",
+            "description" : "Length in meters"
+          }
+        }
+      },
+      "ErrorResponse" : {
+        "required" : [ "message" ],
+        "type" : "object",
+        "properties" : {
+          "message" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}

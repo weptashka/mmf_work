@@ -1,0 +1,11 @@
+<div>
+	{% for k, v in pairs(items) do %}
+		<li><img style="width: 100px" src="https://i.pinimg.com/originals/49/49/3a/49493a4c5a3eadda9e1161a2c6360fdf.jpg"></img><b>{{v["name"]}}</b> located at {{v["geo"]}}, and supported tea types: 
+			{% for kk, z in pairs(v["teaTypes"]) do %}
+			{{z}} 
+			{% end %}
+	    Welcome!
+		</li>
+	{% end %}
+</div>
+ 

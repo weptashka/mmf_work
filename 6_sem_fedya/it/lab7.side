@@ -1,0 +1,256 @@
+{
+  "id": "b2b9a205-04ab-40cc-8d2e-cad25f33b0ed",
+  "version": "2.0",
+  "name": "lab7",
+  "url": "http://svyatoslav.biz/testlab/wt/",
+  "tests": [{
+    "id": "c3c61423-1260-457f-8ae5-a37c395b8044",
+    "name": "Task1",
+    "commands": [{
+      "id": "5045d636-f134-4c5b-ad38-ad8fb306a5fa",
+      "comment": "",
+      "command": "open",
+      "target": "http://svyatoslav.biz/testlab/wt/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "916cf35e-808f-4b4d-a6d2-54f6c3a88a64",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//*[text()='banners']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "784c0c35-4565-4f38-bbbf-4a125b2bfdd4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//*[text()='news']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4825a5fe-c32a-42d5-818c-7052e9fb2063",
+    "name": "Task2",
+    "commands": [{
+      "id": "a09ef522-50a0-4c06-a361-21756dae9f24",
+      "comment": "",
+      "command": "open",
+      "target": "http://svyatoslav.biz/testlab/wt/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dddb3b01-27da-4f3e-b3ac-acf3dcbb9190",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//tr[3]//td[contains(text(),'CoolSoft by Somebody')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "48b05f6a-e888-429d-8c5f-c5e87ba1014f",
+    "name": "Task3",
+    "commands": [{
+      "id": "be0c6e71-e42b-43ed-b651-a9bbb70df901",
+      "comment": "",
+      "command": "open",
+      "target": "http://svyatoslav.biz/testlab/wt/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16239c5a-0fbb-40cf-8f57-f2ce23bfe375",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@name='name'][@value='']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5630c5e-d618-483f-88cd-7d3e5ead8944",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@name='height'][@value='']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be72d04f-eabd-4617-92af-bbc456df0d35",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@name='weight'][@value='']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2f0e7fa-8fdc-4336-9463-b860b67ca29e",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "xpath=//input[@name='gender'][@value='m']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3961d7c-aead-41f9-8870-34392eb4bd98",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "xpath=//input[@name='gender'][@value='f']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8b00842b-f055-424a-abdb-d1637b076d93",
+    "name": "Task4",
+    "commands": [{
+      "id": "b334299e-fdd9-4104-ba32-f11c3334b8c4",
+      "comment": "",
+      "command": "open",
+      "target": "http://svyatoslav.biz/testlab/wt/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55d5477b-0e02-4763-8ca4-937835d628e1",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='name']",
+      "targets": [
+        ["name=name", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "name"
+    }, {
+      "id": "0e44dc7d-7610-4dff-bef5-90a6b8a4e18b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='height']",
+      "targets": [
+        ["name=height", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='height']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "50"
+    }, {
+      "id": "7f24d611-8c79-48a3-a5cd-8a6a69e3da49",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='weight']",
+      "targets": [
+        ["name=weight", "name"],
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@name='weight']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "5566a65c-89b5-4c13-8f8a-5ab70bce5470",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='gender'][@value='f']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3b867a5-c349-4861-861e-5a752d78b969",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a727327a-da88-4095-97d0-6979b9d0de40",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//form",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9d46b86-be0d-4d53-b173-5561f4edd37c",
+      "comment": "",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d354360-8488-4d11-8dcb-b76594ae8227",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//td[2]",
+      "targets": [],
+      "value": "Слишком большая масса тела"
+    }]
+  }, {
+    "id": "aab5fc34-122b-4952-8615-3cae85ac2907",
+    "name": "Task_Optional",
+    "commands": [{
+      "id": "16d9c6b8-225f-435b-a3b5-495a8a50c1e7",
+      "comment": "",
+      "command": "open",
+      "target": "http://svyatoslav.biz/testlab/wt/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e2db6de-60a4-4525-89a3-17ea4bd4394e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='name']",
+      "targets": [
+        ["name=name", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "name"
+    }, {
+      "id": "7f7e056d-7da2-4c42-8f77-62fa6e3ffdf7",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='height']",
+      "targets": [
+        ["name=name", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100000"
+    }, {
+      "id": "8a14d18a-2032-4896-91a4-2b5aa77a1e13",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='weight']",
+      "targets": [
+        ["name=name", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "dcdbb7e5-bad0-4b2c-aa16-9176c369c6b8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='gender'][@value='f']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61c3d2dd-2ac0-4e3a-b8c1-f2526f03450a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fbbe79e-c566-457e-af95-ab62bc7316f6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[contains(text(),'Рост должен быть в диапазоне 50-300 см.')]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b67367c4-036e-4087-9dee-e47b5fd68627",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c3c61423-1260-457f-8ae5-a37c395b8044"]
+  }],
+  "urls": ["http://svyatoslav.biz/testlab/wt/"],
+  "plugins": []
+}

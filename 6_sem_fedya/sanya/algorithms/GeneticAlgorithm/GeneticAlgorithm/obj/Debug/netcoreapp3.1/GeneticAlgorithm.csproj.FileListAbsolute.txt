@@ -1,0 +1,12 @@
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/bin/Debug/netcoreapp3.1/GeneticAlgorithm.deps.json
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/bin/Debug/netcoreapp3.1/GeneticAlgorithm.runtimeconfig.json
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/bin/Debug/netcoreapp3.1/GeneticAlgorithm.runtimeconfig.dev.json
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/bin/Debug/netcoreapp3.1/GeneticAlgorithm.dll
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/bin/Debug/netcoreapp3.1/GeneticAlgorithm.pdb
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/obj/Debug/netcoreapp3.1/GeneticAlgorithm.csprojAssemblyReference.cache
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/obj/Debug/netcoreapp3.1/GeneticAlgorithm.AssemblyInfoInputs.cache
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/obj/Debug/netcoreapp3.1/GeneticAlgorithm.AssemblyInfo.cs
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/obj/Debug/netcoreapp3.1/GeneticAlgorithm.csproj.CoreCompileInputs.cache
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/obj/Debug/netcoreapp3.1/GeneticAlgorithm.dll
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/obj/Debug/netcoreapp3.1/GeneticAlgorithm.pdb
+/Users/alex/sixth_semestr/algorithms/GeneticAlgorithm/GeneticAlgorithm/obj/Debug/netcoreapp3.1/GeneticAlgorithm.genruntimeconfig.cache

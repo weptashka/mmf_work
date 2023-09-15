@@ -1,0 +1,15 @@
+D:\University\6_sem\algorithms\lab4\lab4\bin\Debug\net6.0\lab4.exe
+D:\University\6_sem\algorithms\lab4\lab4\bin\Debug\net6.0\lab4.deps.json
+D:\University\6_sem\algorithms\lab4\lab4\bin\Debug\net6.0\lab4.runtimeconfig.json
+D:\University\6_sem\algorithms\lab4\lab4\bin\Debug\net6.0\lab4.dll
+D:\University\6_sem\algorithms\lab4\lab4\bin\Debug\net6.0\lab4.pdb
+D:\University\6_sem\algorithms\lab4\lab4\obj\Debug\net6.0\lab4.csproj.AssemblyReference.cache
+D:\University\6_sem\algorithms\lab4\lab4\obj\Debug\net6.0\lab4.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\6_sem\algorithms\lab4\lab4\obj\Debug\net6.0\lab4.AssemblyInfoInputs.cache
+D:\University\6_sem\algorithms\lab4\lab4\obj\Debug\net6.0\lab4.AssemblyInfo.cs
+D:\University\6_sem\algorithms\lab4\lab4\obj\Debug\net6.0\lab4.csproj.CoreCompileInputs.cache
+D:\University\6_sem\algorithms\lab4\lab4\obj\Debug\net6.0\lab4.dll
+D:\University\6_sem\algorithms\lab4\lab4\obj\Debug\net6.0\refint\lab4.dll
+D:\University\6_sem\algorithms\lab4\lab4\obj\Debug\net6.0\lab4.pdb
+D:\University\6_sem\algorithms\lab4\lab4\obj\Debug\net6.0\lab4.genruntimeconfig.cache
+D:\University\6_sem\algorithms\lab4\lab4\obj\Debug\net6.0\ref\lab4.dll

@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  build:
+    docker:
+      # using custom image, see .circleci/images/primary/Dockerfile
+      - image: pangramia/circleci-docker-primary:0.0.1 
+
+    steps:
+      - checkout
+
+      - setup_remote_docker
+         # docker_layer_caching: true //available in custom plans
+
+      - run:
+          name: Start container and verify it's working
+          command: |
+            set -x
+            docker-compose up -d 
+            # docker-compose will start 2 containers, the one with service will be named `contacts`
+            # we start another container with curl in the same network as `contacts`, this way we have
+            # all exposed ports from `contacts` available on `localhost` in this new container
+            # docker run --network container:"$(docker-compose ps -q fp-elb)" \
+            #  appropriate/curl --retry 10 --retry-delay 1 --retry-connrefused http://localhost:80/
+      - deploy:
+          name: Build and push Docker image
+          command: |
+            TAG="0.1.${CIRCLE_BUILD_NUM}"
+            docker-compose build
+            echo ${GITLAB_CR_TOKEN} | docker login -u ${GITLAB_CR_NAME}  --password-stdin registry.gitlab.com
+            docker-compose push
