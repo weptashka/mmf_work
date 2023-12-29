@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.left-panel,
+.right-panel {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background-color: #f8f9fa;
+  color: white;
+  text-align: center;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-panel {
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
+    url('https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  font-size: 48px;
+}
+
+.login-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.login-list__item {
+  width: 200px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}

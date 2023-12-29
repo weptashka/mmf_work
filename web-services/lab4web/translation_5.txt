@@ -1,0 +1,3 @@
+from en to es
+sourse text: hello
+Text after translation: hola

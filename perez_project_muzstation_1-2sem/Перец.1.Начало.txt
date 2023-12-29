@@ -1,0 +1,40 @@
+MuzStation - наш проект
+в скобочках мои комменты()
+----------------------
+Это всё в GitBash пиши
+----------------------
+cd C:
+mkdir developer
+cd C:/developer
+git init MuzStation
+  (немного подождать,тут что-то будет написано)
+touch Readme.md
+vi Redmi.md
+  (тут тебя отправит в странное пространство с такими знаками "~" 
+   внизу слева написано визуальный режим или что-то тип того. Чоб 
+   оттуда выйти, нужно нажать Esc и ввести ":q!")(Esc и i - 
+   переключение между режимами)
+cd C:/developer/MuzStation
+git status
+  (немного подождать,тут что-то будет написано)
+
+------------------
+переход в cmd
+------------------
+
+cd C:/developer/MuzStation
+mkdir readiness-api
+cd C:/developer/MuzStation/readiness-api
+yo express
+  (появится такая хюита
+   ? Would you like to create a new directory for your project? Yes
+   ? Enter directory name
+    и тогда пишешь)
+readiness-api-servise
+  (потом щёлкаешь стрелочками и выбирашь)
+Basic
+Handlebars
+None
+Gulp
+
+npm install

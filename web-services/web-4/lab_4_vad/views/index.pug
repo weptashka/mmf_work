@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  form(action='/' method='get')
+    input(type='text' name='search' placeholder='Search')
+    button(type='submit') Search photos
+
+  ul(class='photos')
+    each photo in photos
+      li(class='photo')
+        div(class='photo_card')
+          img(src=photo.imageUrl width=300 height=300)
+          p #{photo.title}
+    else
+      li
+        p No photos yet

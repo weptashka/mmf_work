@@ -16,17 +16,18 @@ public class UserService {
     public void initialize() {
 
         User peter = new User();
-        peter.setName("Peter");
         peter.setEmpId(1111);
+        peter.setName("Peter");
         peter.setSalary(12000);
 
         User sam = new User();
-        sam.setName("Sam");
         sam.setEmpId(1112);
+        sam.setName("Sam");
         sam.setSalary(32000);
+
         User ryan = new User();
-        ryan.setName("Ryan");
         ryan.setEmpId(1113);
+        ryan.setName("Ryan");
         ryan.setSalary(16000);
 
         users.put(peter.getName(), peter);

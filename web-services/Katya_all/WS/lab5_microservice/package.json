@@ -1,0 +1,14 @@
+{
+  "name": "lab5_microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-pets": "cd ./pets && npm start",
+    "start-users": "cd ./users && npm start",
+    "start-categories": "cd ./categories && npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
