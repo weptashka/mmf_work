@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// Enum for order status (OPEN, FILLED, CANCELLED)
+enum OrderStatus {
+  OPEN
+  FILLED
+  CANCELLED
+}
+
+enum OrderType {
+  BUY
+  SELL
+}
+
+model Order {
+  id        String      @id @default(auto()) @map("_id") @db.ObjectId
+  userId    String
+  stockId   String
+  quantity  Int
+  orderType OrderType
+  status    OrderStatus
+  createdAt DateTime    @default(now())
+}
+
+model Event {
+  id            String    @id @default(auto()) @map("_id") @db.ObjectId
+  aggregateId   String
+  aggregateType String
+  type          String
+  payload       Json
+  createdAt     DateTime  @default(now())
+}
+
+model Snapshot {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  aggregateId   String
+  aggregateType String
+  version       Int
+  payload       Json
+}
