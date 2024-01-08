@@ -1,0 +1,15 @@
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\bin\Debug\net6.0\2zamena_dsatur.exe
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\bin\Debug\net6.0\2zamena_dsatur.deps.json
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\bin\Debug\net6.0\2zamena_dsatur.runtimeconfig.json
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\bin\Debug\net6.0\2zamena_dsatur.dll
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\bin\Debug\net6.0\2zamena_dsatur.pdb
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\obj\Debug\net6.0\2zamena_dsatur.csproj.AssemblyReference.cache
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\obj\Debug\net6.0\2zamena_dsatur.GeneratedMSBuildEditorConfig.editorconfig
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\obj\Debug\net6.0\2zamena_dsatur.AssemblyInfoInputs.cache
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\obj\Debug\net6.0\2zamena_dsatur.AssemblyInfo.cs
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\obj\Debug\net6.0\2zamena_dsatur.csproj.CoreCompileInputs.cache
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\obj\Debug\net6.0\2zamena_dsatur.dll
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\obj\Debug\net6.0\refint\2zamena_dsatur.dll
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\obj\Debug\net6.0\2zamena_dsatur.pdb
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\obj\Debug\net6.0\2zamena_dsatur.genruntimeconfig.cache
+D:\javawork\algo_labs\zadachy-na-grafah\lab_al_3\lab_al_3\obj\Debug\net6.0\ref\2zamena_dsatur.dll
